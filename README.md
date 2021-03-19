@@ -38,18 +38,22 @@ was never been easier!
   - Set lower or higher value for Stamina
   - Boost Stamina outer core (Gold)
   - Boost Stamina inner core (Gold)
+
 - **FixHolesInMap**
   - Fix multiple holes in the map
   - Fixes multiple glitched buildings.
+
 - **Stores**
   - Buying items from 3 categories (Food - Meds - Misc)
   - Selling items from 3 categories (Food - Meds - Misc)
   - Multiple Store Locations
   - Easy to work with Config
+
 - **Teleport**
   - Set a marker on the map and teleport with /tpm
   - Set admin group name in the config
   - Can be used for all players or for admins only
+  
 - **UsableItems**
   - Adding items with ease in the config
   - Adding or removing hunger
