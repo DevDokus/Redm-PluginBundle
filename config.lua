@@ -15,8 +15,8 @@ Plugins = {
 --------------------------------------------------------------------------------
 -- This plugin will later also be intergraded into the admin menu i am building.
 Teleport = {
-  AdminGroup  = 'admin',
-  AdminOnly   = false
+  AdminGroup  = 'admin',  -- This is the admin group name you have set.
+  AdminOnly   = true      -- Set false if everyone may use it
 }
 
 --------------------------------------------------------------------------------

@@ -86,3 +86,4 @@ new plugins!
 - [RedM Stores](https://github.com/DevDokus/Redm-Stores)
 - [RedM Usable Items](https://github.com/DevDokus/RedM-UsableItems)
 - [RedM Metabolism](https://github.com/DevDokus/RedM-Metabolism)
+- [IPL](https://github.com/PabloBartelino/IPL)
