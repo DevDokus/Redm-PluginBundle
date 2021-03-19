@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+----------------------------------- DevDokus -----------------------------------
+--------------------------------------------------------------------------------
+-------------------------------- RedM Metabolism -------------------------------
+--------------------------------------------------------------------------------
+
+-- Instructions --
+Simply place the "DevDokus--Metabolism" in your resource
+folder and add it to your server.cfg. Add the following line.
+`ensure DevDokus--Metabolism`
+--------------------------------------------------------------------------------
+
+-- Requirements --
+Other then the VORP Core, you do not
+require other plugins for this to work.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+-- Disclaimer --
+Although the basics of this plugin are finished, 
+I am still working on expanding it in the coming
+months. If you want to be able to upgrade to the 
+latest update, I would recommend leaving this 
+script unchanged. If you make changes, you have 
+to redo these changes if you update to the latest
+version of this script!
+
+Other than that you are free to use this script
+and make changes to it. Just make sure you put
+my name and GitHub link in your upload. 
+
+Have fun everyone :)
+--------------------------------------------------------------------------------
+Value = number between 0 and 100
+TriggerEvent('DevDokus:Metabolism:C:SetFirstStatus', value)
+TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
+TriggerEvent('DevDokus:Metabolism:C:Thirst', value)
+TriggerEvent('DevDokus:Metabolism:C:Health', value)
+TriggerEvent('DevDokus:Metabolism:C:Stamina', value)
+
+Value = seconds for the boost to be active.
+TriggerEvent('DevDokus:Metabolism:C:StaminaInner', value)
+TriggerEvent('DevDokus:Metabolism:C:StaminaOuter', value)
+
+--------------------------------------------------------------------------------
+-- Credits --
+[SirFreddie](https://github.com/SirFreddie) For the hud.
+--------------------------------------------------------------------------------
