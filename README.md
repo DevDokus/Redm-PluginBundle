@@ -1,5 +1,8 @@
-# RedM-DokusCore (v1.0.0)
- The Ultimate RP bundle of plugins for your RedM Server.
+# RedM-DokusCore (ONLY FOR DEVELOPMENT)
+ The Ultimate RP bundle of plugins for your RedM Server.   <br>
+ This is the Development Branch! I do not recommend using <br>
+ this version for your server. Please download the plugin<br>
+ from the [Main](https://github.com/DevDokus/DokusCore/tree/main) Branch.<br>
 
 # Requirements
 - [VorpCore](https://github.com/VORPCORE/VORP-Core)
