@@ -53,7 +53,7 @@ was never been easier!
   - Set a marker on the map and teleport with /tpm
   - Set admin group name in the config
   - Can be used for all players or for admins only
-  
+
 - **UsableItems**
   - Adding items with ease in the config
   - Adding or removing hunger
@@ -81,7 +81,7 @@ be made in this bundle pack. Check this page  <br>
 regularly if you want to stay up to date of all the  <br>
 new plugins!
 
-# My other RedM scripts
+# Scripts Included
 - [RedM Teleport]( https://github.com/DevDokus/RedM-Teleport)
 - [RedM Stores](https://github.com/DevDokus/Redm-Stores)
 - [RedM Usable Items](https://github.com/DevDokus/RedM-UsableItems)
