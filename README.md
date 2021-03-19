@@ -16,46 +16,46 @@ In the near future this script will also be <br>
 compatible with RedEmRP.
 
 # Description
-DokusCore is a bundle of plugins I've made to give
-RedM roleplay servers a more flexible roleplay.
-Instead, having to install all plugins manually,
-and putting them in the right order, you can install
-this on the go! Simply ensure `DokusCore` in your
-server cfg and you're done. If you don't like to use
-any of the features, you can simply turn them off
-in the config. Setting up your RedM RP experience
-was never been easier! 
+DokusCore is a bundle of plugins I've made to give      <br>
+RedM roleplay servers a more flexible roleplay. <br>
+Instead, having to install all plugins manually,  <br>
+and putting them in the right order, you can install  <br>
+this on the go! Simply ensure `DokusCore` in your <br>
+server cfg and you're done. If you don't like to use  <br>
+any of the features, you can simply turn them off <br>
+in the config. Setting up your RedM RP experience <br>
+was never been easier!
 
 # Features
 - **Metabolism**
-  - `Easy to configure config.`
-  - `Very Customizable`
-  - `Lower food and/or thirst when running.`
-  - `Lower food and/or thirst when walking.`
-  - `Lower food and/or thirst when standing idle.`
-  - `Set lower or higher value for hunger`
-  - `Set lower or higher value for thirst`
-  - `Set lower or higher value for Stamina`
-  - `Boost Stamina outer core (Gold)`
-  - `Boost Stamina inner core (Gold)`
+  - Easy to configure config.
+  - Very Customizable
+  - Lower food and/or thirst when running.
+  - Lower food and/or thirst when walking.
+  - Lower food and/or thirst when standing idle.
+  - Set lower or higher value for hunger
+  - Set lower or higher value for thirst
+  - Set lower or higher value for Stamina
+  - Boost Stamina outer core (Gold)
+  - Boost Stamina inner core (Gold)
 - **FixHolesInMap**
-  - `Fix multiple holes in the map`
-  - `Fixes multiple glitched buildings.`
+  - Fix multiple holes in the map
+  - Fixes multiple glitched buildings.
 - **Stores**
-  - `Buying items from 3 categories (Food - Meds - Misc)`
-  - `Selling items from 3 categories (Food - Meds - Misc)`
-  - `Multiple Store Locations`
-  - `Easy to work with Config`
+  - Buying items from 3 categories (Food - Meds - Misc)
+  - Selling items from 3 categories (Food - Meds - Misc)
+  - Multiple Store Locations
+  - Easy to work with Config
 - **Teleport**
-  - `Set a marker on the map and teleport with /tpm`
-  - `Set admin group name in the config`
-  - `Can be used for all players or for admins only`
+  - Set a marker on the map and teleport with /tpm
+  - Set admin group name in the config
+  - Can be used for all players or for admins only
 - **UsableItems**
-  - `Adding items with ease in the config`
-  - `Adding or removing hunger`
-  - `Adding or removing thirst`
-  - `Adding or removing stamina`
-  - `Adding or removing health`
+  - Adding items with ease in the config
+  - Adding or removing hunger
+  - Adding or removing thirst
+  - Adding or removing stamina
+  - Adding or removing health
 
 
 # Events: Metabolism
@@ -70,11 +70,11 @@ TriggerEvent('DevDokus:Metabolism:C:StaminaOuter', value)
 ```
 
 # More will be added soon!
-As I am developing more scripts, I will be adding
-then to this bundle pack! If changes or extentions
-are made to the Standalone plugin, they will also
-be made in this bundle pack. Check this page
-regularly if you want to stay up to date of all the
+As I am developing more scripts, I will be adding     <br>
+then to this bundle pack! If changes or extentions  <br>
+are made to the Standalone plugin, they will also  <br>
+be made in this bundle pack. Check this page  <br>
+regularly if you want to stay up to date of all the  <br>
 new plugins!
 
 # My other RedM scripts
