@@ -3,11 +3,11 @@
 --------------------------------------------------------------------------------
 -- This will turn features on or off.
 Plugins = {
-  FixHolesInMap = true,
-  Metabolism    = true,
-  Stores        = true,
-  Teleport      = true,
-  UsableItems   = true
+  Metabolism    = true,       -- Gives you Character vitals like eat and drink.
+  Stores        = true,       -- Gives you multiple stores to buy and sell items.
+  Teleport      = true,       -- Lets admins or all players teleport to map marker.
+  UsableItems   = true,       -- Makes items usable that otherwise can't be used.
+  iMaps         = true        -- Fixed hole and glitched buildings. Adds tons of objects.
 }
 
 --------------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------- CHANGE NOTES ---------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+[ Version 1.1.0 ]: Couple fixes and removed some old code.
+
+[1]: Removed FixHolesInMap as this is taken over by iMaps
+[2]: Intergraded iMaps made by KiBook. My plugin FixHolesInMap coverd a small
+     percentage of hole and glitched buildings, but iMaps fixes most of them incl
+     the buildings that I fixed. Therefor I have replaced FixHolesInMap with the
+     iMap version for a better coverage.
+[3]: I forgot to upload the fxmanifest in the main branch and only included it
+     into the developers branch. This is now fixed.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
