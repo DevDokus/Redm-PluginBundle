@@ -101,5 +101,4 @@ to manually change this on every update.
 - [DevDokus Stores](https://github.com/DevDokus/Redm-Stores)
 - [DevDokus Usable Items](https://github.com/DevDokus/RedM-UsableItems)
 - [DevDokus Metabolism](https://github.com/DevDokus/RedM-Metabolism)
-- [PabloBartelino IPL](https://github.com/PabloBartelino/IPL)
 - [KiBook iMaps](https://github.com/kibook/redm-imaps)
