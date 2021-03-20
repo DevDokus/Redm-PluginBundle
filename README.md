@@ -23,7 +23,7 @@ DokusCore is a bundle of plugins I've made to give      <br>
 RedM roleplay servers a more flexible roleplay. <br>
 Instead, having to install all plugins manually,  <br>
 and putting them in the right order, you can install  <br>
-this on the go! Simply ensure `DokusCore` in your <br>
+this on the go! Simply `ensure DokusCore` in your <br>
 server cfg and you're done. If you don't like to use  <br>
 any of the features, you can simply turn them off <br>
 in the config. Setting up your RedM RP experience <br>
@@ -42,9 +42,10 @@ was never been easier!
   - Boost Stamina outer core (Gold)
   - Boost Stamina inner core (Gold)
 
-- **FixHolesInMap**
+- **iMaps**
   - Fix multiple holes in the map
   - Fixes multiple glitched buildings.
+  - Places tons of objects back on the map
 
 - **Stores**
   - Buying items from 3 categories (Food - Meds - Misc)
@@ -84,9 +85,24 @@ be made in this bundle pack. Check this page  <br>
 regularly if you want to stay up to date of all the  <br>
 new plugins!
 
+# Disclaimer
+DokusCore is currently under development, but can already be used!   <br>
+I will still be including more scripts to this  <br>
+core on a daily basis. If you want to be able to  <br>
+upgrade to the latest version with ease, then I would <br>
+recommend not to make changes in any files other then <br>
+the config file. This way you can simply download the <br>
+latest version and replace your old files. Just keep in   <br>
+mind that changes can be made to the config. You  <br>
+can either replace the config and add in your custom changes,   <br>
+or use the old config and add in the changes I made manually.   <br>
+If you make any changes in the client/server files, you have  <br>
+to manually change this on every update.  
+
 # Scripts Included
-- [RedM Teleport]( https://github.com/DevDokus/RedM-Teleport)
-- [RedM Stores](https://github.com/DevDokus/Redm-Stores)
-- [RedM Usable Items](https://github.com/DevDokus/RedM-UsableItems)
-- [RedM Metabolism](https://github.com/DevDokus/RedM-Metabolism)
-- [IPL](https://github.com/PabloBartelino/IPL)
+- [DevDokus Teleport]( https://github.com/DevDokus/RedM-Teleport)
+- [DevDokus Stores](https://github.com/DevDokus/Redm-Stores)
+- [DevDokus Usable Items](https://github.com/DevDokus/RedM-UsableItems)
+- [DevDokus Metabolism](https://github.com/DevDokus/RedM-Metabolism)
+- [PabloBartelino IPL](https://github.com/PabloBartelino/IPL)
+- [KiBook iMaps](https://github.com/kibook/redm-imaps)

@@ -15,21 +15,22 @@ else
 end
 
 -- Report online features.
-if Plugins.FixHolesInMap then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6FixHolesInMap ^3is running") end
 if Plugins.Metabolism then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Metabolism ^3is running") end
 if Plugins.Stores then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Stores ^3is running") end
 if Plugins.Teleport then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Teleport ^3is running") end
 if Plugins.UsableItems then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6UsableItems ^3is running") end
+if Plugins.iMaps then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6iMaps ^3is running") end
 
 -- Report offline features
-if not Plugins.FixHolesInMap then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6FixHolesInMap ^3is not running") end
 if not Plugins.Metabolism then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Metabolism ^3is not running") end
 if not Plugins.Stores then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Stores ^3is not running") end
 if not Plugins.Teleport then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Teleport ^3is not running") end
 if not Plugins.UsableItems then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6UsableItems ^3is not running") end
+if not Plugins.iMaps then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6iMaps ^3is not running") end
 
 -- Thanks
 print("^5[DokusCore]^2[SYSTEM]: ^5Thanks for using DokusCore for Vorp!")
 print("^5[DokusCore]^2[SYSTEM]: ^5Developed By DevDokus")
 print("^5[DokusCore]^2[DISCORD]: ^5Http://discord.gg/2gdypBhsye")
+print("^5[DokusCore]^2[WEBSITE]: ^5Https://KDNGaming.com")
 print("^5[DokusCore]^2[SYSTEM]: ^6-----------------------------------")
