@@ -5,7 +5,7 @@
 -------------------------- DONT CHANGE ANYTHING BELOW --------------------------
 --------------------------------------------------------------------------------
 -- Check Dependencies.
-print("^5[DokusCore]^2[SYSTEM]: ^6---------- Version 1.0.0 ----------")
+print("^5[DokusCore]^2[SYSTEM]: ^6---------- Version 1.1.0 ----------")
 
 if (Plugins.UsableItems == true) and (Plugins.Metabolism == false) then
   print('^5[DokusCore]^1[ERROR]: ^3The plugin UsableItems is depending on the plugin ^1Metabolism^3.')
