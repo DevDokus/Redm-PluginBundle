@@ -12,5 +12,13 @@
      iMap version for a better coverage.
 [3]: I forgot to upload the fxmanifest in the main branch and only included it
      into the developers branch. This is now fixed.
+
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+[ Version 1.2.0 ]:
+
+[1]: reworked the core file structure to minimize the amount of editing and
+     information needed in the fxmanifest. This will also allow me to make new
+     plugins without the need of restarting the server, as the fxmanifest file
+     does not need to be edited. Newly inserted files will automatically be
+     found upon restarting DokusCore. 

@@ -275,8 +275,8 @@ function WarMenu.CreateMenu(id, title, subTitle)
 	menus[id].aboutToBeClosed = false
 	menus[id].aboutToBeSubClosed = false
 
-	menus[id].x = 0.02
-	menus[id].y = 0.10
+	menus[id].x = 0.77
+	menus[id].y = 0.05
 
 	menus[id].width = 0.21
 

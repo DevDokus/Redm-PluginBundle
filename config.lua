@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 -- This will turn features on or off.
 Plugins = {
-  Metabolism    = true,       -- Gives you Character vitals like eat and drink.
+  Metabolism    = false,       -- Gives you Character vitals like eat and drink.
   Stores        = true,       -- Gives you multiple stores to buy and sell items.
   Teleport      = true,       -- Lets admins or all players teleport to map marker.
   UsableItems   = true,       -- Makes items usable that otherwise can't be used.
@@ -16,7 +16,7 @@ Plugins = {
 -- This plugin will later also be intergraded into the admin menu i am building.
 Teleport = {
   AdminGroup  = 'admin',  -- This is the admin group name you have set.
-  AdminOnly   = true      -- Set false if everyone may use it
+  AdminOnly   = false      -- Set false if everyone may use it
 }
 
 --------------------------------------------------------------------------------
@@ -48,6 +48,19 @@ Metabolism = {
     LoseWhen = 10.0,                             -- Losing innercore health below this threshold
     DamagePerSec = 1.0,                          -- Amount of damage on innercore health per second.
   },
+}
+
+--------------------------------------------------------------------------------
+------------------------------- Plugin Blackjack -------------------------------
+--------------------------------------------------------------------------------
+Blackjack = {
+  Radius = 5,
+  Seats  = 6,
+  Tables = {{ID = 'Valentine', x = -303.95, y = 800.99, z = 89.93}},
+
+
+
+  --- Below here
 }
 
 --------------------------------------------------------------------------------
@@ -125,4 +138,19 @@ Stores = {
 }
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-Keys = {["Enter"] = 0xC7B5340A, ["Space"] = 0xD9D0E1C0, ['Backspace'] = 0x308588E6}
+Keys = {
+  ['E'] = 0xCEFD9220,
+  ["Enter"] = 0xC7B5340A,
+  ["Space"] = 0xD9D0E1C0,
+  ['Backspace'] = 0x308588E6
+}
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+_Version_ = "1.2.0"
+_StartError_ = false
+
+_Test = nil
