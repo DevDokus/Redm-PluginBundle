@@ -1,6 +1,5 @@
 
 var Plugin = null;
-
 window.addEventListener('message', function(event) {
   Plugin = event.data._plugin;
    if (Plugin == true) {

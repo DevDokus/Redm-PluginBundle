@@ -1,4 +1,4 @@
-# RedM-DokusCore (v1.1.0) (WIP)
+# RedM-DokusCore (v1.2.0) (WIP)
  The Ultimate RP bundle of plugins for your RedM Server.
 
 # Requirements
