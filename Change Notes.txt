@@ -27,3 +27,11 @@
 [3]: Added in more system checks and warning message to guide the users.
 [4]: Added a script termination if one of the settings are incorrect. Dokuscore
      features will then be turned off, and you receive a warning in the console.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+[ Version 1.2.1 ]:
+
+[1]: Small Fix: UsableItems was unable to find the items table.
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
