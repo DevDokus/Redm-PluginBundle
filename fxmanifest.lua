@@ -3,19 +3,20 @@
 --------------------------------------------------------------------------------
 description 'The Ultimate RP Pack for RedM VORP'
 author 'DevDokus Github'
-version '1.2.0'
+version '1.2.1'
 
 shared_script 'config.lua'
 
-client_scripts { 'config.lua', '[Core]/[Client]/*.lua', '[Core]/[System]/[Client]/*.lua' }
-server_scripts { 'config.lua', '[Core]/[Server]/*.lua', '[Core]/[System]/[Server]/*.lua' }
-ui_page('[Core]/[HTML]/[Metabolism]/index.html')
+client_scripts { 'config.lua', '[Core]/[Vorp]/[Client]/*.lua', '[Core]/[System]/[Client]/*.lua' }
+server_scripts { 'config.lua', '[Core]/[Vorp]/[Server]/*.lua', '[Core]/[System]/[Server]/*.lua' }
+ui_page('[Core]/[Vorp]/[HTML]/index.html')
 
 files {
-  "[Core]/[HTML]/[Metabolism]/script.js",
-  "[Core]/[HTML]/[Metabolism]/styles.css",
-  "[Core]/[HTML]/[Metabolism]/img/*.png",
-  "[Core]/[HTML]/[Metabolism]/index.html",
+  "[Core]/[Vorp]/[HTML]/script.js",
+  "[Core]/[Vorp]/[HTML]/styles.css",
+  "[Core]/[Vorp]/[HTML]/img/Hud/*.png",
+  "[Core]/[Vorp]/[HTML]/index.html",
+  "[Core]/[Vorp]/[HTML]/img/Cards/*.png",
 }
 
 fx_version "adamant"
