@@ -33,7 +33,6 @@ to manually change this on every update.
 
 --------------------------------------------------------------------------------
 Value = number between 0 and 100
-TriggerEvent('DevDokus:Metabolism:C:SetFirstStatus', value)
 TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
 TriggerEvent('DevDokus:Metabolism:C:Thirst', value)
 TriggerEvent('DevDokus:Metabolism:C:Health', value)

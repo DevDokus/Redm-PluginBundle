@@ -37,14 +37,14 @@ Citizen.CreateThread(function()
           if (dist <= 8) then
             if not MenuOpen then DrawCircle(x,y,z, 204, 56, 209, 50) end
             if (dist <= 1.5) then
-              if not MenuOpen then DrawTxt('Press [ ~r~SPACE~w~ ] to open the shop menu', 0.50, 0.90, 0.7, 0.5, true, 255, 255, 255, 255, true) end
-              if IsControlJustPressed(0, Keys["Space"]) then
+              if not MenuOpen then DrawInfo('Press [ ~e~SPACE~q~ ] to open the shop menu', 0.5, 0.95, 0.75) end
+              if IsControlJustPressed(0, Keys["SPACEBAR"]) then
                 MenuOpen = true
                 ActiveMenu = 'Home'
                 WarMenu.OpenMenu('Home')
               end
 
-              if IsControlJustPressed(0, Keys['Backspace']) then
+              if IsControlJustPressed(0, Keys['BACKSPACE']) then
                 if     ActiveMenu == 'Home'       then WarMenu.CloseMenu()          ActiveMenu = nil MenuOpen = false
                 elseif ActiveMenu == 'BuyMenu'    then WarMenu.OpenMenu('Home')     ActiveMenu = 'Home'
                 elseif ActiveMenu == 'SellMenu'   then WarMenu.OpenMenu('Home')     ActiveMenu = 'Home'
@@ -225,16 +225,6 @@ Citizen.CreateThread(function()
         end
       end
       WarMenu.Display()
-    end
-
-    function DrawTxt(str, x, y, w, h, enableShadow, col1, col2, col3, a, center)
-       local str = CreateVarString(10, "LITERAL_STRING", str, Citizen.ResultAsLong())
-       SetTextScale(w, h)
-       SetTextColor(math.floor(col1), math.floor(col2), math.floor(col3), math.floor(a))
-       SetTextCentre(center)
-       if enableShadow then SetTextDropshadow(1, 0, 0, 0, 255) end
-       Citizen.InvokeNative(0xADA9255D, 10);
-       DisplayText(str, x, y)
     end
   end
 end)

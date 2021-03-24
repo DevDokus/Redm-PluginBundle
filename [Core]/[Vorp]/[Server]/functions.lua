@@ -6,5 +6,5 @@ function DrawCircle(x,y,z,r,g,b,a)
 end
 
 function Notify(text, time)
-  TriggerClientEvent("vorp:TipRight", -1, text, time)
+  TriggerClientEvent("vorp:TipRight", source, text, time)
 end
