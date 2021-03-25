@@ -1,4 +1,4 @@
-if BountyHunter.NUI.Theme.Red then
+if Plugin.BountyHunter and BountyHunter.NUI.Theme.Red then
 print("RED")
 
 	WarBountyMenu = { }
@@ -667,7 +667,7 @@ end
 
 
 
-if BountyHunter.NUI.Theme.Dark then
+if Plugin.BountyHunter and BountyHunter.NUI.Theme.Dark then
 	print("DARK")
   WarBountyMenu = { }
 
