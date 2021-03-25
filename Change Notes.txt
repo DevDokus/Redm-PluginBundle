@@ -2,6 +2,13 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.3.1 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: Small patch on the metabolism script. Here I was not flooring a number thus
+     creating a decimal number like (10.0). This resulted in the script being
+     unable to change the users health. 
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.3.0 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: [ Feature Added ]: BankDoors: With this switch you can open the bank doors
@@ -10,13 +17,6 @@
      ill be able to insert Redemrp capabilities.
 [3]: Metabolism stopped working after the last update. I forgot to place the html
      files in the correct location. This is now fixed.
-[4]: Messages coming from the store where send over the -1 source, meaning that
-     everyone would see the message if someone would buy or sell anything. This 
-     is now fixed and all messages now go to the right client.
-[5]: Added in a config version check. This will let you know if your config is
-     upto date. An warning will trigger when you have updated to a new version
-     and things have been deleted or added in the config. As long you see that 
-     your config is up to date, your golden!
 
 --------------------------------------------------------------------------------
 -------------------------------- Version 1.2.1 ---------------------------------

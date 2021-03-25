@@ -48,7 +48,7 @@ Metabolism = {
     DrainWalking = 0.05,                         -- Amount of drain when walking
     LoseWhen = 10.0,                             -- Losing innercore health below this threshold
     DamagePerSec = 1.0,                          -- Amount of damage on innercore health per second.
-  },
+  }
 }
 
 
@@ -194,6 +194,6 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.3.0"
+_Version_ = "1.3.1"
 _vConfig_ = 24032021
 _StartError_ = false
