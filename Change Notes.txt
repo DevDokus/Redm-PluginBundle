@@ -2,11 +2,25 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.4.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [ Feature Added ]: With [ /coords ] you can now toggle your map coordinates.
+     These will be shown around your minimap. You can change each coordinates
+     position. The admin only option for this feature is not ready yet. This will
+     be added in a later version.
+
+[2]: [ Feature Added (BountyHunter)]: This is one of my newly made scripts. With
+     this feature you are able to hun PVE and PVP bounties. Get your bounty in
+     valentine and kill your objectives. Get the evidence and claim you bounty
+     at the office. This feature is fully Customizable and can even be changed
+     in looks and menu position.
+[3]: Also pushed a couple of small fixes.
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.3.1 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: Small patch on the metabolism script. Here I was not flooring a number thus
      creating a decimal number like (10.0). This resulted in the script being
-     unable to change the users health. 
+     unable to change the users health.
 
 --------------------------------------------------------------------------------
 -------------------------------- Version 1.3.0 ---------------------------------

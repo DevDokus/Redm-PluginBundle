@@ -1,17 +1,17 @@
 ---
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/49053928/111937011-2e9b8080-8ac7-11eb-914a-a0d94380d611.gif"><br>
- <b>Version (v1.3.1) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
+ <b>Version (v1.4.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
 </p>
 
 ---
 <p align="center">
 <b> ATTENTION! </b><br>
-If you update to version 1.3.1, please delete the old <br>
+If you update to version 1.4.0, please delete the old <br>
 files first! Do not replace the old files with these, as I<br>
 have done some important changes, replaced file locations and<br>
 deleted some old files. Please delete all files incl the <br>
-config file before copying version 1.3.1 to your server!
+config file before copying version 1.4.0 to your server!
 </p>
 
 ---
@@ -76,6 +76,23 @@ was never been easier!
   - Adding or removing thirst
   - Adding or removing stamina
   - Adding or removing health
+
+- **BankDoors**
+  - Open or close the bank doors.
+
+- **ShowCoords**
+  - Show map coords with /coords
+
+- **BountyHunter**
+  - Very Customizable
+  - Set Multiple Bounty Boards
+  - Set min and max rewards for money
+  - Set min and max rewards for EXP
+  - Set a static value per kill and EXP
+  - Easy to add locations and enemies
+  - Set groups of enemies together by using the same ID
+  - Set a Red Theme or a Dark Theme for the menu.
+  - Set the position of the menu (left - right - center)
 
 
 # Events: Metabolism

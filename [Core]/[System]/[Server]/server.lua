@@ -7,6 +7,7 @@
 -- Check Dependencies.
 print("^5[DokusCore]^2[SYSTEM]: ^6---------- Version ".._Version_.."----------")
 
+-- Error for missing Dependencies
 if (Plugins.UsableItems == true) and (Plugins.Metabolism == false) then
   print('^5[DokusCore]^1[ERROR]: ^3The plugin UsableItems is depending on the plugin ^1Metabolism^3.')
   print("^5[DokusCore]^1[ERROR]: ^3If you want to use UsableItems, please set Metabolism to ^1true^3. ")
@@ -16,20 +17,24 @@ else
 end
 
 -- Report online features.
-if not _StartError_ and Plugins.Metabolism      then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Metabolism ^3is running") end
-if not _StartError_ and Plugins.Stores          then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Stores ^3is running") end
-if not _StartError_ and Plugins.Teleport        then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Teleport ^3is running") end
-if not _StartError_ and Plugins.UsableItems     then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6UsableItems ^3is running") end
-if not _StartError_ and Plugins.iMaps           then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6iMaps ^3is running") end
-if not _StartError_ and Plugins.BankDoors       then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6BankDoors ^3is running") end
+if not _StartError_ and Plugins.Metabolism       then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Metabolism ^3is running") end
+if not _StartError_ and Plugins.Stores           then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Stores ^3is running") end
+if not _StartError_ and Plugins.Teleport         then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6Teleport ^3is running") end
+if not _StartError_ and Plugins.UsableItems      then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6UsableItems ^3is running") end
+if not _StartError_ and Plugins.iMaps            then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6iMaps ^3is running") end
+if not _StartError_ and Plugins.BankDoors        then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6BankDoors ^3is running") end
+if not _StartError_ and Plugins.ShowCoords       then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6ShowCoords ^3is running") end
+if not _StartError_ and Plugins.BountyHunter     then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6BountyHunter ^3is running") end
 
 -- Report offline features
-if not _StartError_ and not Plugins.Metabolism  then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Metabolism ^3is not running") end
-if not _StartError_ and not Plugins.Stores      then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Stores ^3is not running") end
-if not _StartError_ and not Plugins.Teleport    then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Teleport ^3is not running") end
-if not _StartError_ and not Plugins.UsableItems then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6UsableItems ^3is not running") end
-if not _StartError_ and not Plugins.iMaps       then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6iMaps ^3is not running") end
-if not _StartError_ and not Plugins.BankDoors   then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6BankDoors ^3is not running") end
+if not _StartError_ and not Plugins.Metabolism   then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Metabolism ^3is not running") end
+if not _StartError_ and not Plugins.Stores       then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Stores ^3is not running") end
+if not _StartError_ and not Plugins.Teleport     then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Teleport ^3is not running") end
+if not _StartError_ and not Plugins.UsableItems  then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6UsableItems ^3is not running") end
+if not _StartError_ and not Plugins.iMaps        then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6iMaps ^3is not running") end
+if not _StartError_ and not Plugins.BankDoors    then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6BankDoors ^3is not running") end
+if not _StartError_ and not Plugins.ShowCoords   then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6ShowCoords ^3is not running") end
+if not _StartError_ and not Plugins.BountyHunter then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6BountyHunter ^3is not running") end
 
 -- Config Update Warning
 print("^5[DokusCore]^2[SYSTEM]: ^6-----------------------------------")

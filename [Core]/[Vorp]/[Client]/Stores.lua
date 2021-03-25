@@ -1,4 +1,3 @@
-
 Citizen.CreateThread(function()
   Wait(500)
   if Plugins.Stores and not _StartError_ then

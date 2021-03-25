@@ -67,8 +67,6 @@ Citizen.CreateThread(function()
           local running = IsPedRunning(User)
           local walking = IsPedWalking(User)
 
-          -- TriggerServerEvent('DevDokus:Metabolism:S:Console', {_Hunger,_Thirst})
-
           if running then
             _Hunger  = _Hunger - (Metabolism.Food.DrainRunning + DrainFood)
             _Thirst  = _Thirst - (Metabolism.Water.DrainRunning + DrainWater)
@@ -90,8 +88,6 @@ Citizen.CreateThread(function()
             local User   = PlayerPedId()
             local Core   = GetAttributeCoreValue(User, 0)
             local health = math.floor((Core - Metabolism.Food.DamagePerSec))
-            TriggerServerEvent('C', {'-------------------------------------'})
-            TriggerServerEvent('C', {Metabolism.Food.DamagePerSec, Core, health})
             Citizen.InvokeNative(0xC6258F41D86676E0, User, 0, health)
           end
 
@@ -99,8 +95,6 @@ Citizen.CreateThread(function()
             local User   = PlayerPedId()
             local Core   = GetAttributeCoreValue(User, 0)
             local health = math.floor((Core - Metabolism.Water.DamagePerSec))
-            TriggerServerEvent('C', {Metabolism.Water.DamagePerSec, Core, health})
-            TriggerServerEvent('C', {'-------------------------------------'})
             Citizen.InvokeNative(0xC6258F41D86676E0, User, 0, health)
           end
         end
@@ -117,7 +111,6 @@ Citizen.CreateThread(function()
           local User = PlayerPedId()
           local Core = GetAttributeCoreValue(User, 0)
           local eHealth = GetEntityHealth(User)
-          -- print(Core, eHealth, DeadOrAlive, stage.s1, stage.s2, stage.s3, CoreIsZero)
 
           -- STOP: If user is dead, let's wait until the player is alive again.
           if (Core == 0) and not DeadOrAlive then print("Waiting for respawn.....") return end

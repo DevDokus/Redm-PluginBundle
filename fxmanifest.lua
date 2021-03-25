@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 description 'The Ultimate RP Pack for RedM VORP'
 author 'DevDokus Github'
-version '1.3.1'
+version '1.4.0'
 
 shared_script 'config.lua'
 
