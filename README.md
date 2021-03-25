@@ -97,7 +97,6 @@ was never been easier!
 
 # Events: Metabolism
 ```
-TriggerEvent('DevDokus:Metabolism:C:SetFirstStatus', value)
 TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
 TriggerEvent('DevDokus:Metabolism:C:Thirst', value)
 TriggerEvent('DevDokus:Metabolism:C:Health', value)
