@@ -14,7 +14,7 @@ AddEventHandler('DevDokus:Teleport:S:CheckAdmin', function()
       TriggerClientEvent('DevDokus:Teleport:C:Teleport', source)
       return
     else
-      TriggerClientEvent("vorp:TipRight", source, 'Only admins can teleport!', 10000)
+      Notify('Only admins can teleport!', 5000)
       return
     end
   end

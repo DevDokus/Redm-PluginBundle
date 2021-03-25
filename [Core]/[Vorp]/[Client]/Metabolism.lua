@@ -87,16 +87,20 @@ Citizen.CreateThread(function()
       while true do
         if VORPCore ~= nil then
           if _Hunger < Metabolism.Food.LoseWhen then
-            local User    = PlayerPedId()
-            local Core = GetAttributeCoreValue(User, 0)
-            local health = (Core - Metabolism.Food.DamagePerSec)
+            local User   = PlayerPedId()
+            local Core   = GetAttributeCoreValue(User, 0)
+            local health = math.floor((Core - Metabolism.Food.DamagePerSec))
+            TriggerServerEvent('C', {'-------------------------------------'})
+            TriggerServerEvent('C', {Metabolism.Food.DamagePerSec, Core, health})
             Citizen.InvokeNative(0xC6258F41D86676E0, User, 0, health)
           end
 
           if _Thirst < Metabolism.Water.LoseWhen then
-            local User    = PlayerPedId()
-            local Core = GetAttributeCoreValue(User, 0)
-            local health = (Core - Metabolism.Water.DamagePerSec)
+            local User   = PlayerPedId()
+            local Core   = GetAttributeCoreValue(User, 0)
+            local health = math.floor((Core - Metabolism.Water.DamagePerSec))
+            TriggerServerEvent('C', {Metabolism.Water.DamagePerSec, Core, health})
+            TriggerServerEvent('C', {'-------------------------------------'})
             Citizen.InvokeNative(0xC6258F41D86676E0, User, 0, health)
           end
         end

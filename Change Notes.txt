@@ -2,9 +2,30 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.3.1 ---------------------------------
 --------------------------------------------------------------------------------
-[ Version 1.1.0 ]: Couple fixes and removed some old code.
+[1]: Small patch on the metabolism script. Here I was not flooring a number thus
+     creating a decimal number like (10.0). This resulted in the script being
+     unable to change the users health. 
 
+--------------------------------------------------------------------------------
+-------------------------------- Version 1.3.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [ Feature Added ]: BankDoors: With this switch you can open the bank doors
+     of all the cities. In Valentine it also opens the doors in the back.
+[2]: Changed the folder structure a little bit making it ready for later. Then
+     ill be able to insert Redemrp capabilities.
+[3]: Metabolism stopped working after the last update. I forgot to place the html
+     files in the correct location. This is now fixed.
+
+--------------------------------------------------------------------------------
+-------------------------------- Version 1.2.1 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: Small Fix: UsableItems was unable to find the items table.
+
+--------------------------------------------------------------------------------
+-------------------------------- Version 1.1.0 ---------------------------------
+--------------------------------------------------------------------------------
 [1]: Removed FixHolesInMap as this is taken over by iMaps
 [2]: Intergraded iMaps made by KiBook. My plugin FixHolesInMap coverd a small
      percentage of hole and glitched buildings, but iMaps fixes most of them incl
@@ -14,9 +35,8 @@
      into the developers branch. This is now fixed.
 
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.2.0 ---------------------------------
 --------------------------------------------------------------------------------
-[ Version 1.2.0 ]:
-
 [1]: reworked the core file structure to minimize the amount of editing and
      information needed in the fxmanifest. This will also allow me to make new
      plugins without the need of restarting the server, as the fxmanifest file
@@ -27,11 +47,5 @@
 [3]: Added in more system checks and warning message to guide the users.
 [4]: Added a script termination if one of the settings are incorrect. Dokuscore
      features will then be turned off, and you receive a warning in the console.
-
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-[ Version 1.2.1 ]:
-
-[1]: Small Fix: UsableItems was unable to find the items table.
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
