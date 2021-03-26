@@ -2,9 +2,22 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.4.2 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [UsableItems][Fix]: I had renamed TaskBottle to TaskDrink, this i already
+     updated in the standalone, but forgot to update it in DokusCore. This is
+     now fixed and drinking from a bottle now works.
+
+[2]: [BountyHunter][Fix]: I had a little typo in the script, thus you where
+     getting a error on WarBountyMenu. I requested Plugin instead of Plugins.
+     When i converted this script from the standalone to DokusCore i have to
+     add in a couple extra checks. This is now fixed and the BountyHunterMenu
+     works now correctly. 
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.4.1 ---------------------------------
 --------------------------------------------------------------------------------
-[1]: Added in the plugins switch for the Bounty Hunting Script 
+[1]: Added in the plugins switch for the Bounty Hunting Script
 --------------------------------------------------------------------------------
 -------------------------------- Version 1.4.0 ---------------------------------
 --------------------------------------------------------------------------------

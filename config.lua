@@ -312,6 +312,6 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.4.1"
+_Version_ = "1.4.2"
 _vConfig_ = 103925032021
 _StartError_ = false

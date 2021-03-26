@@ -28,7 +28,7 @@ Citizen.CreateThread(function()
           end
         end
       elseif Type == 'Drink' then
-        TaskBottle(ped) Wait(1000)
+        TaskDrink(ped) Wait(1000)
         for k,v in pairs(UsableItems.Items) do
           if Item == v.ID then
             TriggerEvent('DevDokus:Metabolism:C:Hunger', Hunger)
