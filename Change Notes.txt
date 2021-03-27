@@ -2,6 +2,31 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.6.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [Fix] The function that is scanning for your distance from the Bounty
+    Boards, was returning true and false at the time due to multiple coordinates
+    inside the array. As you are close for 1 of the coords, it would immediately
+    set the variable back to false as you are far away from the other coords.
+    Thus if you have multiple locations, it will start to glitch.
+    Now we are scanning for the location itself and setting that as your closest
+    Bounty Board. You are now able to add multiple locations on the list without
+    running in to troubles
+
+[2]: [Fix] When multiple BountyBoards are on the list, and you are activating a
+    bounty, it would activate 1 per BountyBoard on the list resulting in multiple
+    bounties at once. I have added a extra check into the code so only 1 bounty
+    activates per time you click on "Hunt Bounty".  However, you are still able
+    to stack multiple bounties by activating the menu more times.
+
+[3]: [REQUESTED]: Now you can set if you need a job(s) for hunting bounties.
+    Instead of setting 1 job type, I have made it so that you can set multiple
+    jobs in a list. If the user has any of these jobs he will be able to hunt
+    for bounties. When he does not have the job, he will receive an error.
+
+[4]: Added 2 more BountyBoard locations to the config.
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.5.0 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: [Feature Added]: Play the piano like a pro on RedM. This will give you the

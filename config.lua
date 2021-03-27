@@ -157,6 +157,21 @@ BountyHunter = {
     Theme = { Dark = false, Red = true },
     Position = { Right = true, Left = false, Center = false }
   },
+
+  --------------------------------------------------------------------------------
+  -- Here you can set if BountyHunter needs a job or not for it to work.
+  -- You can add multiple on this list. If set to true, the job is active
+  -- NoJob is simply the error you get when you dont have the correct job.
+  -- Make sure that you put every job on this line if you put them on the listz
+  -- NOTE: if you disable one of the jobs, make sure to edit the NoJob also!
+  -- Otherwise people will thet need a job that maybe doesn't exists.
+  --------------------------------------------------------------------------------
+  Jobs = {
+    { Job = 'police', Use = false },
+    { Job = 'hunter', Use = false },
+    NoJob = 'You need the jobs ~e~Police~q~ or ~e~Hunter~q~ job to hunt for bounties'
+  },
+
   --------------------------------------------------------------------------------
   Payment = {
     Money = {
@@ -178,9 +193,9 @@ BountyHunter = {
   -- The City name does nothing! this is just a visual reference.
   --------------------------------------------------------------------------------
   BountyBoards = {
-    { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
-    -- { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
-    -- { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
+    { City = 'Valentine',    x = -274.8, y = 805.5, z = 119.3 },
+    { City = 'Saint Dennis', x = 2513.4, y = -1305.2, z = 48.9 },
+    { City = 'Blackwater',   x = -758.0, y = -1266.0, z = 44.0 },
     -- { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
   },
   --------------------------------------------------------------------------------
@@ -331,6 +346,6 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.5.0"
-_vConfig_ = 093827032021
+_Version_ = "1.6.0"
+_vConfig_ = 114727032021
 _StartError_ = false

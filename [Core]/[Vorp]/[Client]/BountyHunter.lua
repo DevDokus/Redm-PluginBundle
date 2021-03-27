@@ -8,6 +8,7 @@ if Plugins.BountyHunter then
   local InRange = false
   local ActiveMenu = nil
   local MenuOpen = false
+  local Location = nil
 
   RegisterNetEvent('DevDokus:BountyHunter:C:StartMission')
   --------------------------------------------------------------------------------
@@ -19,13 +20,25 @@ if Plugins.BountyHunter then
       local ped = PlayerPedId()
       local coords = GetEntityCoords(ped)
       for k, v in pairs(BountyHunter.BountyBoards) do
+
         local dist = GetDistanceBetweenCoords(coords.x, coords.y, coords.z, v.x, v.y, v.z)
-        -- Set user if out of range
-        if (dist > 10) and InRange then InRange = false WarBountyMenu.CloseMenu() end
-        -- Set user if in range
-        if (dist <= 10) and not InRange then
-          InRange = true
-          TriggerEvent('DevDokus:BountyHunter:C:StartMission')
+
+        if Location == nil and (dist <= 5) then Location = v.City end
+        if Location == v.City then
+
+          -- Set user if out of range
+          if (dist > 5) and InRange then
+            InRange = false
+            Location = nil
+            WarBountyMenu.CloseMenu()
+          end
+
+          -- Set user if in range
+          if (dist <= 5) and not InRange then
+            InRange = true
+            Location = v.City
+            TriggerEvent('DevDokus:BountyHunter:C:StartMission')
+          end
         end
       end
     end
@@ -54,7 +67,7 @@ if Plugins.BountyHunter then
           end
 
           if IsControlJustPressed(0, Keys['BACKSPACE']) then
-            if ActiveMenu == 'BountyMenu' then WarBountyMenu.CloseMenu() ActiveMenu = nil MenuOpen = false
+            if ActiveMenu == 'BountyMenu' then WarBountyMenu.CloseMenu() ActiveMenu = nil MenuOpen = false Location = nil
             elseif ActiveMenu == 'PVEMenu' then WarBountyMenu.OpenMenu('BountyMenu') ActiveMenu = 'BountyMenu'
             elseif ActiveMenu == 'PVPMenu' then WarBountyMenu.OpenMenu('BountyMenu') ActiveMenu = 'BountyMenu'
             end
@@ -105,14 +118,21 @@ if Plugins.BountyHunter then
     ActiveMenu = 'PVEMenu'
     local hunt = WarBountyMenu.Button('Hunt a Bounty', '', 'Your daily basic needs')
     local payment = WarBountyMenu.Button('Receive Payment', '', 'Other Items')
-    if hunt then TriggerEvent('DevDokus:BountyHunter:C:SetUpMission') end
+
+    if hunt then
+      Location = nil
+      TriggerServerEvent('DevDokus:BountyHunter:S:CheckJob')
+    end
+
     if payment and (TotalKilled > 0)then
       TriggerServerEvent('DevDokus:BountyHunter:S:PayDay', TotalKilled)
       TotalKilled = 0
+      Location = nil
       ActiveMenu = nil
       MenuOpen = false
       WarBountyMenu.CloseMenu()
     elseif payment and (TotalKilled == 0) then
+      Location = nil
       Notify("You've no recorded bounty kills, partner!", 5000)
     end
     WarBountyMenu.Display()
@@ -186,7 +206,7 @@ if Plugins.BountyHunter then
   RegisterNetEvent('DevDokus:BountyHunter:C:SetUpMission')
   RegisterNetEvent('DevDokus:BountyHunter:C:ResetTotalKills')
   --------------------------------------------------------------------------------
-  TotalKilled = 1
+  TotalKilled = 0
   local ArrayBounties = {}
   local CreateNPC = {}
   local NPCx, NPCy, NPCz = 0, 0, 0
@@ -194,13 +214,33 @@ if Plugins.BountyHunter then
   local TotalEnemies = 0
   local SearchingBodies = false
   local GPSToBodyIsSet = false
+  local SaveGuard = false
+
+  AddEventHandler('DevDokus:BountyHunter:C:SetUpMission', function(_Job)
+    -- Make sure this script does not execute twice.
+    SaveGuard = true
+
+    -- See if any job is required.
+  local HasJob = false
+  local NeedJob = false
+  for k,v in pairs(BountyHunter.Jobs) do
+    if v.Use == true then
+      NeedJob = true
+      if v.Job == _Job then
+        HasJob = true
+      end
+    end
+  end
+
+  -- Stop the user if he/she does not have the correct jobs.
+  if NeedJob and not HasJob then Notify(BountyHunter.Jobs.NoJob) return end
 
 
-  AddEventHandler('DevDokus:BountyHunter:C:SetUpMission', function()
     -- Get a random bounty ID
     local rLoc = BountyHunter.Bounties[math.random(#BountyHunter.Bounties)]
     -- Get all NPCs associated with this ID
     for k, v in pairs(BountyHunter.Bounties) do
+
       if v.ID == rLoc.ID then
         TotalEnemies = TotalEnemies + 1
         -- Get a random model for this NPC
@@ -229,8 +269,14 @@ if Plugins.BountyHunter then
 
     Wait(1000)
     Notify('Your Bounty is located on the map!', 5000)
+    Wait(3000)
     Notify('We need them dead, not alive! But Dead!', 5000)
+    Wait(5500)
+    Notify('You can stack bounties, just keep in mind', 5000)
+    Wait(3000)
+    Notify('that you lose the bounties if you died!', 5000)
     InMission = true
+    SaveGuard = false
     while InMission do Wait(1)
       for k, v in pairs(ArrayBounties) do
         if IsEntityDead(v) then

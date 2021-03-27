@@ -58,13 +58,8 @@ AddEventHandler('DevDokus:PlayPiano:C:ActPiano', function(ped, x, y, z, h)
     local male = IsPedMale(ped)
     local hash = nil
 
-    if male then
-      TriggerServerEvent('C', {'I am male'})
-      hash = GetHashKey('PROP_HUMAN_PIANO')
-    else
-      TriggerServerEvent('C', {'I am female'})
-      hash = GetHashKey('PROP_HUMAN_ABIGAIL_PIANO')
-    end
+    if male then hash = GetHashKey('PROP_HUMAN_PIANO')
+    else hash = GetHashKey('PROP_HUMAN_ABIGAIL_PIANO') end
 
     Wait(500)
     TaskStartScenarioAtPosition(ped, hash, x, y, z, h, 0, true, true, 0, true)

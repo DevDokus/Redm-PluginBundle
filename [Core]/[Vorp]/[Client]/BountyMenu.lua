@@ -1,8 +1,5 @@
 if Plugins.BountyHunter and BountyHunter.NUI.Theme.Red then
-  print("RED")
-
   WarBountyMenu = { }
-
   WarBountyMenu.debug = false
 
 
@@ -668,9 +665,7 @@ end
 
 
 if Plugins.BountyHunter and BountyHunter.NUI.Theme.Dark then
-  print("DARK")
   WarBountyMenu = { }
-
   WarBountyMenu.debug = false
 
 
