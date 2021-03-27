@@ -25,6 +25,7 @@ if not _StartError_ and Plugins.iMaps            then print("^5[DokusCore]^2[ONL
 if not _StartError_ and Plugins.BankDoors        then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6BankDoors ^3is running") end
 if not _StartError_ and Plugins.ShowCoords       then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6ShowCoords ^3is running") end
 if not _StartError_ and Plugins.BountyHunter     then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6BountyHunter ^3is running") end
+if not _StartError_ and Plugins.PlayPiano        then print("^5[DokusCore]^2[ONLINE]: ^3The Feature ^6PlayPiano ^3is running") end
 
 -- Report offline features
 if not _StartError_ and not Plugins.Metabolism   then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6Metabolism ^3is not running") end
@@ -35,6 +36,7 @@ if not _StartError_ and not Plugins.iMaps        then print("^5[DokusCore]^1[OFF
 if not _StartError_ and not Plugins.BankDoors    then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6BankDoors ^3is not running") end
 if not _StartError_ and not Plugins.ShowCoords   then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6ShowCoords ^3is not running") end
 if not _StartError_ and not Plugins.BountyHunter then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6BountyHunter ^3is not running") end
+if not _StartError_ and not Plugins.PlayPiano    then print("^5[DokusCore]^1[OFFLINE]: ^3The Feature ^6PlayPiano ^3is not running") end
 
 -- Config Update Warning
 print("^5[DokusCore]^2[SYSTEM]: ^6-----------------------------------")

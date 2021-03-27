@@ -10,7 +10,8 @@ Plugins = {
   iMaps         = true,  -- Fixed hole and glitched buildings. Adds tons of objects.
   BankDoors     = true,  -- Open or close the Bank Doors.
   ShowCoords    = true,  -- Show coordinate with ( /coords )
-  BountyHunter  = true   -- Enable the Bounty Hunter System
+  BountyHunter  = true,  -- Enable the Bounty Hunter System
+  PlayPiano     = true,  -- Lets users play the saloon pianos.
 }
 
 --------------------------------------------------------------------------------
@@ -241,6 +242,24 @@ BountyHunter = {
 
 
 
+--------------------------------------------------------------------------------
+---------------------------------- Play Piano ----------------------------------
+--------------------------------------------------------------------------------
+PlayPiano = {
+  Pianos = {
+    {ID = "Valentine",    x= -312.36,  y= 799.05,   z= 118.48, h= 102.3},
+    {ID = "Saint Dennis", x= 2631.82,  y= -1232.31, z= 53.70,  h= 62.0},
+    {ID = "Rhodos",       x= 1346.95,  y= -1371.07, z= 79.99,  h=351.0},
+    {ID = "Blackwater",   x= -814.98,  y= -1313.04, z= 43.18,  h= 358.0},
+    {ID = "Armadillo",    x= -3706.38, y= -2589.00, z= -13.82, h= 360.0},
+    {ID = "Tumbleweed",   x= -5516.0,  y= -2914.53, z= -2.26,  h= 121.4},
+    {ID = "vHoorn",       x= 2944.12,   y= 528.87,  z= 44.85,  h= 359.03},
+  }
+}
+
+
+
+
 
 
 --------------------------------------------------------------------------------
@@ -312,6 +331,6 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.4.2"
-_vConfig_ = 103925032021
+_Version_ = "1.5.0"
+_vConfig_ = 093827032021
 _StartError_ = false
