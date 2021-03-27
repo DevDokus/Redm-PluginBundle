@@ -2,6 +2,13 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.5.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [Feature Added]: Play the piano like a pro on RedM. This will give you the
+     abillity to play the piano in multiple saloons. Press space to start
+     playing, and press F to stop playing.
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.4.2 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: [UsableItems][Fix]: I had renamed TaskBottle to TaskDrink, this i already
@@ -12,7 +19,7 @@
      getting a error on WarBountyMenu. I requested Plugin instead of Plugins.
      When i converted this script from the standalone to DokusCore i have to
      add in a couple extra checks. This is now fixed and the BountyHunterMenu
-     works now correctly. 
+     works now correctly.
 
 --------------------------------------------------------------------------------
 -------------------------------- Version 1.4.1 ---------------------------------
