@@ -59,7 +59,7 @@ if Plugins.BountyHunter then
         if (dist <= 2) then
           -- Turn cirle green if in range
           if not OpenMenu then DrawCircle(x, y, z, 17, 217, 27, 50) end
-          if not MenuOpen then DrawInfo('Press [ ~e~SPACE~q~ ] to open the bounty menu', 0.5, 0.95, 0.75) end
+          if not MenuOpen then DrawInfo(_('BountyHunter_PressSpace'), 0.5, 0.95, 0.75) end
           if IsControlJustPressed(0, Keys['SPACEBAR']) then
             MenuOpen = true
             ActiveMenu = 'BountyMenu'
@@ -91,12 +91,12 @@ if Plugins.BountyHunter then
 
 
   function CreateMenus()
-    WarBountyMenu.CreateMenu('BountyMenu', 'Bounty Board')
+    WarBountyMenu.CreateMenu('BountyMenu', _('BountyHunter_MenuTitle'))
     WarBountyMenu.SetSubTitle('BountyMenu', 'Made By DevDokus')
-    WarBountyMenu.CreateMenu('PVEMenu', 'Bounty Board')
-    WarBountyMenu.SetSubTitle('PVEMenu', 'Hunt NPCs')
-    WarBountyMenu.CreateMenu('PVPMenu', 'Bounty Board')
-    WarBountyMenu.SetSubTitle('PVPMenu', 'Hunt Humans')
+    WarBountyMenu.CreateMenu('PVEMenu', _('BountyHunter_MenuTitle'))
+    WarBountyMenu.SetSubTitle('PVEMenu', _('BountyHunter_PVESubTitle'))
+    WarBountyMenu.CreateMenu('PVPMenu', _('BountyHunter_MenuTitle'))
+    WarBountyMenu.SetSubTitle('PVPMenu', _('BountyHunter_PVPSubTitle'))
   end
 
   --------------------------------------------------------------------------------
@@ -104,8 +104,8 @@ if Plugins.BountyHunter then
   --------------------------------------------------------------------------------
   function BountyMenu ()
     ActiveMenu = 'BountyMenu'
-    local Pve = WarBountyMenu.Button('PVE Menu', '', '')
-    local Pvp = WarBountyMenu.Button('PVP Menu', '', '')
+    local Pve = WarBountyMenu.Button(_('BountyHunter_PVEMenu'), '', '')
+    local Pvp = WarBountyMenu.Button(_('BountyHunter_PVPMenu'), '', '')
     if Pve then WarBountyMenu.OpenMenu('PVEMenu') end
     if Pvp then Beta() end--WarBountyMenu.OpenMenu('PVPMenu') end
     WarBountyMenu.Display()
@@ -116,8 +116,8 @@ if Plugins.BountyHunter then
   --------------------------------------------------------------------------------
   function PVEMenu ()
     ActiveMenu = 'PVEMenu'
-    local hunt = WarBountyMenu.Button('Hunt a Bounty', '', 'Your daily basic needs')
-    local payment = WarBountyMenu.Button('Receive Payment', '', 'Other Items')
+    local hunt = WarBountyMenu.Button(_('BountyHunter_HuntBountyButton'), '', '')
+    local payment = WarBountyMenu.Button(_('BountyHunter_ReceivePayment'), '', '')
 
     if hunt then
       Location = nil
@@ -133,16 +133,16 @@ if Plugins.BountyHunter then
       WarBountyMenu.CloseMenu()
     elseif payment and (TotalKilled == 0) then
       Location = nil
-      Notify("You've no recorded bounty kills, partner!", 5000)
+      Notify(_('BountyHunter_NoBounties'), 5000)
     end
     WarBountyMenu.Display()
   end
 
   function PVPMenu ()
     ActiveMenu = 'PVPMenu'
-    local bounty = WarBountyMenu.Button('Hunt a Bounty', '', '')
-    local sbounty = WarBountyMenu.Button('Set a Bounty', '', '')
-    local payment = WarBountyMenu.Button('Receive Payment', '', '')
+    local bounty = WarBountyMenu.Button(_('BountyHunter_HuntBountyButton'), '', '')
+    local sbounty = WarBountyMenu.Button(_('BountyHunter_SetBounty'), '', '')
+    local payment = WarBountyMenu.Button(_('BountyHunter_ReceivePayment'), '', '')
     if bounty then end
     if sbounty then end
     if payment then end

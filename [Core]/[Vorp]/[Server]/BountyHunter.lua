@@ -48,7 +48,7 @@ AddEventHandler('DevDokus:BountyHunter:S:PayDay', function(KillCount)
   end
 
   TriggerClientEvent('DevDokus:BountyHunter:C:ResetTotalKills', source)
-  TriggerClientEvent("vorp:TipRight", source, "You received $"..mPay..' and '..xPay..' XP', 5000)
+  TriggerClientEvent("vorp:TipRight", source, _('BountyHunter_Payment1')..mPay.._('BountyHunter_Payment2')..xPay.._('BountyHunter_Payment3'), 5000)
 end)
 
 

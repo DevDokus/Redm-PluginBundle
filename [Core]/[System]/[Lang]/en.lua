@@ -42,5 +42,51 @@ Lang['en'] = {
   ['Store_Bought2'] = ', costing you $',
   ['Store_Bought3'] = ' Dollar!',
   ['Store_Sold'] = "You've sold an item: ",
-  ['Store_NoItem'] = "You've no item called: "
+  ['Store_NoItem'] = "You've no item called: ",
+
+  -- Bounty Hunter
+  ['BountyHunter_PressSpace'] = 'Press [~e~ SPACE ~q~] to open the bounty menu',
+  ['BountyHunter_MenuTitle'] = 'Bounty Board',
+  ['BountyHunter_PVESubTitle'] = 'Hunt NPCs',
+  ['BountyHunter_PVPSubTitle'] = 'Hunt Humans',
+  ['BountyHunter_PVEMenu'] = 'PVE Menu',
+  ['BountyHunter_PVPMenu'] = 'PVP Menu',
+  ['BountyHunter_HuntBountyButton'] = 'Hunt a Bounty',
+  ['BountyHunter_ReceivePayment'] = 'Receive Payment',
+  ['BountyHunter_NoBounties'] = "You've no recorded bounty kills, partner!",
+  ['BountyHunter_SetBounty'] = 'Set a Bounty',
+  ['BountyHunter_Payment1'] = "You received $",
+  ['BountyHunter_Payment2'] = ' and ',
+  ['BountyHunter_Payment3'] = ' XP',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
