@@ -119,13 +119,13 @@ Citizen.CreateThread(function()
             CoreIsZero = true
             if (eHealth >= 50) then
               Citizen.InvokeNative(0x697157CED63F18D4, User, 5, false, true, true)
-              if stage.s1 == false then stage.s1 = true TriggerEvent("vorp:TipRight", 'You\'re dying, check your vitals!', 5000) end
+              if stage.s1 == false then stage.s1 = true TriggerEvent("vorp:TipRight", _('YourDying1'), 5000) end
             elseif (eHealth < 50) and (eHealth >= 35) then
               Citizen.InvokeNative(0x697157CED63F18D4, User, 5, false, true, true)
-              if stage.s2 == false then stage.s2 = true TriggerEvent("vorp:TipRight", 'I feel tingling in my fingers...', 5000) end
+              if stage.s2 == false then stage.s2 = true TriggerEvent("vorp:TipRight", _('YourDying2'), 5000) end
             elseif (eHealth < 35) and (eHealth >= 2) then
               Citizen.InvokeNative(0x697157CED63F18D4, User, 5, false, true, true)
-              if stage.s3 == false then stage.s3 = true TriggerEvent("vorp:TipRight", 'I can see the lights, the end is near...', 5000) end
+              if stage.s3 == false then stage.s3 = true TriggerEvent("vorp:TipRight", _('YourDying3'), 5000) end
             elseif (eHealth < 2) then
               Citizen.InvokeNative(0x697157CED63F18D4, User, 50000, false, true, true)
               DeadOrAlive = false

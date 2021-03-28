@@ -36,7 +36,7 @@ Citizen.CreateThread(function()
           if (dist <= 8) then
             if not MenuOpen then DrawCircle(x,y,z, 204, 56, 209, 50) end
             if (dist <= 1.5) then
-              if not MenuOpen then DrawInfo('Press [ ~e~SPACE~q~ ] to open the shop menu', 0.5, 0.95, 0.75) end
+              if not MenuOpen then DrawInfo(_('Store_OpenShop'), 0.5, 0.95, 0.75) end
               if IsControlJustPressed(0, Keys["SPACEBAR"]) then
                 MenuOpen = true
                 ActiveMenu = 'Home'
@@ -81,65 +81,65 @@ Citizen.CreateThread(function()
 
 
     function CreateMenus()
-    	WarMenu.CreateMenu('Home', 'General Store')
+      WarMenu.CreateMenu('Home', _('Store_MenuTitle'))
       WarMenu.SetSubTitle('Home', 'Made By DevDokus')
 
       -- Buy Menu
-      WarMenu.CreateMenu('BuyMenu', 'General Store')
-      WarMenu.SetSubTitle('BuyMenu', 'Choose Category')
-      WarMenu.CreateMenu('bFoodCat', 'General Store')
-      WarMenu.SetSubTitle('bFoodCat', 'Ah, hungry I see?')
-      WarMenu.CreateMenu('bMiscCat', 'General Store')
-      WarMenu.SetSubTitle('bMiscCat', 'Other items')
-      WarMenu.CreateMenu('bMedsCat', 'General Store')
-      WarMenu.SetSubTitle('bMedsCat', 'Medical Items')
+      WarMenu.CreateMenu('BuyMenu', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('BuyMenu', _('Store_Category'))
+      WarMenu.CreateMenu('bFoodCat', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('bFoodCat', _('Store_FoodMenu'))
+      WarMenu.CreateMenu('bMiscCat', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('bMiscCat', _('Store_MiscMenu'))
+      WarMenu.CreateMenu('bMedsCat', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('bMedsCat', _('Store_MedsMenu'))
 
       --- Sell Menu
-      WarMenu.CreateMenu('SellMenu', 'General Store')
-      WarMenu.SetSubTitle('SellMenu', 'Choose Category')
-      WarMenu.CreateMenu('sFoodCat', 'General Store')
-      WarMenu.SetSubTitle('sFoodCat', 'Ah, hungry I see?')
-      WarMenu.CreateMenu('sMiscCat', 'General Store')
-      WarMenu.SetSubTitle('sMiscCat', 'Other items')
-      WarMenu.CreateMenu('sMedsCat', 'General Store')
-      WarMenu.SetSubTitle('sMedsCat', 'Medical Items')
+      WarMenu.CreateMenu('SellMenu', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('SellMenu', _('Store_Category'))
+      WarMenu.CreateMenu('sFoodCat', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('sFoodCat', _('Store_FoodMenu'))
+      WarMenu.CreateMenu('sMiscCat', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('sMiscCat', _('Store_MiscMenu'))
+      WarMenu.CreateMenu('sMedsCat', _('Store_MenuTitle'))
+      WarMenu.SetSubTitle('sMedsCat', _('Store_MedsMenu'))
     end
 
     --------------------------------------------------------------------------------
     -- Page 1 - Home Page
     --------------------------------------------------------------------------------
     function Home ()
-      ActiveMenu = 'Home'
-    	local BBuy   = WarMenu.Button('Buy Items',  '', 'Github.com/DevDokus')
-      local BSell  = WarMenu.Button('Sell Items', '', 'WORK IN PROGRESS')
-      if BBuy then WarMenu.OpenMenu('BuyMenu') end
-      if BSell then WarMenu.OpenMenu('SellMenu') end
-    	WarMenu.Display()
+    ActiveMenu = 'Home'
+    local BBuy = WarMenu.Button(_('Store_Buy'), '', 'Github.com/DevDokus')
+    local BSell = WarMenu.Button(_('Store_Sell'), '', 'WORK IN PROGRESS')
+    if BBuy then WarMenu.OpenMenu('BuyMenu') end
+    if BSell then WarMenu.OpenMenu('SellMenu') end
+    WarMenu.Display()
     end
 
     --------------------------------------------------------------------------------
     -- Page 2 - Buy Category Section
     --------------------------------------------------------------------------------
     function BuyMenu ()
-      ActiveMenu = 'BuyMenu'
-      local _Foods  = WarMenu.Button('Foods',  '', 'Your daily basic needs')
-      local _Meds   = WarMenu.Button('Medical',  '', 'For staying alive!')
-      local _Misc   = WarMenu.Button('Misc',  '', 'Other Items')
-      if _Foods then WarMenu.OpenMenu('bFoodCat') end
-      if _Meds then WarMenu.OpenMenu('bMedsCat') end
-      if _Misc then WarMenu.OpenMenu('bMiscCat') end
-      WarMenu.Display()
+    ActiveMenu = 'BuyMenu'
+    local _Foods = WarMenu.Button(_('Store_Food'), '', _('Store_FoodMenu'))
+    local _Meds = WarMenu.Button(_('Store_Meds'), '', _('Store_MedsMenu'))
+    local _Misc = WarMenu.Button(_('Store_Misc'), '', _('Store_MiscMenu'))
+    if _Foods then WarMenu.OpenMenu('bFoodCat') end
+    if _Meds then WarMenu.OpenMenu('bMedsCat') end
+    if _Misc then WarMenu.OpenMenu('bMiscCat') end
+    WarMenu.Display()
     end
 
     function SellMenu ()
-      ActiveMenu = 'SellMenu'
-      local _Foods  = WarMenu.Button('Foods',  '', 'Your daily basic needs')
-      local _Meds   = WarMenu.Button('Medical',  '', 'For staying alive!')
-      local _Misc   = WarMenu.Button('Misc',  '', 'Other Items')
-      if _Foods then WarMenu.OpenMenu('sFoodCat') end
-      if _Meds then WarMenu.OpenMenu('sMedsCat') end
-      if _Misc then WarMenu.OpenMenu('sMiscCat') end
-      WarMenu.Display()
+    ActiveMenu = 'SellMenu'
+    local _Foods = WarMenu.Button(_('Store_Food'), '', _('Store_FoodMenu'))
+    local _Meds = WarMenu.Button(_('Store_Meds'), '', _('Store_MedsMenu'))
+    local _Misc = WarMenu.Button(_('Store_Misc'), '', _('Store_MiscMenu'))
+    if _Foods then WarMenu.OpenMenu('sFoodCat') end
+    if _Meds then WarMenu.OpenMenu('sMedsCat') end
+    if _Misc then WarMenu.OpenMenu('sMiscCat') end
+    WarMenu.Display()
     end
 
     function bFoodCat()

@@ -12,8 +12,8 @@ local currentKey = nil
 local currentMenu = nil
 
 local titleHeight = 0.09
-local titleYOffset = 0.010
-local titleScale = 1.0
+local titleYOffset = 0.020
+local titleScale = 0.8
 
 local descWidth = 0.15
 local descHeight = 0.030

@@ -48,7 +48,7 @@ Citizen.CreateThread(function()
         thirst = _Thirst,
         --stress = mystress,
         --cash = money,
-        temp = "Incorrect_Format_Check_Config",
+        temp = _('Metabolism_IFCC'),
         _plugin = Plugins.Metabolism
       }) Wait(1000)
     end

@@ -50,8 +50,8 @@ AddEventHandler('DevDokus:PlayPiano:C:ActPiano', function(ped, x, y, z, h)
   local Space = IsControlJustPressed(0, Keys['SPACEBAR'])
   local F = IsControlJustPressed(0, Keys['F'])
 
-  if not IsPlaying then DrawInfo('Press [~e~Space~q~] to play the piano', 0.5, 0.95, 0.75) end
-  if IsPlaying then DrawInfo('Press [~e~F~q~] to stop playing', 0.5, 0.95, 0.75) end
+  if not IsPlaying then DrawInfo(_('PlayPiano_Play'), 0.5, 0.95, 0.75) end
+    if IsPlaying then DrawInfo(_('PlayPiano_Stop'), 0.5, 0.95, 0.75) end
 
   if Space and not IsPlaying then
     IsPlaying = true

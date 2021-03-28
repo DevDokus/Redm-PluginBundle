@@ -1,0 +1,46 @@
+Lang['nl'] = {
+  -- Algemeen
+  ['OnlyAdmins'] = 'Deze functie is alleen voor beheerders!',
+
+  -- Piano
+  ['PlayPiano_Play'] = 'Druk [~e~Space~q~] om de piano te bespelen',
+  ['PlayPiano_Stop'] = 'Druk [~e~F~q~] om te stoppen met spelen',  
+
+  -- Metabolisme
+  ['Metabolism_IFCC'] = 'Incorrect_Format_Check_Config',
+  ['Metabolism_YourDying1'] = 'Je gaat dood, controleer je vitale functies!',
+  ['Metabolism_YourDying2'] = 'Ik voel tintelingen in mijn vingers ...',
+  ['Metabolism_YourDying3'] = 'Ik kan de lichten zien, het einde is nabij ...',
+
+  -- Bruikbare items
+  ['UsableItems_NoTent'] = 'Je hebt geen tent!',
+  ['UsableItems_NoCampFire'] = 'Je hebt geen kampvuur!',
+  ['UsableItems_PlacingCampfire'] = "Je plaatst je kampvuur ...",
+  ['UsableItems_PlacingTent'] = "Je plaatst je tent ...",
+  ['UsableItems_Eating'] = "Je hebt geconsumeerd",
+  ['UsableItems_Drinking'] = "Je hebt gedronken",
+  ['UsableItems_RefundCampfire'] = "Je hebt een kampvuur terugbetaald",
+  ['UsableItems_RefundTent'] = "Je hebt een tent terugbetaald",
+
+  -- Winkels
+  ['Store_OpenShop'] = 'Druk op [~e~ SPACE ~q~] om het winkelmenu te openen',
+  ['Store_MenuTitle'] = 'Algemene winkel',
+  ['Store_Category'] = 'Categorie',
+  ['Store_Buy'] = 'Koop artikelen',
+  ['Store_Sell'] = 'Artikelen verkopen',
+  ['Store_Food'] = 'Eten',
+  ['Store_Meds'] = 'Medisch',
+  ['Store_Misc'] = 'Diversen',
+  ['Store_FoodMenu'] = 'Voedselmenu',
+  ['Store_MedsMenu'] = 'Medische artikelen',
+  ['Store_MiscMenu'] = 'Overige items',
+  ['Store_FoodSubTitle'] = 'Je dagelijkse basisbehoeften',
+  ['Store_MedsSubTitle'] = 'Om in leven te blijven!',
+  ['Store_OtherItems'] = 'Overige items',
+  ['Store_NotEnoughMoney'] = 'Niet genoeg geld',
+  ['Store_Bought1'] = "Je hebt een",
+  ['Store_Bought2'] = ', kost u $',
+  ['Store_Bought3'] = 'Dollar!',
+  ['Store_Sold'] = "U heeft een item verkocht:",
+  ['Store_NoItem'] = "Je hebt geen item met de naam:",
+}

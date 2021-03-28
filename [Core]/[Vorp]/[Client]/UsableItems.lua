@@ -52,7 +52,7 @@ Citizen.CreateThread(function()
     --------------------------------------------------------------------------------
     RegisterCommand('deltent', function()
       if ObjTent == 0 then
-        TriggerEvent("vorp:TipRight", 'You\'ve no tent!', 5000)
+        TriggerEvent("vorp:TipRight", _('UsableItems_NoTent'), 5000)
       else
         TriggerServerEvent('DevDokus:S:Refund', 'tent')
         SetEntityAsMissionEntity(ObjTent)
@@ -63,7 +63,7 @@ Citizen.CreateThread(function()
 
     RegisterCommand('delfire', function()
       if ObjFire == 0 then
-        TriggerEvent("vorp:TipRight", 'You\'ve no campfire!', 5000)
+        TriggerEvent("vorp:TipRight", _('UsableItems_NoCampFire'), 5000)
       else
         TriggerServerEvent('DevDokus:S:Refund', 'campfire')
         SetEntityAsMissionEntity(ObjFire)
@@ -99,7 +99,7 @@ Citizen.CreateThread(function()
     function TaskCampfire(ped)
       if ObjFire ~= 0 then SetMission('Fire') end
       TaskStartScenarioInPlace(ped, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 15000, true, false, false, false)
-      exports['progressBars']:startUI(15000, "You're placing your campfire...") Wait(15000)
+      exports['progressBars']:startUI(15000, _('UsableItems_PlacingCampfire')) Wait(15000)
       ClearPedTasksImmediately(ped)
       local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(ped, 0.0, 2.0, -1.55))
       local prop = CreateObject(GetHashKey("p_campfire02x"), x, y, z, true, false, true)
@@ -111,7 +111,7 @@ Citizen.CreateThread(function()
     function TaskTent(ped)
       if ObjTent ~= 0 then SetMission('Tent') end
       TaskStartScenarioInPlace(ped, GetHashKey('WORLD_HUMAN_CROUCH_INSPECT'), 30000, true, false, false, false)
-      exports['progressBars']:startUI(30000, "You're placing your tent...") Wait(30000)
+      exports['progressBars']:startUI(30000, _('UsableItems_PlacingTent')) Wait(30000)
       ClearPedTasksImmediately(ped)
       local x,y,z = table.unpack(GetOffsetFromEntityInWorldCoords(ped, 0.0, 2.0, -1.55))
       local prop = CreateObject(GetHashKey("mp005_s_posse_tent_bountyhunter07x"), x, y, z, true, false, true)
