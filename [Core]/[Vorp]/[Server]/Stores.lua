@@ -6,7 +6,7 @@ Citizen.CreateThread(function()
     ----------------------------------- DevDokus -----------------------------------
     --------------------------------------------------------------------------------
     local VorpCore = {}
-    TriggerEvent("getCore",function(core) VorpCore = core end)
+    TriggerEvent("getCore", function(core) VorpCore = core end)
     VorpInv = exports.vorp_inventory:vorp_inventoryApi()
     --------------------------------------------------------------------------------
     RegisterServerEvent('DevDokus:S:BuyItem')
@@ -22,11 +22,11 @@ Citizen.CreateThread(function()
 
         if (balance < max) then
           if (money <= Data.Price) then
-            Notify('Not Enough Money', 100)
+            Notify(_('Store_NotEnoughMoney'), 100)
           else
             Char.removeCurrency(0, Data.Price)
             VorpInv.addItem(source, Data.ID, 1)
-            Notify('You\'ve bought a ' .. Data.Name .. ', costing you $' .. Data.Price .. ' Dollar!', 5000)
+            Notify(_('Store_Bought1') .. Data.Name .. _('Store_Bought2') .. Data.Price .. _('Store_Bought3'), 5000)
           end
         end
       end
@@ -35,16 +35,16 @@ Citizen.CreateThread(function()
     AddEventHandler('DevDokus:S:SellItem', function(Data)
       local User = VorpCore.getUser(source)
       if User ~= nil then
-        local Char  = User.getUsedCharacter
+        local Char = User.getUsedCharacter
         local money = Char.money
-        local item  = VorpInv.getItemCount(source, Data.ID)
+        local item = VorpInv.getItemCount(source, Data.ID)
 
         if (item > 0) then
           Char.addCurrency(0, Data.Price)
           VorpInv.subItem(source, Data.ID, 1)
-          Notify('You\'ve sold an item: '..Data.Name, 5000)
+          Notify(_('Store_Sold')..Data.Name, 5000)
         else
-          Notify('You\'ve no item called: '..Data.Name, 5000)
+          Notify(_('Store_NoItem')..Data.Name, 5000)
         end
       end
     end)

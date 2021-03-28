@@ -1,5 +1,10 @@
 --------------------------------------------------------------------------------
 ----------------------------------- DevDokus -----------------------------------
+--------------------------------------------------------------------------------z
+-- Supported Languages
+-- en - es - ru - pt - fr - de - it - nl - pl - gr - dk - bg
+--------------------------------------------------------------------------------z
+Language = 'en'
 --------------------------------------------------------------------------------
 -- This will turn features on or off.
 Plugins = {
@@ -10,7 +15,8 @@ Plugins = {
   iMaps         = true,  -- Fixed hole and glitched buildings. Adds tons of objects.
   BankDoors     = true,  -- Open or close the Bank Doors.
   ShowCoords    = true,  -- Show coordinate with ( /coords )
-  BountyHunter  = true   -- Enable the Bounty Hunter System
+  BountyHunter  = true,  -- Enable the Bounty Hunter System
+  PlayPiano     = true,  -- Lets users play the saloon pianos.
 }
 
 --------------------------------------------------------------------------------
@@ -156,6 +162,21 @@ BountyHunter = {
     Theme = { Dark = false, Red = true },
     Position = { Right = true, Left = false, Center = false }
   },
+
+  --------------------------------------------------------------------------------
+  -- Here you can set if BountyHunter needs a job or not for it to work.
+  -- You can add multiple on this list. If set to true, the job is active
+  -- NoJob is simply the error you get when you dont have the correct job.
+  -- Make sure that you put every job on this line if you put them on the listz
+  -- NOTE: if you disable one of the jobs, make sure to edit the NoJob also!
+  -- Otherwise people will thet need a job that maybe doesn't exists.
+  --------------------------------------------------------------------------------
+  Jobs = {
+    { Job = 'police', Use = false },
+    { Job = 'hunter', Use = false },
+    NoJob = 'You need the jobs ~e~Police~q~ or ~e~Hunter~q~ job to hunt for bounties'
+  },
+
   --------------------------------------------------------------------------------
   Payment = {
     Money = {
@@ -177,9 +198,9 @@ BountyHunter = {
   -- The City name does nothing! this is just a visual reference.
   --------------------------------------------------------------------------------
   BountyBoards = {
-    { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
-    -- { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
-    -- { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
+    { City = 'Valentine',    x = -274.8, y = 805.5, z = 119.3 },
+    { City = 'Saint Dennis', x = 2513.4, y = -1305.2, z = 48.9 },
+    { City = 'Blackwater',   x = -758.0, y = -1266.0, z = 44.0 },
     -- { City = 'Valentine', x = -274.8, y = 805.5, z = 119.3 },
   },
   --------------------------------------------------------------------------------
@@ -235,6 +256,24 @@ BountyHunter = {
     {ID = 20, Coords = { x = 1178.78, y = 430.47, z = 92.78 }},
     {ID = 21, Coords = { x = 769.29, y = 874.3, z = 120.95 }},
     {ID = 21, Coords = { x = 776.87, y = 850.21, z = 118.9 }}
+  }
+}
+
+
+
+
+--------------------------------------------------------------------------------
+---------------------------------- Play Piano ----------------------------------
+--------------------------------------------------------------------------------
+PlayPiano = {
+  Pianos = {
+    {ID = "Valentine",    x= -312.36,  y= 799.05,   z= 118.48, h= 102.3},
+    {ID = "Saint Dennis", x= 2631.82,  y= -1232.31, z= 53.70,  h= 62.0},
+    {ID = "Rhodos",       x= 1346.95,  y= -1371.07, z= 79.99,  h=351.0},
+    {ID = "Blackwater",   x= -814.98,  y= -1313.04, z= 43.18,  h= 358.0},
+    {ID = "Armadillo",    x= -3706.38, y= -2589.00, z= -13.82, h= 360.0},
+    {ID = "Tumbleweed",   x= -5516.0,  y= -2914.53, z= -2.26,  h= 121.4},
+    {ID = "vHoorn",       x= 2944.12,   y= 528.87,  z= 44.85,  h= 359.03},
   }
 }
 
@@ -312,6 +351,6 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.4.0"
-_vConfig_ = 103925032021
+_Version_ = "1.7.0"
+_vConfig_ = 123929032021
 _StartError_ = false

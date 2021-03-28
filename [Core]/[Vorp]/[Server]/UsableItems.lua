@@ -13,13 +13,13 @@ Citizen.CreateThread(function() Wait(1000)
       if v.Type == 'Eat' then
         VorpInv.RegisterUsableItem(v.ID, function(_Data)
           VorpInv.subItem(_Data.source, v.ID, 1)
-          TriggerClientEvent("vorp:TipRight", _Data.source, "You've consumed "..v.Name, 5000)
+          TriggerClientEvent("vorp:TipRight", _Data.source, _('UsableItems_Eating')..v.Name, 5000)
           TriggerClientEvent("DevDokus:C:Consume", _Data.source, v.ID, v.Type, v.Hunger, v.Thirst, v.Stamina, v.Health)
         end)
       elseif v.Type == 'Drink' then
         VorpInv.RegisterUsableItem(v.ID, function(_Data)
           VorpInv.subItem(_Data.source, v.ID, 1)
-          TriggerClientEvent("vorp:TipRight", _Data.source, "You've drunk "..v.Name, 5000)
+          TriggerClientEvent("vorp:TipRight", _Data.source, _('UsableItems_Drinking')..v.Name, 5000)
           TriggerClientEvent("DevDokus:C:Consume", _Data.source, v.ID, v.Type, v.Hunger, v.Thirst, v.Stamina, v.Health)
         end)
       elseif v.Type == 'Placing' then
@@ -35,9 +35,9 @@ end)
 AddEventHandler('DevDokus:S:Refund', function(Item)
 if Item == 'campfire' then
 VorpInv.addItem(source, "campfire", 1)
-TriggerClientEvent("vorp:TipRight", source, "You've been refunded a campfire", 5000)
+TriggerClientEvent("vorp:TipRight", source, _('UsableItems_RefundCampfire'), 5000)
 elseif Item == 'tent' then
 VorpInv.addItem(source, "tent", 1)
-TriggerClientEvent("vorp:TipRight", source, "You've been refunded a tent", 5000)
+TriggerClientEvent("vorp:TipRight", source, _('UsableItems_RefundTent'), 5000)
 end
 end)

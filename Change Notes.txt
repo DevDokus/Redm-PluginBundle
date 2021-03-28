@@ -2,6 +2,62 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.7.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: Added multi language support. I have added the following languages:
+    - Bulgarian  - Germain  - Danish  - Spanish  - French  - Greek
+    - Italian    - Dutch    - Polish  - Portuguese  - Russian
+
+--------------------------------------------------------------------------------
+-------------------------------- Version 1.6.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [Fix] The function that is scanning for your distance from the Bounty
+    Boards, was returning true and false at the time due to multiple coordinates
+    inside the array. As you are close for 1 of the coords, it would immediately
+    set the variable back to false as you are far away from the other coords.
+    Thus if you have multiple locations, it will start to glitch.
+    Now we are scanning for the location itself and setting that as your closest
+    Bounty Board. You are now able to add multiple locations on the list without
+    running in to troubles
+
+[2]: [Fix] When multiple BountyBoards are on the list, and you are activating a
+    bounty, it would activate 1 per BountyBoard on the list resulting in multiple
+    bounties at once. I have added a extra check into the code so only 1 bounty
+    activates per time you click on "Hunt Bounty".  However, you are still able
+    to stack multiple bounties by activating the menu more times.
+
+[3]: [REQUESTED]: Now you can set if you need a job(s) for hunting bounties.
+    Instead of setting 1 job type, I have made it so that you can set multiple
+    jobs in a list. If the user has any of these jobs he will be able to hunt
+    for bounties. When he does not have the job, he will receive an error.
+
+[4]: Added 2 more BountyBoard locations to the config.
+
+--------------------------------------------------------------------------------
+-------------------------------- Version 1.5.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [Feature Added]: Play the piano like a pro on RedM. This will give you the
+     abillity to play the piano in multiple saloons. Press space to start
+     playing, and press F to stop playing.
+
+--------------------------------------------------------------------------------
+-------------------------------- Version 1.4.2 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [UsableItems][Fix]: I had renamed TaskBottle to TaskDrink, this i already
+     updated in the standalone, but forgot to update it in DokusCore. This is
+     now fixed and drinking from a bottle now works.
+
+[2]: [BountyHunter][Fix]: I had a little typo in the script, thus you where
+     getting a error on WarBountyMenu. I requested Plugin instead of Plugins.
+     When i converted this script from the standalone to DokusCore i have to
+     add in a couple extra checks. This is now fixed and the BountyHunterMenu
+     works now correctly.
+
+--------------------------------------------------------------------------------
+-------------------------------- Version 1.4.1 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: Added in the plugins switch for the Bounty Hunting Script
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.4.0 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: [ Feature Added ]: With [ /coords ] you can now toggle your map coordinates.

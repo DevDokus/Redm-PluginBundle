@@ -3,12 +3,12 @@
 --------------------------------------------------------------------------------
 description 'The Ultimate RP Pack for RedM VORP'
 author 'DevDokus Github'
-version '1.4.0'
+version '1.6.0'
 
-shared_script 'config.lua'
+shared_script {'config.lua', '[Core]/[System]/[Lang]/*.lua'}
 
-client_scripts { 'config.lua', '[Core]/[Vorp]/[Client]/*.lua', '[Core]/[System]/[Client]/*.lua' }
-server_scripts { 'config.lua', '[Core]/[Vorp]/[Server]/*.lua', '[Core]/[System]/[Server]/*.lua' }
+client_scripts { '[Core]/[Vorp]/[Client]/*.lua', '[Core]/[System]/[Client]/*.lua' }
+server_scripts { '[Core]/[Vorp]/[Server]/*.lua', '[Core]/[System]/[Server]/*.lua' }
 ui_page('[Core]/[Vorp]/[HTML]/index.html')
 
 files {

@@ -14,7 +14,7 @@ AddEventHandler('DevDokus:Teleport:S:CheckAdmin', function()
       TriggerClientEvent('DevDokus:Teleport:C:Teleport', source)
       return
     else
-      Notify('Only admins can teleport!', 5000)
+      Notify(_('OnlyAdmins'), 5000)
       return
     end
   end
