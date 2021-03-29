@@ -126,6 +126,7 @@ to manually change this on every update.
 - [DevDokus Stores](https://github.com/DevDokus/Redm-Stores)
 - [DevDokus Usable Items](https://github.com/DevDokus/RedM-UsableItems)
 - [DevDokus Metabolism](https://github.com/DevDokus/RedM-Metabolism)
-- [KiBook iMaps](https://github.com/kibook/redm-imaps)
 - [DevDokus BountyHunter](https://github.com/DevDokus/RedM-BountyHunter)
 - [DevDokus PlayPiano](https://github.com/DevDokus/RedM-PlayPiano)
+- [KiBook iMaps](https://github.com/kibook/redm-imaps)
+- [Thunderstorm441 Trains](https://github.com/Thunderstorm441/ts-trains-redm)
