@@ -13,8 +13,10 @@ client_scripts {
   '[Core]/[System]/[Client]/*.lua',
 
 -- ================================================== --
-  -- If you dont want to use the trains delete this line!
-  '[Core]/[Vorp]/[Client]/*.dll'
+  -- If you want to use the Trains, then delete the
+  -- [ --##-- ] In front of the line below!!!
+-- ================================================== --
+  --##--'[Core]/[Vorp]/[Client]/*.dll'
 -- ================================================== --
 }
 
@@ -25,8 +27,10 @@ server_scripts {
   '[Core]/[System]/[Server]/*.lua',
 
 -- ================================================== --
-  -- If you dont want to use the trains delete this line!
-  '[Core]/[Vorp]/[Server]/*.dll'
+  -- If you want to use the Trains, then delete the
+  -- [ --##-- ] In front of the line below!!!
+-- ================================================== --
+  --##--'[Core]/[Vorp]/[Server]/*.dll'
 -- ================================================== --
 }
 
