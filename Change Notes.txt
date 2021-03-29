@@ -2,6 +2,16 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.8.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [Feature Added Trains]: I have incorporated the train script form 
+     Thunderstorm441 into DokusCore. This gives you 2 trains and 1 tram. 
+
+[2]: [Fix]: By accident deleted part of the bounty hunters code server side.
+     This stopped you from getting a new bounty. The job check code is
+     added back in.
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.7.0 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: Added multi language support. I have added the following languages:

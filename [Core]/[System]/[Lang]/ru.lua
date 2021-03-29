@@ -42,5 +42,20 @@ Lang['ru'] = {
   ['Store_Bought2'] = ', стоит вам $',
   ['Store_Bought3'] = 'Доллар!',
   ['Store_Sold'] = "Вы продали товар:",
-  ['Store_NoItem'] = "У вас нет элемента с названием:"
+  ['Store_NoItem'] = "У вас нет элемента с названием:",
+
+  -- Охотник за головами
+  ['BountyHunter_PressSpace'] = 'Нажмите [~e~ SPACE ~q~], чтобы открыть меню наград',
+  ['BountyHunter_MenuTitle'] = 'Доска объявлений',
+  ['BountyHunter_PVESubTitle'] = 'Охота на NPC',
+  ['BountyHunter_PVPSubTitle'] = 'Охота на людей',
+  ['BountyHunter_PVEMenu'] = 'Меню PVE',
+  ['BountyHunter_PVPMenu'] = 'Меню PVP',
+  ['BountyHunter_HuntBountyButton'] = 'Охота за наградой',
+  ['BountyHunter_ReceivePayment'] = 'Получить платеж',
+  ['BountyHunter_NoBounties'] = "У вас нет зарегистрированных убийств за награду, партнер!",
+  ['BountyHunter_SetBounty'] = 'Установить награду',
+  ['BountyHunter_Payment1'] = "Вы получили $",
+  ['BountyHunter_Payment2'] = 'и',
+  ['BountyHunter_Payment3'] = 'XP',
 }

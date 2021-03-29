@@ -7,6 +7,7 @@ function Wait(args) Citizen.Wait(args) end
 function Invoke(args, bool) Citizen.InvokeNative(args, bool) end
 --------------------------------------------------------------------------------
 -- Event Register
+RegisterServerEvent('DevDokus:BountyHunter:S:CheckJob')
 RegisterServerEvent('DevDokus:BountyHunter:S:PayDay')
 --------------------------------------------------------------------------------
 -- Core
@@ -48,9 +49,17 @@ AddEventHandler('DevDokus:BountyHunter:S:PayDay', function(KillCount)
   end
 
   TriggerClientEvent('DevDokus:BountyHunter:C:ResetTotalKills', source)
-  TriggerClientEvent("vorp:TipRight", source, "You received $"..mPay..' and '..xPay..' XP', 5000)
+  TriggerClientEvent("vorp:TipRight", source, _('BountyHunter_Payment1')..mPay.._('BountyHunter_Payment2')..xPay.._('BountyHunter_Payment3'), 5000)
 end)
 
+AddEventHandler('DevDokus:BountyHunter:S:CheckJob', function()
+  local User = VorpCore.getUser(source)
+  if User ~= nil then
+    local Character = User.getUsedCharacter
+    local _Job = Character.job
+    TriggerClientEvent('DevDokus:BountyHunter:C:SetUpMission', source, _Job)
+  end
+end)
 
 
 

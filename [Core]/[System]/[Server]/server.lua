@@ -14,6 +14,7 @@ if (Plugins.UsableItems == true) and (Plugins.Metabolism == false) then
   _StartError_ = true
 else
   print("^5[DokusCore]^2[SYSTEM]: ^5All settings are standing correctly!")
+  print("^5[DokusCore]^2[SYSTEM]: ^6-----------------------------------")
 end
 
 -- Report online features.

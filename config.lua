@@ -17,6 +17,12 @@ Plugins = {
   ShowCoords    = true,  -- Show coordinate with ( /coords )
   BountyHunter  = true,  -- Enable the Bounty Hunter System
   PlayPiano     = true,  -- Lets users play the saloon pianos.
+
+
+  -- =============================================== --
+  -- If you want you to disable the trains, edit the
+  -- fxmanifest.lua! Instruction are within the file
+  -- =============================================== --
 }
 
 --------------------------------------------------------------------------------
@@ -351,6 +357,6 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.7.0"
-_vConfig_ = 123929032021
+_Version_ = "1.8.0"
+_vConfig_ = 040029032021
 _StartError_ = false

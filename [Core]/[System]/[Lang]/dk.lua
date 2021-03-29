@@ -42,5 +42,20 @@ Lang['dk'] = {
   ['Store_Bought2'] = ', koster dig $',
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Du har solgt en vare:",
-  ['Store_NoItem'] = "Du har ikke noget, der hedder:"
+  ['Store_NoItem'] = "Du har ikke noget, der hedder:",
+
+  -- Dusør jæger
+  ['BountyHunter_PressSpace'] = 'Tryk på [~e~ MELLEMRUM ~q~] for at åbne dusørmenuen',
+  ['BountyHunter_MenuTitle'] = 'Bounty Board',
+  ['BountyHunter_PVESubTitle'] = 'Hunt NPCs',
+  ['BountyHunter_PVPSubTitle'] = 'Jagt på mennesker',
+  ['BountyHunter_PVEMenu'] = 'PVE-menu',
+  ['BountyHunter_PVPMenu'] = 'PVP-menu',
+  ['BountyHunter_HuntBountyButton'] = 'Hunt a Bounty',
+  ['BountyHunter_ReceivePayment'] = 'Modtag betaling',
+  ['BountyHunter_NoBounties'] = "Du har ingen registrerede dusørmord, partner!",
+  ['BountyHunter_SetBounty'] = 'Indstil en Bounty',
+  ['BountyHunter_Payment1'] = "Du modtog $",
+  ['BountyHunter_Payment2'] = 'og',
+  ['BountyHunter_Payment3'] = 'XP',
 }

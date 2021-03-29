@@ -42,5 +42,20 @@ Lang['gr'] = {
   ['Store_Bought2'] = ', σας κοστίζει $',
   ['Store_Bought3'] = 'Δολάριο!',
   ['Store_Sold'] = "Έχετε πουλήσει ένα αντικείμενο:",
-  ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:"
+  ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
+
+  -- Κυνηγός επικυρηγμένων
+  ['BountyHunter_PressSpace'] = 'Πατήστε [~e~ SPACE ~q~] για να ανοίξετε το μενού bounty',
+  ['BountyHunter_MenuTitle'] = 'Bounty Board',
+  ['BountyHunter_PVESubTitle'] = 'Κυνήγι NPC',
+  ['BountyHunter_PVPSubTitle'] = "Κυνήγι ανθρώπων",
+  ['BountyHunter_PVEMenu'] = 'Μενού PVE',
+  ['BountyHunter_PVPMenu'] = 'Μενού PVP',
+  ['BountyHunter_HuntBountyButton'] = 'Κυνήγι Bounty',
+  ['BountyHunter_ReceivePayment'] = 'Λήψη πληρωμής',
+  ['BountyHunter_NoBounties'] = "Δεν έχετε καταγράψει bounty kill, συνεργάτη!",
+  ['BountyHunter_SetBounty'] = 'Ορίστε ένα Bounty',
+  ['BountyHunter_Payment1'] = "Λάβατε $",
+  ['BountyHunter_Payment2'] = 'και',
+  ['BountyHunter_Payment3'] = 'XP',
 }

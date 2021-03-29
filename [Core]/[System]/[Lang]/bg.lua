@@ -42,5 +42,20 @@ Lang['bg'] = {
   ['Store_Bought2'] = ', струва ви $',
   ['Store_Bought3'] = 'Долар!',
   ['Store_Sold'] = "Продали сте артикул:",
-  ['Store_NoItem'] = "Нямате елемент, наречен:"
+  ['Store_NoItem'] = "Нямате елемент, наречен:",
+
+  -- Ловец на глави
+  ['BountyHunter_PressSpace'] = 'Натиснете [~e~ SPACE ~q~], за да отворите менюто за награди',
+  ['BountyHunter_MenuTitle'] = 'Bounty Board',
+  ['BountyHunter_PVESubTitle'] = 'Лов на NPC',
+  ['BountyHunter_PVPSubTitle'] = 'Лов на хора',
+  ['BountyHunter_PVEMenu'] = 'PVE меню',
+  ['BountyHunter_PVPMenu'] = 'PVP меню',
+  ['BountyHunter_HuntBountyButton'] = 'Намиране на награда',
+  ['BountyHunter_ReceivePayment'] = 'Получаване на плащане',
+  ['BountyHunter_NoBounties'] = "Нямате записани убийства на глави, партньоре!",
+  ['BountyHunter_SetBounty'] = 'Задаване на награда',
+  ['BountyHunter_Payment1'] = "Получихте $",
+  ['BountyHunter_Payment2'] = 'и',
+  ['BountyHunter_Payment3'] = 'XP',
 }

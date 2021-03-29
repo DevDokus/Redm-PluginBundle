@@ -42,5 +42,20 @@ Lang['it'] = {
   ['Store_Bought2'] = ', ti costa $',
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Hai venduto un articolo:",
-  ['Store_NoItem'] = "Nessun articolo chiamato:"
+  ['Store_NoItem'] = "Nessun articolo chiamato:",
+
+  -- Cacciatore di taglie
+  ['BountyHunter_PressSpace'] = 'Premi [~e~ SPAZIO ~q~] per aprire il menu delle taglie',
+  ['BountyHunter_MenuTitle'] = 'Bounty Board',
+  ['BountyHunter_PVESubTitle'] = 'Caccia agli NPC',
+  ['BountyHunter_PVPSubTitle'] = 'Hunt Humans',
+  ["BountyHunter_PVEMenu"] = "Menu PVE",
+  ['BountyHunter_PVPMenu'] = 'Menu PVP',
+  ['BountyHunter_HuntBountyButton'] = 'Caccia una taglia',
+  ["BountyHunter_ReceivePayment"] = "Ricevi pagamento",
+  ['BountyHunter_NoBounties'] = "Non hai registrato uccisioni di taglie, partner!",
+  ['BountyHunter_SetBounty'] = 'Imposta una taglia',
+  ["BountyHunter_Payment1"] = "Hai ricevuto $",
+  ["BountyHunter_Payment2"] = "e",
+  ["BountyHunter_Payment3"] = "XP",
 }

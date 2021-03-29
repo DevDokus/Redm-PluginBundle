@@ -42,5 +42,20 @@ Lang['pl'] = {
   ['Store_Bought2'] = ', σας κοστίζει $',
   ['Store_Bought3'] = 'Δολάριο!',
   ['Store_Sold'] = "Έχετε πουλήσει ένα αντικείμενο:",
-  ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:"
+  ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
+
+  -- Łowca nagród
+  ['BountyHunter_PressSpace'] = 'Naciśnij [~e~ SPACE ~q~], aby otworzyć menu nagród',
+  ['BountyHunter_MenuTitle'] = 'Tablica zleceń',
+  ['BountyHunter_PVESubTitle'] = 'Poluj na NPC',
+  ['BountyHunter_PVPSubTitle'] = 'Poluj na ludzi',
+  ['BountyHunter_PVEMenu'] = 'Menu PVE',
+  ['BountyHunter_PVPMenu'] = 'Menu PVP',
+  ['BountyHunter_HuntBountyButton'] = 'Poluj na nagrodę',
+  ['BountyHunter_ReceivePayment'] = 'Odbierz płatność',
+  ['BountyHunter_NoBounties'] = "Nie masz żadnych nagranych zabójstw, partnerze!",
+  ['BountyHunter_SetBounty'] = 'Ustaw nagrodę',
+  ['BountyHunter_Payment1'] = "Otrzymałeś $",
+  ['BountyHunter_Payment2'] = 'i',
+  ['BountyHunter_Payment3'] = 'XP',
 }

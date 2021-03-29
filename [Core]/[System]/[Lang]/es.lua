@@ -42,5 +42,20 @@ Lang['es'] = {
   ['Store_Bought2'] = ', le cuesta $',
   ['Store_Bought3'] = '¡Dólar!',
   ['Store_Sold'] = "Has vendido un artículo:",
-  ['Store_NoItem'] = "No tiene ningún elemento llamado:"
+  ['Store_NoItem'] = "No tiene ningún elemento llamado:",
+
+  -- Cazarrecompensas
+  ['BountyHunter_PressSpace'] = 'Presione [~e~ SPACE ~q~] para abrir el menú de recompensas',
+  ['BountyHunter_MenuTitle'] = 'Tablero de recompensas',
+  ['BountyHunter_PVESubTitle'] = 'Cazar NPC',
+  ['BountyHunter_PVPSubTitle'] = 'Cazar humanos',
+  ['BountyHunter_PVEMenu'] = 'Menú PVE',
+  ['BountyHunter_PVPMenu'] = 'Menú PVP',
+  ['BountyHunter_HuntBountyButton'] = 'Caza una recompensa',
+  ['BountyHunter_ReceivePayment'] = 'Recibir pago',
+  ['BountyHunter_NoBounties'] = "¡No tienes bajas por recompensa registradas, socio!",
+  ['BountyHunter_SetBounty'] = 'Establecer una recompensa',
+  ['BountyHunter_Payment1'] = "Recibiste $",
+  ['BountyHunter_Payment2'] = 'y',
+  ['BountyHunter_Payment3'] = 'XP',
 }

@@ -42,5 +42,20 @@ Lang['fr'] = {
   ['Store_Bought2'] = ', ça vous coûte $',
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Vous avez vendu un article:",
-  ['Store_NoItem'] = "Vous n'avez aucun élément appelé:"
+  ['Store_NoItem'] = "Vous n'avez aucun élément appelé:",
+
+  -- Chasseur de primes
+  ['BountyHunter_PressSpace'] = 'Appuyez sur [~e~ ESPACE ~q~] pour ouvrir le menu des primes',
+  ['BountyHunter_MenuTitle'] = 'Tableau de primes',
+  ['BountyHunter_PVESubTitle'] = 'Chasser les PNJ',
+  ['BountyHunter_PVPSubTitle'] = 'Chasser les humains',
+  ['BountyHunter_PVEMenu'] = 'Menu PVE',
+  ['BountyHunter_PVPMenu'] = 'Menu PVP',
+  ['BountyHunter_HuntBountyButton'] = 'Chasser une prime',
+  ['BountyHunter_ReceivePayment'] = 'Recevoir le paiement',
+  ['BountyHunter_NoBounties'] = "Vous n'avez pas enregistré de victimes de primes, partenaire!",
+  ['BountyHunter_SetBounty'] = 'Définir une prime',
+  ['BountyHunter_Payment1'] = "Vous avez reçu $",
+  ['BountyHunter_Payment2'] = 'et',
+  ['BountyHunter_Payment3'] = 'XP',
 }

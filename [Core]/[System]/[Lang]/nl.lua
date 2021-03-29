@@ -4,7 +4,7 @@ Lang['nl'] = {
 
   -- Piano
   ['PlayPiano_Play'] = 'Druk [~e~Space~q~] om de piano te bespelen',
-  ['PlayPiano_Stop'] = 'Druk [~e~F~q~] om te stoppen met spelen',  
+  ['PlayPiano_Stop'] = 'Druk [~e~F~q~] om te stoppen met spelen',
 
   -- Metabolisme
   ['Metabolism_IFCC'] = 'Incorrect_Format_Check_Config',
@@ -43,4 +43,19 @@ Lang['nl'] = {
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "U heeft een item verkocht:",
   ['Store_NoItem'] = "Je hebt geen item met de naam:",
+
+  -- Premie Jager
+  ['BountyHunter_PressSpace'] = 'Druk op [~e~ SPACE ~q~] om het bounty-menu te openen',
+  ['BountyHunter_MenuTitle'] = 'Premiebord',
+  ['BountyHunter_PVESubTitle'] = 'Jaag op NPC\'s',
+  ['BountyHunter_PVPSubTitle'] = 'Jaag op mensen',
+  ['BountyHunter_PVEMenu'] = 'PVE-menu',
+  ['BountyHunter_PVPMenu'] = 'PVP-menu',
+  ['BountyHunter_HuntBountyButton'] = 'Jaag op een premie',
+  ['BountyHunter_ReceivePayment'] = 'Betaling ontvangen',
+  ['BountyHunter_NoBounties'] = "Je hebt geen geregistreerde premiekills, partner!",
+  ['BountyHunter_SetBounty'] = 'Stel een premie in',
+  ['BountyHunter_Payment1'] = "U heeft $ ontvangen",
+  ['BountyHunter_Payment2'] = 'en',
+  ['BountyHunter_Payment3'] = 'XP',
 }

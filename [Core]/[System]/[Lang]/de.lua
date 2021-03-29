@@ -23,6 +23,7 @@ Lang['de'] = {
   ['UsableItems_RefundCampfire'] = "Ihnen wurde ein Lagerfeuer erstattet",
   ['UsableItems_RefundTent'] = "Ihnen wurde ein Zelt erstattet",
 
+  -- Stores
   ['Store_OpenShop'] = 'Drücken Sie [~e~ SPACE ~q~], um das Shop-Menü zu öffnen',
   ['Store_MenuTitle'] = 'Gemischtwarenladen',
   ['Store_Category'] = 'Kategorie',
@@ -42,5 +43,20 @@ Lang['de'] = {
   ['Store_Bought2'] = ', kostet dich $',
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Sie haben einen Artikel verkauft:",
-  ['Store_NoItem'] = "Sie haben kein Element mit dem Namen:"
+  ['Store_NoItem'] = "Sie haben kein Element mit dem Namen:",
+
+  -- Kopfgeldjäger
+  ['BountyHunter_PressSpace'] = 'Drücken Sie [~e~ SPACE ~q~], um das Kopfgeldmenü zu öffnen',
+  ['BountyHunter_MenuTitle'] = 'Kopfgeldbrett',
+  ['BountyHunter_PVESubTitle'] = 'NPCs jagen',
+  ['BountyHunter_PVPSubTitle'] = 'Menschen jagen',
+  ['BountyHunter_PVEMenu'] = 'PVE-Menü',
+  ['BountyHunter_PVPMenu'] = 'PVP-Menü',
+  ['BountyHunter_HuntBountyButton'] = 'Jage ein Kopfgeld',
+  ['BountyHunter_ReceivePayment'] = 'Zahlung erhalten',
+  ['BountyHunter_NoBounties'] = "Du hast keine Kopfgeld-Kills aufgezeichnet, Partner!",
+  ['BountyHunter_SetBounty'] = 'Kopfgeld setzen',
+  ['BountyHunter_Payment1'] = "Sie haben $ erhalten",
+  ['BountyHunter_Payment2'] = 'und',
+  ['BountyHunter_Payment3'] = 'XP',
 }
