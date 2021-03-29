@@ -19,10 +19,10 @@ Plugins = {
   PlayPiano     = true,  -- Lets users play the saloon pianos.
 
 
-  -- =============================================== --
-  -- If you want you to disable the trains, edit the
-  -- fxmanifest.lua! Instruction are within the file
-  -- =============================================== --
+  -- ======================================================= --
+  -- For enabling the trains please read the Disclaimer.txt.
+  -- This will add 2 trains and a tram for your server.
+  -- ======================================================= --
 }
 
 --------------------------------------------------------------------------------
