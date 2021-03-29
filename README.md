@@ -31,6 +31,20 @@ in the config. Setting up your RedM RP experience <br>
 was never been easier!
 
 # Features
+- **Multi Language Support**
+  - English
+  - Dutch
+  - Bulgarian
+  - German
+  - Danish
+  - Spanish
+  - French
+  - Greek
+  - Italian
+  - Polish
+  - Portuguese
+  - Russian
+
 - **Metabolism**
   - Easy to configure config.
   - Very Customizable
