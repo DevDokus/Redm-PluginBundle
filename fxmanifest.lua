@@ -3,14 +3,35 @@
 --------------------------------------------------------------------------------
 description 'The Ultimate RP Pack for RedM VORP'
 author 'DevDokus Github'
-version '1.6.0'
-
-shared_script {'config.lua', '[Core]/[System]/[Lang]/*.lua'}
-
-client_scripts { '[Core]/[Vorp]/[Client]/*.lua', '[Core]/[System]/[Client]/*.lua' }
-server_scripts { '[Core]/[Vorp]/[Server]/*.lua', '[Core]/[System]/[Server]/*.lua' }
+version '1.8.0'
+--------------------------------------------------------------------------------
 ui_page('[Core]/[Vorp]/[HTML]/index.html')
+shared_script {'config.lua', '[Core]/[System]/[Lang]/*.lua'}
+--------------------------------------------------------------------------------
+client_scripts {
+  '[Core]/[Vorp]/[Client]/*.lua',
+  '[Core]/[System]/[Client]/*.lua',
 
+-- ================================================== --
+  -- If you dont want to use the trains delete this line!
+  '[Core]/[Vorp]/[Client]/*.dll'
+-- ================================================== --
+}
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+server_scripts {
+  '[Core]/[Vorp]/[Server]/*.lua',
+  '[Core]/[System]/[Server]/*.lua',
+
+-- ================================================== --
+  -- If you dont want to use the trains delete this line!
+  '[Core]/[Vorp]/[Server]/*.dll'
+-- ================================================== --
+}
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 files {
   "[Core]/[Vorp]/[HTML]/script.js",
   "[Core]/[Vorp]/[HTML]/styles.css",
@@ -18,7 +39,10 @@ files {
   "[Core]/[Vorp]/[HTML]/index.html",
   "[Core]/[Vorp]/[HTML]/img/Cards/*.png",
 }
-
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 fx_version "adamant"
 games {"rdr3"}
 rdr3_warning 'I acknowledge that this is a prerelease build of RedM, and I am aware my resources *will* become incompatible once RedM ships.'
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

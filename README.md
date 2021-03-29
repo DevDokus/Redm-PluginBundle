@@ -1,7 +1,7 @@
 ---
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/49053928/111937011-2e9b8080-8ac7-11eb-914a-a0d94380d611.gif"><br>
- <b>Version (v1.7.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
+ <b>Version (v1.8.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
 </p>
 
 ---
@@ -127,3 +127,5 @@ to manually change this on every update.
 - [DevDokus Usable Items](https://github.com/DevDokus/RedM-UsableItems)
 - [DevDokus Metabolism](https://github.com/DevDokus/RedM-Metabolism)
 - [KiBook iMaps](https://github.com/kibook/redm-imaps)
+- [DevDokus BountyHunter](https://github.com/DevDokus/RedM-BountyHunter)
+- [DevDokus PlayPiano](https://github.com/DevDokus/RedM-PlayPiano)
