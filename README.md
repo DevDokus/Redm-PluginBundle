@@ -147,3 +147,4 @@ to manually change this on every update.
 - [DevDokus PlayPiano](https://github.com/DevDokus/RedM-PlayPiano)
 - [KiBook iMaps](https://github.com/kibook/redm-imaps)
 - [Thunderstorm441 Trains](https://github.com/Thunderstorm441/ts-trains-redm)
+- [DevDokus ShowCoordinates](https://github.com/DevDokus/RedM-Show-Coordinates)
