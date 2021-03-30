@@ -357,6 +357,6 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.8.0"
+_Version_ = "1.8.1"
 _vConfig_ = 040029032021
 _StartError_ = false

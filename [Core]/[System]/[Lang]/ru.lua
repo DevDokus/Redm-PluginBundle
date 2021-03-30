@@ -58,4 +58,13 @@ Lang['ru'] = {
   ['BountyHunter_Payment1'] = "Вы получили $",
   ['BountyHunter_Payment2'] = 'и',
   ['BountyHunter_Payment3'] = 'XP',
+  ['BountyHunter_BountyOnMap'] = 'Ваша награда указана на карте!',
+  ['BountyHunter_TheyBeDead'] = 'Они нужны нам мертвыми, а не живыми! Но мертв! ',
+  ['BountyHunter_StackBounties'] = 'Вы можете складывать награды, помните',
+  ['BountyHunter_DieAndLose'] = 'что вы потеряете награды, если умрете!',
+  ['BountyHunter_KilledAllTargets'] = 'Вам удалось убить все цели',
+  ['BountyHunter_SearchBodies'] = 'Обыскать тела в поисках улик,',
+  ['BountyHunter_AndBringBack'] = 'и отправь это обратно в полицию!',
+  ['BountyHunter_BringBackEvidence'] = 'Верните доказательства шерифу!',
+  ['BountyHunter_LostTargets'] = "Вы потеряли свои цели",
 }

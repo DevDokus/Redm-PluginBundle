@@ -59,4 +59,13 @@ Lang['de'] = {
   ['BountyHunter_Payment1'] = "Sie haben $ erhalten",
   ['BountyHunter_Payment2'] = 'und',
   ['BountyHunter_Payment3'] = 'XP',
+  ['BountyHunter_BountyOnMap'] = 'Dein Kopfgeld befindet sich auf der Karte!',
+  ['BountyHunter_TheyBeDead'] = 'Wir brauchen sie tot, nicht lebendig! Aber tot! ',
+  ['BountyHunter_StackBounties'] = 'Sie können Kopfgelder stapeln, denken Sie daran',
+  ['BountyHunter_DieAndLose'] = 'dass du die Kopfgelder verlierst, wenn du stirbst!',
+  ['BountyHunter_KilledAllTargets'] = 'Du hast es geschafft, alle Ziele zu töten',
+  ['BountyHunter_SearchBodies'] = 'Durchsuche die Leichen nach Beweisen',
+  ['BountyHunter_AndBringBack'] = 'und bing das zurück zum Polizeibüro!',
+  ['BountyHunter_BringBackEvidence'] = 'Bring die Beweise zum Sherif zurück!',
+  ['BountyHunter_LostTargets'] = "Du hast deine Ziele verloren",
 }

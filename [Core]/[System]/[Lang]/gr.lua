@@ -58,4 +58,13 @@ Lang['gr'] = {
   ['BountyHunter_Payment1'] = "Λάβατε $",
   ['BountyHunter_Payment2'] = 'και',
   ['BountyHunter_Payment3'] = 'XP',
+  ['BountyHunter_BountyOnMap'] = "Το Bounty σας βρίσκεται στον χάρτη!",
+  ['BountyHunter_TheyBeDead'] = 'Τους χρειαζόμαστε νεκρούς, όχι ζωντανούς! Αλλά νεκρός!',
+  ['BountyHunter_StackBounties'] = "Μπορείτε να στοίβατε bounties, απλώς να έχετε κατά νου",
+  ['BountyHunter_DieAndLose'] = 'ότι θα χάσεις τα γενναιοδωρία αν πεθάνεις!',
+  ['BountyHunter_KilledAllTargets'] = "Καταφέρατε να σκοτώσετε όλους τους στόχους",
+  ['BountyHunter_SearchBodies'] = 'Αναζητήστε αποδεικτικά στοιχεία στα σώματα',
+  ['BountyHunter_AndBringBack'] = 'και επιστρέψτε το στο γραφείο της αστυνομίας!',
+  ['BountyHunter_BringBackEvidence'] = 'Επιστρέψτε τα αποδεικτικά στοιχεία στον sherrif!',
+  ['BountyHunter_LostTargets'] = "Έχετε χάσει τους στόχους σας",
 }

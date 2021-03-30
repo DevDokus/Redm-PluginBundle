@@ -58,6 +58,16 @@ Lang['en'] = {
   ['BountyHunter_Payment1'] = "You received $",
   ['BountyHunter_Payment2'] = ' and ',
   ['BountyHunter_Payment3'] = ' XP',
+  ['BountyHunter_BountyOnMap'] = 'Your Bounty is located on the map!',
+  ['BountyHunter_TheyBeDead'] = 'We need them dead, not alive! But Dead!',
+  ['BountyHunter_StackBounties'] = 'You can stack bounties, just keep in mind',
+  ['BountyHunter_DieAndLose'] = 'that you lose the bounties if you died!',
+  ['BountyHunter_KilledAllTargets'] = 'You managed to kill all targets',
+  ['BountyHunter_SearchBodies'] = 'Search the bodies for evidence,',
+  ['BountyHunter_AndBringBack'] = 'and bing this back to the police office!',
+  ['BountyHunter_BringBackEvidence'] = 'Bring back the evidence to the sherrif!',
+  ['BountyHunter_LostTargets'] = "You've lost your targets",
+
 
 
 

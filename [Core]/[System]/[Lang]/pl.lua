@@ -58,4 +58,13 @@ Lang['pl'] = {
   ['BountyHunter_Payment1'] = "Otrzymałeś $",
   ['BountyHunter_Payment2'] = 'i',
   ['BountyHunter_Payment3'] = 'XP',
+  ['BountyHunter_BountyOnMap'] = 'Twoja nagroda znajduje się na mapie!',
+  ['BountyHunter_TheyBeDead'] = 'Potrzebujemy ich martwych, a nie żywych! Ale martwy! ',
+  ['BountyHunter_StackBounties'] = 'Możesz kumulować nagrody, pamiętaj o tym',
+  ['BountyHunter_DieAndLose'] = 'że tracisz nagrody, jeśli zginąłeś!',
+  ['BountyHunter_KilledAllTargets'] = 'Udało ci się zabić wszystkie cele',
+  ['BountyHunter_SearchBodies'] = 'Przeszukaj ciała w poszukiwaniu dowodów,',
+  ['BountyHunter_AndBringBack'] = 'i wróć do biura policji!',
+  ['BountyHunter_BringBackEvidence'] = 'Przynieś dowody szeryfowi!',
+  ['BountyHunter_LostTargets'] = "Straciłeś swoje cele",
 }

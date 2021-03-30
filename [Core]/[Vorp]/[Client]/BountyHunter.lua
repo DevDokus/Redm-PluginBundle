@@ -268,13 +268,13 @@ if Plugins.BountyHunter then
     -- SetGpsMultiRouteRender(true)
 
     Wait(1000)
-    Notify('Your Bounty is located on the map!', 5000)
+    Notify(_('BountyHunter_BountyOnMap'), 5000)
     Wait(3000)
-    Notify('We need them dead, not alive! But Dead!', 5000)
+    Notify(_('BountyHunter_TheyBeDead'), 5000)
     Wait(5500)
-    Notify('You can stack bounties, just keep in mind', 5000)
+    Notify(_('BountyHunter_StackBounties'), 5000)
     Wait(3000)
-    Notify('that you lose the bounties if you died!', 5000)
+    Notify(_('BountyHunter_DieAndLose'), 5000)
     InMission = true
     SaveGuard = false
     while InMission do Wait(1)
@@ -287,11 +287,11 @@ if Plugins.BountyHunter then
             TotalKilled = TotalKilled + 1
             ArrayBounties[k] = nil
             if TotalEnemies == 0 then
-              TriggerEvent("vorp:TipRight", 'You managed to kill all targets', 5000)
+              TriggerEvent("vorp:TipRight", _('BountyHunter_KilledAllTargets'), 5000)
               SearchingBodies = true
               Wait(5000)
-              Notify('Search the body for evidence,', 5000)
-              Notify('and bing this back to the police office!', 5000)
+              Notify(_('BountyHunter_SearchBodies'), 5000)
+              Notify(_('BountyHunter_AndBringBack'), 5000)
               local ped = PlayerPedId()
               while SearchingBodies do Wait(1)
                 local ped = PlayerPedId()
@@ -310,7 +310,7 @@ if Plugins.BountyHunter then
                 if (dist <= 5) and E then
                   Wait(2000)
                   StopMission()
-                  Notify('Bring back the rewards to the sherrif!', 5000)
+                  Notify(_('BountyHunter_BringBackEvidence'), 5000)
                 end
               end
             end
@@ -318,7 +318,7 @@ if Plugins.BountyHunter then
         end
 
         if IsPlayerDead() then
-          TriggerEvent("vorp:TipRight", "You've lost your target", 4000)
+          TriggerEvent("vorp:TipRight", _('BountyHunter_LostTargets'), 4000)
           StopMission()
           TotalKilled = 0
         end

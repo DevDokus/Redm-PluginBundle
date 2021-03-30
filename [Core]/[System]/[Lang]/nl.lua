@@ -58,4 +58,13 @@ Lang['nl'] = {
   ['BountyHunter_Payment1'] = "U heeft $ ontvangen",
   ['BountyHunter_Payment2'] = 'en',
   ['BountyHunter_Payment3'] = 'XP',
+  ['BountyHunter_BountyOnMap'] = 'Je Bounty staat op de kaart!',
+  ['BountyHunter_TheyBeDead'] = 'We hebben ze dood nodig, niet levend! Maar dood! ',
+  ['BountyHunter_StackBounties'] = 'Je kunt premies stapelen, houd er gewoon rekening mee',
+  ['BountyHunter_DieAndLose'] = 'dat je de premies verliest als je stierf!',
+  ['BountyHunter_KilledAllTargets'] = 'Het is je gelukt om alle doelen te doden',
+  ['BountyHunter_SearchBodies'] = 'Doorzoek de lichamen voor bewijs',
+  ['BountyHunter_AndBringBack'] = 'en breng dit terug naar het politiebureau!',
+  ['BountyHunter_BringBackEvidence'] = 'Breng het bewijs terug naar de sherrif!',
+  ['BountyHunter_LostTargets'] = "Je bent je doelen kwijt",
 }

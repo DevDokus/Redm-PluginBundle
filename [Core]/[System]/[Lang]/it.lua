@@ -58,4 +58,13 @@ Lang['it'] = {
   ["BountyHunter_Payment1"] = "Hai ricevuto $",
   ["BountyHunter_Payment2"] = "e",
   ["BountyHunter_Payment3"] = "XP",
+  ['BountyHunter_BountyOnMap'] = 'La tua taglia si trova sulla mappa!',
+  ['BountyHunter_TheyBeDead'] = 'Abbiamo bisogno di loro morti, non vivi! Ma morto! ',
+  ['BountyHunter_StackBounties'] = 'Puoi accumulare taglie, tienilo a mente',
+  ['BountyHunter_DieAndLose'] = 'che perdi i premi se muori!',
+  ['BountyHunter_KilledAllTargets'] = 'Sei riuscito a uccidere tutti i bersagli',
+  ['BountyHunter_SearchBodies'] = 'Cerca prove nei corpi,',
+  ['BountyHunter_AndBringBack'] = 'e riportalo all\'ufficio di polizia!',
+  ['BountyHunter_BringBackEvidence'] = 'Riporta le prove allo sceriffo!',
+  ['BountyHunter_LostTargets'] = "Hai perso i tuoi obiettivi",
 }

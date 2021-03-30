@@ -58,4 +58,13 @@ Lang['dk'] = {
   ['BountyHunter_Payment1'] = "Du modtog $",
   ['BountyHunter_Payment2'] = 'og',
   ['BountyHunter_Payment3'] = 'XP',
+  ['BountyHunter_BountyOnMap'] = 'Din Bounty er placeret på kortet!',
+  ['BountyHunter_TheyBeDead'] = 'Vi har brug for dem døde, ikke i live! Men død! ',
+  ['BountyHunter_StackBounties'] = 'Du kan stable bounties, bare husk',
+  ['BountyHunter_DieAndLose'] = 'at du mister bounties, hvis du døde!',
+  ['BountyHunter_KilledAllTargets'] = 'Det lykkedes dig at dræbe alle mål',
+  ['BountyHunter_SearchBodies'] = 'Søg i ligene efter beviser,',
+  ['BountyHunter_AndBringBack'] = 'og bing dette tilbage til politiet!',
+  ['BountyHunter_BringBackEvidence'] = 'Bring beviset tilbage til sherrif!',
+  ['BountyHunter_LostTargets'] = "Du har mistet dine mål",
 }
