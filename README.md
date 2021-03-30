@@ -102,6 +102,9 @@ was never been easier!
   - Add and remove pianos locations
   - Playable as male and female
 
+- **Trains**
+  - 2 Trains and 1 Tram
+
 
 # Events: Metabolism
 ```
