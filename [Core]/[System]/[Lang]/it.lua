@@ -3,8 +3,8 @@ Lang['it'] = {
   ['OnlyAdmins'] = 'Questa funzione è solo per gli amministratori!',
 
   --Piano
-  ['PlayPiano_Play'] = 'Premi [~e~ barra spaziatrice ~q~] per suonare il piano',
-  ['PlayPiano_Stop'] = 'Premi [~e~ F ~q~] per interrompere la riproduzione',
+  ['PlayPiano_Play'] = 'Premi [~e~barra spaziatrice~q~] per suonare il piano',
+  ['PlayPiano_Stop'] = 'Premi [~e~F~q~] per interrompere la riproduzione',
 
   -- Metabolismo
   ['Metabolism_IFCC'] = 'Config_controllo_formato_errato',
@@ -23,7 +23,7 @@ Lang['it'] = {
   ['UsableItems_RefundTent'] = "Ti è stata rimborsata una tenda",
 
   -- I negozi
-  ['Store_OpenShop'] = 'Premi [~e~ SPAZIO ~q~] per aprire il menu del negozio',
+  ['Store_OpenShop'] = 'Premi [~e~SPAZIO~q~] per aprire il menu del negozio',
   ['Store_MenuTitle'] = 'General Store',
   ['Store_Category'] = 'Categoria',
   ["Store_Buy"] = "Acquista articoli",
@@ -45,7 +45,7 @@ Lang['it'] = {
   ['Store_NoItem'] = "Nessun articolo chiamato:",
 
   -- Cacciatore di taglie
-  ['BountyHunter_PressSpace'] = 'Premi [~e~ SPAZIO ~q~] per aprire il menu delle taglie',
+  ['BountyHunter_PressSpace'] = 'Premi [~e~SPAZIO~q~] per aprire il menu delle taglie',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
   ['BountyHunter_PVESubTitle'] = 'Caccia agli NPC',
   ['BountyHunter_PVPSubTitle'] = 'Hunt Humans',
@@ -67,4 +67,11 @@ Lang['it'] = {
   ['BountyHunter_AndBringBack'] = 'e riportalo all\'ufficio di polizia!',
   ['BountyHunter_BringBackEvidence'] = 'Riporta le prove allo sceriffo!',
   ['BountyHunter_LostTargets'] = "Hai perso i tuoi obiettivi",
+
+  ['PickableFruits_PressSpace'] = 'Premi [~e~SPAZIO~q~] per raccogliere le bacche',
+  ['PickableFruits_Searching'] = "Ricerca in corso ...",
+  ['PickableFruits_Collected'] = "Hai raccolto",
+  ['PickableFruits_NothingFound'] = "Non c'è niente da raccogliere qui!",
+
+  ['Rivers_Info'] = "Premi [~e~G~q~] per lavare, [~e~ENTER~q~] per bere acqua",
 }

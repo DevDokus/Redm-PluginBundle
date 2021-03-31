@@ -67,4 +67,13 @@ Lang['bg'] = {
   ['BountyHunter_AndBringBack'] = 'и върнете това обратно в полицейския офис!',
   ['BountyHunter_BringBackEvidence'] = 'Върнете доказателствата в шериф!',
   ['BountyHunter_LostTargets'] = "Изгубихте целите си",
+
+  -- Picking Fruits
+  ['PickableFruits_PressSpace'] = 'Натиснете [~e~ SPACE ~q~], за да съберете плодове',
+  ['PickableFruits_Searching'] = "Търсене ...",
+  ['PickableFruits_Collected'] = "Събрахте",
+  ['PickableFruits_NothingFound'] = "Тук няма какво да се събира!",
+
+  -- Rivers
+  ['Rivers_Info'] = "Натиснете [~e~ G ~q~], за да измиете, [~e~ ENTER ~q~], за да пиете вода",
 }

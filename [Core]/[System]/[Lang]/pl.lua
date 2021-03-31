@@ -3,8 +3,8 @@ Lang['pl'] = {
   ['OnlyAdmins'] = 'Αυτή η λειτουργία είναι μόνο για διαχειριστές!',
 
   -- πιάνο
-  ['PlayPiano_Play'] = 'Πατήστε [~e~ Space ~q~] για να παίξετε πιάνο',
-  ['PlayPiano_Stop'] = 'Πατήστε [~e~ F ~q~] για να σταματήσετε να παίζετε',
+  ['PlayPiano_Play'] = 'Πατήστε [~e~Space~q~] για να παίξετε πιάνο',
+  ['PlayPiano_Stop'] = 'Πατήστε [~e~F~q~] για να σταματήσετε να παίζετε',
 
   -- Μεταβολισμός
   ['Metabolism_IFCC'] = 'Εσφαλμένο_Format_Check_Config',
@@ -23,7 +23,7 @@ Lang['pl'] = {
   ['UsableItems_RefundTent'] = "Σας έχει επιστραφεί μια σκηνή",
 
   -- Καταστήματα
-  ['Store_OpenShop'] = 'Πατήστε [~e~ SPACE ~q~] για να ανοίξετε το μενού καταστήματος',
+  ['Store_OpenShop'] = 'Πατήστε [~e~SPACE~q~] για να ανοίξετε το μενού καταστήματος',
   ['Store_MenuTitle'] = "Γενικό κατάστημα",
   ['Store_Category'] = 'Κατηγορία',
   ['Store_Buy'] = 'Αγορά αντικειμένων',
@@ -45,7 +45,7 @@ Lang['pl'] = {
   ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
 
   -- Łowca nagród
-  ['BountyHunter_PressSpace'] = 'Naciśnij [~e~ SPACE ~q~], aby otworzyć menu nagród',
+  ['BountyHunter_PressSpace'] = 'Naciśnij [~e~SPACE~q~], aby otworzyć menu nagród',
   ['BountyHunter_MenuTitle'] = 'Tablica zleceń',
   ['BountyHunter_PVESubTitle'] = 'Poluj na NPC',
   ['BountyHunter_PVPSubTitle'] = 'Poluj na ludzi',
@@ -67,4 +67,11 @@ Lang['pl'] = {
   ['BountyHunter_AndBringBack'] = 'i wróć do biura policji!',
   ['BountyHunter_BringBackEvidence'] = 'Przynieś dowody szeryfowi!',
   ['BountyHunter_LostTargets'] = "Straciłeś swoje cele",
+
+  ['PickableFruits_PressSpace'] = 'Naciśnij [~e~SPACE~q~], aby zbierać jagody',
+  ['PickableFruits_Searching'] = "Wyszukiwanie ...",
+  ['PickableFruits_Collected'] = "Zebrałeś",
+  ['PickableFruits_NothingFound'] = "Nie ma tu nic do zebrania!",
+
+  ['Rivers_Info'] = "Naciśnij [~e~G~q~], aby umyć, [~e~ENTER~q~], aby pić wodę",
 }

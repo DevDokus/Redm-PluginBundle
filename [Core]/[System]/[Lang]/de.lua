@@ -4,8 +4,8 @@ Lang['de'] = {
   ['OnlyAdmins'] = 'Diese Funktion ist nur für Administratoren!',
 
   -- Piano
-  ['PlayPiano_Play'] = 'Drücken Sie [~e~ Leertaste ~q~], um Klavier zu spielen',
-  ['PlayPiano_Stop'] = 'Drücken Sie [~e~ F ~q~], um die Wiedergabe zu beenden.',
+  ['PlayPiano_Play'] = 'Drücken Sie [~e~Leertaste~q~], um Klavier zu spielen',
+  ['PlayPiano_Stop'] = 'Drücken Sie [~e~F~q~], um die Wiedergabe zu beenden.',
 
   -- Stoffwechsel
   ['Metabolism_IFCC'] = 'Falsche_Formatprüfkonfiguration',
@@ -24,7 +24,7 @@ Lang['de'] = {
   ['UsableItems_RefundTent'] = "Ihnen wurde ein Zelt erstattet",
 
   -- Stores
-  ['Store_OpenShop'] = 'Drücken Sie [~e~ SPACE ~q~], um das Shop-Menü zu öffnen',
+  ['Store_OpenShop'] = 'Drücken Sie [~e~SPACE~q~], um das Shop-Menü zu öffnen',
   ['Store_MenuTitle'] = 'Gemischtwarenladen',
   ['Store_Category'] = 'Kategorie',
   ['Store_Buy'] = 'Artikel kaufen',
@@ -46,7 +46,7 @@ Lang['de'] = {
   ['Store_NoItem'] = "Sie haben kein Element mit dem Namen:",
 
   -- Kopfgeldjäger
-  ['BountyHunter_PressSpace'] = 'Drücken Sie [~e~ SPACE ~q~], um das Kopfgeldmenü zu öffnen',
+  ['BountyHunter_PressSpace'] = 'Drücken Sie [~e~SPACE~q~], um das Kopfgeldmenü zu öffnen',
   ['BountyHunter_MenuTitle'] = 'Kopfgeldbrett',
   ['BountyHunter_PVESubTitle'] = 'NPCs jagen',
   ['BountyHunter_PVPSubTitle'] = 'Menschen jagen',
@@ -68,4 +68,11 @@ Lang['de'] = {
   ['BountyHunter_AndBringBack'] = 'und bing das zurück zum Polizeibüro!',
   ['BountyHunter_BringBackEvidence'] = 'Bring die Beweise zum Sherif zurück!',
   ['BountyHunter_LostTargets'] = "Du hast deine Ziele verloren",
+
+  ['PickableFruits_PressSpace'] = 'Drücken Sie [~e~SPACE~q~], um nach Beeren zu ernten',
+  ['PickableFruits_Searching'] = "Suchen ...",
+  ['PickableFruits_Collected'] = "Sie haben gesammelt",
+  ['PickableFruits_NothingFound'] = "Hier gibt es nichts zu sammeln!",
+
+  ['Rivers_Info'] = "Drücken Sie [~e~G~q~], um sich zu waschen, [~e~ENTER~q~], um Wasser zu trinken",
 }

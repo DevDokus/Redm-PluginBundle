@@ -23,7 +23,7 @@ Lang['nl'] = {
   ['UsableItems_RefundTent'] = "Je hebt een tent terugbetaald",
 
   -- Winkels
-  ['Store_OpenShop'] = 'Druk op [~e~ SPACE ~q~] om het winkelmenu te openen',
+  ['Store_OpenShop'] = 'Druk op [~e~SPACE~q~] om het winkelmenu te openen',
   ['Store_MenuTitle'] = 'Algemene winkel',
   ['Store_Category'] = 'Categorie',
   ['Store_Buy'] = 'Koop artikelen',
@@ -45,7 +45,7 @@ Lang['nl'] = {
   ['Store_NoItem'] = "Je hebt geen item met de naam:",
 
   -- Premie Jager
-  ['BountyHunter_PressSpace'] = 'Druk op [~e~ SPACE ~q~] om het bounty-menu te openen',
+  ['BountyHunter_PressSpace'] = 'Druk op [~e~SPACE~q~] om het bounty-menu te openen',
   ['BountyHunter_MenuTitle'] = 'Premiebord',
   ['BountyHunter_PVESubTitle'] = 'Jaag op NPC\'s',
   ['BountyHunter_PVPSubTitle'] = 'Jaag op mensen',
@@ -67,4 +67,11 @@ Lang['nl'] = {
   ['BountyHunter_AndBringBack'] = 'en breng dit terug naar het politiebureau!',
   ['BountyHunter_BringBackEvidence'] = 'Breng het bewijs terug naar de sherrif!',
   ['BountyHunter_LostTargets'] = "Je bent je doelen kwijt",
+
+  ['PickableFruits_PressSpace'] = 'Druk op [~e~SPACE~q~] om te oogsten voor bessen',
+  ['PickableFruits_Searching'] = "Zoeken ...",
+  ['PickableFruits_Collected'] = "Je hebt verzameld",
+  ['PickableFruits_NothingFound'] = "Er kan hier niets verzameld worden!",
+
+  ['Rivers_Info'] = "Druk op [~e~G~q~] om te wassen, [~e~ENTER~q~] om water te drinken",
 }

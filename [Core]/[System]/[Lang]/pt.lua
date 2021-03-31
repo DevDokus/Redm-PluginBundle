@@ -3,8 +3,8 @@ Lang['pt'] = {
   ['OnlyAdmins'] = 'Este recurso é apenas para administradores!',
 
   -- Piano
-  ['PlayPiano_Tocar'] = 'Pressione [~e~ Espaço ~q~] para tocar o piano',
-  ['PlayPiano_Parar'] = 'Pressione [~e~ F ~q~] para parar de tocar',
+  ['PlayPiano_Tocar'] = 'Pressione [~e~Espaço~q~] para tocar o piano',
+  ['PlayPiano_Parar'] = 'Pressione [~e~F~q~] para parar de tocar',
 
   -- Metabolismo
   ['Metabolism_IFCC'] = 'Configuração_de_verificação_de formato_incorreto',
@@ -23,7 +23,7 @@ Lang['pt'] = {
   ['UsableItems_RefundTent'] = "Você foi reembolsado por uma barraca",
 
   -- lojas
-  ['Store_OpenShop'] = 'Pressione [~e~ ESPAÇO ~q~] para abrir o menu da loja',
+  ['Store_OpenShop'] = 'Pressione [~e~ESPAÇO~q~] para abrir o menu da loja',
   ['Store_MenuTitle'] = 'Armazém Geral',
   ['Store_Category'] = 'Categoria',
   ['Store_Buy'] = 'Comprar itens',
@@ -45,7 +45,7 @@ Lang['pt'] = {
   ['Store_NoItem'] = "Você não tem nenhum item chamado:",
 
   -- Caçador de Recompensa
-  ['BountyHunter_PressSpace'] = 'Pressione [~e~ ESPAÇO ~q~] para abrir o menu de recompensas',
+  ['BountyHunter_PressSpace'] = 'Pressione [~e~ESPAÇO~q~] para abrir o menu de recompensas',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
   ['BountyHunter_PVESubTitle'] = 'Hunt NPCs',
   ['BountyHunter_PVPSubTitle'] = 'Caçar humanos',
@@ -67,4 +67,15 @@ Lang['pt'] = {
   ['BountyHunter_AndBringBack'] = 'e devolva isso ao escritório da polícia!',
   ['BountyHunter_BringBackEvidence'] = 'Traga de volta as evidências para o sherrif!',
   ['BountyHunter_LostTargets'] = "Você perdeu seus alvos",
+
+  ['PickableFruits_PressSpace'] = 'Pressione [~e~SPACE~q~] para colher os frutos',
+  ['PickableFruits_Searching'] = "Pesquisando ...",
+  ['PickableFruits_Collected'] = "Você coletou",
+
+  ['PickableFruits_PressSpace'] = 'Нажмите [~e~SPACE~q~], чтобы собрать ягоды',
+  ['PickableFruits_Searching'] = "Поиск ...",
+  ['PickableFruits_Collected'] = 'Вы собрали',
+  ['PickableFruits_NothingFound'] = "Não há nada a ser coletado aqui!",
+
+  ['Rivers_Info'] = "Pressione [~e~G~q~] para lavar, [~e~ENTER~q~] para beber água",
 }

@@ -176,16 +176,16 @@ Citizen.CreateThread(function()
 
     AddEventHandler('DevDokus:Metabolism:C:Stamina', function(value)
       local User     = PlayerPedId()
-      local _Stamina = Citizen.InvokeNative(0x36731AC041289BB1, User, 1)
-      local new      = (_Stamina + tonumber(value))
+      local Core     = GetAttributeCoreValue(User, 1)
+      local new      = (Core + tonumber(value))
       if (new > 100) then new = 100 end
       Citizen.InvokeNative(0xC6258F41D86676E0, User, 1, new)
     end)
 
     AddEventHandler('DevDokus:Metabolism:C:Health', function(value)
       local User   = PlayerPedId()
-      local health = Citizen.InvokeNative(0x36731AC041289BB1, User, 1)
-      local new    = health + tonumber(value)
+      local Core   = GetAttributeCoreValue(User, 0)
+      local new    = (Core + tonumber(value))
       if (new > 100) then new = 100 end
       Citizen.InvokeNative(0xC6258F41D86676E0, User, 0, new)
     end)

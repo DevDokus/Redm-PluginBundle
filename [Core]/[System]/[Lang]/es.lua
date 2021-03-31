@@ -3,8 +3,8 @@ Lang['es'] = {
   ['OnlyAdmins'] = '¡Esta función es solo para administradores!',
 
   -- Piano
-  ['PlayPiano_Play'] = 'Presione [~e~ Espacio ~q~] para tocar el piano',
-  ['PlayPiano_Stop'] = 'Presione [~e~ F ~q~] para detener la reproducción',
+  ['PlayPiano_Play'] = 'Presione [~e~Espacio~q~] para tocar el piano',
+  ['PlayPiano_Stop'] = 'Presione [~e~F~q~] para detener la reproducción',
 
   -- Metabolismo
   ['Metabolism_IFCC'] = 'Configuración_de_verificación_de_formato_incorrecta',
@@ -23,7 +23,7 @@ Lang['es'] = {
   ['UsableItems_RefundTent'] = "Se le reembolsó una tienda de campaña",
 
   -- Historias
-  ['Store_OpenShop'] = 'Presione [~e~ SPACE ~q~] para abrir el menú de la tienda',
+  ['Store_OpenShop'] = 'Presione [~e~SPACE~q~] para abrir el menú de la tienda',
   ['Store_MenuTitle'] = 'Tienda general',
   ['Store_Category'] = 'Categoría',
   ['Store_Buy'] = 'Comprar artículos',
@@ -45,7 +45,7 @@ Lang['es'] = {
   ['Store_NoItem'] = "No tiene ningún elemento llamado:",
 
   -- Cazarrecompensas
-  ['BountyHunter_PressSpace'] = 'Presione [~e~ SPACE ~q~] para abrir el menú de recompensas',
+  ['BountyHunter_PressSpace'] = 'Presione [~e~SPACE~q~] para abrir el menú de recompensas',
   ['BountyHunter_MenuTitle'] = 'Tablero de recompensas',
   ['BountyHunter_PVESubTitle'] = 'Cazar NPC',
   ['BountyHunter_PVPSubTitle'] = 'Cazar humanos',
@@ -67,4 +67,11 @@ Lang['es'] = {
   ['BountyHunter_AndBringBack'] = '¡y llévate esto a la oficina de policía!',
   ['BountyHunter_BringBackEvidence'] = '¡Devuélvele la evidencia al sherrif!',
   ['BountyHunter_LostTargets'] = "Has perdido tus objetivos",
+
+  ['PickableFruits_PressSpace'] = 'Presione [~e~SPACE~q~] para cosechar las bayas',
+  ['PickableFruits_Searching'] = "Buscando ...",
+  ['PickableFruits_Collected'] = "Has recopilado",
+  ['PickableFruits_NothingFound'] = "¡No hay nada que recolectar aquí!",
+
+  ['Rivers_Info'] = "Presione [~e~G~q~] para lavar, [~e~ENTER~q~] para beber agua",
 }

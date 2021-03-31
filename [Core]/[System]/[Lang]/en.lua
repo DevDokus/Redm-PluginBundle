@@ -68,7 +68,13 @@ Lang['en'] = {
   ['BountyHunter_BringBackEvidence'] = 'Bring back the evidence to the sherrif!',
   ['BountyHunter_LostTargets'] = "You've lost your targets",
 
+  ['PickableFruits_PressSpace'] = 'Press [ ~e~SPACE~q~ ] to harvest for berries',
+  ['PickableFruits_Searching'] = "Searching...",
+  ['PickableFruits_Collected'] = "You've collected ",
+  ['PickableFruits_NothingFound'] = "There is nothing to be collected here!",
 
+  -- Rivers
+  ['Rivers_Info'] = "Press [~e~G~q~] to wash, [~e~ENTER~q~] to Drink Water",
 
 
 

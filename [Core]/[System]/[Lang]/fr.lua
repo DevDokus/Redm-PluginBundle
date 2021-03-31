@@ -3,8 +3,8 @@ Lang['fr'] = {
   ['OnlyAdmins'] = 'Cette fonctionnalité est réservée aux administrateurs!',
 
   -- Piano
-  ['PlayPiano_Play'] = 'Appuyez sur [~e~ barre d\'espace ~q~] pour jouer du piano',
-  ['PlayPiano_Stop'] = 'Appuyez sur [~e~ F ~q~] pour arrêter la lecture',
+  ['PlayPiano_Play'] = 'Appuyez sur [~e~barre d\'espace~q~] pour jouer du piano',
+  ['PlayPiano_Stop'] = 'Appuyez sur [~e~F~q~] pour arrêter la lecture',
 
   -- Métabolisme
   ['Metabolism_IFCC'] = 'Configuration_de_vérification_du_format_incorrecte',
@@ -23,7 +23,7 @@ Lang['fr'] = {
   ['UsableItems_RefundTent'] = "Une tente vous a été remboursée",
 
   -- Magasins
-  ['Store_OpenShop'] = 'Appuyez sur [~e~ ESPACE ~q~] pour ouvrir le menu de la boutique',
+  ['Store_OpenShop'] = 'Appuyez sur [~e~ESPACE~q~] pour ouvrir le menu de la boutique',
   ['Store_MenuTitle'] = 'Magasin général',
   ['Store_Category'] = 'Catégorie',
   ['Store_Buy'] = 'Acheter des articles',
@@ -45,7 +45,7 @@ Lang['fr'] = {
   ['Store_NoItem'] = "Vous n'avez aucun élément appelé:",
 
   -- Chasseur de primes
-  ['BountyHunter_PressSpace'] = 'Appuyez sur [~e~ ESPACE ~q~] pour ouvrir le menu des primes',
+  ['BountyHunter_PressSpace'] = 'Appuyez sur [~e~ESPACE~q~] pour ouvrir le menu des primes',
   ['BountyHunter_MenuTitle'] = 'Tableau de primes',
   ['BountyHunter_PVESubTitle'] = 'Chasser les PNJ',
   ['BountyHunter_PVPSubTitle'] = 'Chasser les humains',
@@ -67,4 +67,12 @@ Lang['fr'] = {
   ['BountyHunter_AndBringBack'] = 'et ramenez ceci au bureau de police!',
   ['BountyHunter_BringBackEvidence'] = 'Rapportez les preuves au sherrif!',
   ['BountyHunter_LostTargets'] = "Vous avez perdu vos cibles",
+
+  ['PickableFruits_PressSpace'] = 'Appuyez sur [~e~SPACE~q~] pour récolter les baies',
+  ['PickableFruits_Searching'] = "Recherche ...",
+  ['PickableFruits_Collected'] = "Vous avez collecté",
+  ['PickableFruits_NothingFound'] = "Il n'y a rien à collecter ici!",
+  ['PickableFruits_NothingFound'] = "Il n'y a rien à collecter ici!",
+
+  ['Rivers_Info'] = "Appuyez sur [~e~G~q~] pour laver, [~e~ENTER~q~] pour boire de l'eau",
 }

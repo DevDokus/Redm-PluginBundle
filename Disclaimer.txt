@@ -36,28 +36,24 @@ to manually change this on every update.
 -- Disclaimer Trains --
 Without the trains DokusCore run 0.00ms with 0.02% server
 side. With the trains this will be average around 0.80ms
-with 6.00% of thread time. The train edition is quite 
-a heavy resource but should, depending on the amount of 
+with 6.00% of thread time. The train edition is quite
+a heavy resource but should, depending on the amount of
 your resourcs, cause no lag on your server. If dispire you
 have troubles with the trains, you can simply disable it
-via the FXManifext.lua. Simply uncomment or delete the 
-client and server /*.dll entries. By default i have disabled 
+via the FXManifext.lua. Simply uncomment or delete the
+client and server /*.dll entries. By default i have disabled
 the trains, this because there is possibility that your RedM
 client crashes when restarting DokusCore. using the trains
 itself will not cause your troubles, just restarting them
-your client sometimes does'nt like. 
+your client sometimes doesn't like.
 ===================================================================
 ===================================================================
 
 --------------------------------------------------------------------------------
-Value = number between 0 and 100
-For health this needs to be a decimal number ( 0.0 / 100.0 )
 TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
 TriggerEvent('DevDokus:Metabolism:C:Thirst', value)
 TriggerEvent('DevDokus:Metabolism:C:Health', value)
 TriggerEvent('DevDokus:Metabolism:C:Stamina', value)
-
-Value = seconds for the boost to be active.
 TriggerEvent('DevDokus:Metabolism:C:StaminaInner', value)
 TriggerEvent('DevDokus:Metabolism:C:StaminaOuter', value)
 

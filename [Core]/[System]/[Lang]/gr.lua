@@ -3,8 +3,8 @@ Lang['gr'] = {
   ['OnlyAdmins'] = 'Αυτή η λειτουργία είναι μόνο για διαχειριστές!',
 
   -- πιάνο
-  ['PlayPiano_Play'] = 'Πατήστε [~e~ Space ~q~] για να παίξετε πιάνο',
-  ['PlayPiano_Stop'] = 'Πατήστε [~e~ F ~q~] για να σταματήσετε να παίζετε',
+  ['PlayPiano_Play'] = 'Πατήστε [~e~Space~q~] για να παίξετε πιάνο',
+  ['PlayPiano_Stop'] = 'Πατήστε [~e~F~q~] για να σταματήσετε να παίζετε',
 
   -- Μεταβολισμός
   ['Metabolism_IFCC'] = 'Εσφαλμένο_Format_Check_Config',
@@ -23,7 +23,7 @@ Lang['gr'] = {
   ['UsableItems_RefundTent'] = "Σας έχει επιστραφεί μια σκηνή",
 
   -- Καταστήματα
-  ['Store_OpenShop'] = 'Πατήστε [~e~ SPACE ~q~] για να ανοίξετε το μενού καταστήματος',
+  ['Store_OpenShop'] = 'Πατήστε [~e~SPACE~q~] για να ανοίξετε το μενού καταστήματος',
   ['Store_MenuTitle'] = "Γενικό κατάστημα",
   ['Store_Category'] = 'Κατηγορία',
   ['Store_Buy'] = 'Αγορά αντικειμένων',
@@ -45,7 +45,7 @@ Lang['gr'] = {
   ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
 
   -- Κυνηγός επικυρηγμένων
-  ['BountyHunter_PressSpace'] = 'Πατήστε [~e~ SPACE ~q~] για να ανοίξετε το μενού bounty',
+  ['BountyHunter_PressSpace'] = 'Πατήστε [~e~SPACE~q~] για να ανοίξετε το μενού bounty',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
   ['BountyHunter_PVESubTitle'] = 'Κυνήγι NPC',
   ['BountyHunter_PVPSubTitle'] = "Κυνήγι ανθρώπων",
@@ -67,4 +67,11 @@ Lang['gr'] = {
   ['BountyHunter_AndBringBack'] = 'και επιστρέψτε το στο γραφείο της αστυνομίας!',
   ['BountyHunter_BringBackEvidence'] = 'Επιστρέψτε τα αποδεικτικά στοιχεία στον sherrif!',
   ['BountyHunter_LostTargets'] = "Έχετε χάσει τους στόχους σας",
+
+  ['PickableFruits_PressSpace'] = 'Πατήστε [~e~SPACE~q~] για συγκομιδή για μούρα',
+  ['PickableFruits_Searching'] = "Αναζήτηση ...",
+  ['PickableFruits_Collected'] = "Έχετε συλλέξει",
+  ['PickableFruits_NothingFound'] = "Δεν υπάρχει τίποτα για συλλογή εδώ!",
+
+  ['Rivers_Info'] = "Πατήστε [~e~G~q~] για πλύσιμο, [~e~ENTER~q~] για να πιείτε νερό",
 }

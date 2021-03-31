@@ -8,15 +8,17 @@ Language = 'en'
 --------------------------------------------------------------------------------
 -- This will turn features on or off.
 Plugins = {
-  Metabolism    = true,  -- Gives you Character vitals like eat and drink.
-  Stores        = true,  -- Gives you multiple stores to buy and sell items.
-  Teleport      = true,  -- Lets admins or all players teleport to map marker.
-  UsableItems   = true,  -- Makes items usable that otherwise can't be used.
-  iMaps         = true,  -- Fixed hole and glitched buildings. Adds tons of objects.
-  BankDoors     = true,  -- Open or close the Bank Doors.
-  ShowCoords    = true,  -- Show coordinate with ( /coords )
-  BountyHunter  = true,  -- Enable the Bounty Hunter System
-  PlayPiano     = true,  -- Lets users play the saloon pianos.
+  Metabolism     = true,  -- Gives you Character vitals like eat and drink.
+  Stores         = true,  -- Gives you multiple stores to buy and sell items.
+  Teleport       = true,  -- Lets admins or all players teleport to map marker.
+  UsableItems    = true,  -- Makes items usable that otherwise can't be used.
+  iMaps          = true,  -- Fixed hole and glitched buildings. Adds tons of objects.
+  BankDoors      = true,  -- Open or close the Bank Doors.
+  ShowCoords     = true,  -- Show coordinate with ( /coords )
+  BountyHunter   = true,  -- Enable the Bounty Hunter System
+  PlayPiano      = true,  -- Lets users play the saloon pianos.
+  Rivers         = true,  -- Lets you drink and wash in rivers and lakes.
+  PickableFruits = true,  -- Lets you harvest fruits from trees and bushes.
 
 
   -- ======================================================= --
@@ -86,12 +88,28 @@ Metabolism = {
 -- Additionally you can also change your metabolism per item.
 UsableItems = {
   Items = {
-    {ID = 'consumable_coffee', Name = 'Coffee', Type = 'Eat', Hunger = -5, Thirst = 20, Stamina = 20, Health = 5},
-    {ID = 'consumable_peach', Name = 'Peach', Type = 'Eat', Hunger = 15, Thirst = 10, Stamina = 5, Health = 5},
-    {ID = 'tent', Name = 'Tent', Type = 'Placing', Hunger = 0, Thirst = 0, Stamina = -50, Health = 0},
-    {ID = 'campfire', Name = 'Campfire', Type = 'Placing', Hunger = 0, Thirst = 0, Stamina = -25, Health = 0},
-    {ID = 'consumable_sugarcube', Name = 'Sugercube', Type = 'Eat', Hunger = 5, Thirst = -5, Stamina = 5, Health = 5},
-    -- {ID = '', Name = '', Type = '', Hunger = 15, Thirst = 10, Stamina = 5, Health = 5},
+
+    -- Store
+    {Type = 'Eat',     Hunger = -5, Thirst = 20, Stamina = 20,  Health = 5, ID = 'consumable_coffee', Name = 'Coffee'},
+    {Type = 'Eat',     Hunger = 15, Thirst = 10, Stamina = 5,   Health = 5, ID = 'consumable_peach', Name = 'Peach'},
+    {Type = 'Placing', Hunger = 0,  Thirst = 0,  Stamina = -50, Health = 0, ID = 'tent', Name = 'Tent'},
+    {Type = 'Placing', Hunger = 0,  Thirst = 0,  Stamina = -25, Health = 0, ID = 'campfire', Name = 'Campfire'},
+    {Type = 'Eat',     Hunger = 5,  Thirst = -5, Stamina = 5,   Health = 5, ID = 'consumable_sugarcube', Name = 'Sugercube'},
+
+    -- PickableFruits Script.
+    {Type = 'Eat', Hunger = 1,   Thirst = 2,   Stamina = 5,  Health = 2,  ID = 'blackberry', Name = 'BlackBerry'},
+    {Type = 'Eat', Hunger = 1,   Thirst = 2,   Stamina = 5,  Health = 2,  ID = 'blueberry', Name = 'BlueBerry'},
+    {Type = 'Eat', Hunger = 1,   Thirst = 5,   Stamina = 7,  Health = 5,  ID = 'consumable_herb_wintergreen_berry', Name = 'Wintergreen Berry'},
+    {Type = 'Eat', Hunger = 1,   Thirst = 5,   Stamina = 7,  Health = 5,  ID = 'consumable_herb_evergreen_huckleberry', Name = 'Evergreen Berry'},
+    {Type = 'Eat', Hunger = 5,   Thirst = 10,  Stamina = 15, Health = 5,  ID = 'consumable_orange', Name = 'Orange'},
+    {Type = 'Eat', Hunger = 5,   Thirst = 7,   Stamina = 15, Health = 5,  ID = 'consumable_pear', Name = 'Pear'},
+    {Type = 'Eat', Hunger = 5,   Thirst = 7,   Stamina = 15, Health = 5,  ID = 'consumable_peach', Name = 'Peach'},
+    {Type = 'Eat', Hunger = 5,   Thirst = 5,   Stamina = 15, Health = 5,  ID = 'consumable_apple', Name = 'Apple'},
+    {Type = 'Eat', Hunger = 2,   Thirst = -10, Stamina = 10, Health = 5,  ID = 'oregano', Name = 'Oregano'},
+    {Type = 'Eat', Hunger = 1,   Thirst = -5,  Stamina = 5,  Health = 5,  ID = 'consumable_herb_vanilla_flower', Name = 'Vanilla Flower'},
+    {Type = 'Eat', Hunger = -20, Thirst = -20, Stamina = 20, Health = -5, ID = 'consumable_herb_indian_tobacco', Name = 'Tabacco'},
+    {Type = 'Eat', Hunger = 2,   Thirst = -5,  Stamina = 7,  Health = 2,  ID = 'consumable_herb_chanterelles', Name = 'Chanterelles'},
+    {Type = 'Eat', Hunger = 2,   Thirst = -5,  Stamina = 10, Health = 5,  ID = 'consumable_herb_currant', Name = 'Currant Herbs'},
   }
 }
 -- TYPES: There are 3 types (Eat - Drink - Placing).
@@ -124,15 +142,16 @@ Stores = {
   -- Items that can not be used can be added via my plugin DevDokus--UsableItems
   -- TYPE: There are 3 types (Food - Meds - Misc) more will be added in a later update.
   Buy = {
-    {ID = 'consumable_peach', Type = 'Food', Name = 'Peach', Price = 1.0, Max = 5, Text = 'Very good for your health'},
-    {ID = 'consumable_coffee', Type = 'Food', Name = 'Coffee', Price = 1.0, Max = 5, Text = 'A fine brown brew'},
-    {ID = 'consumable_meat_greavy', Type = 'Food', Name = 'Cooked Meat', Price = 2.5, Max = 5, Text = 'Cooked Meat free from pests'},
-    {ID = 'consumable_salmon_can', Type = 'Food', Name = 'Can Salmon', Price = 1.5, Max = 5, Text = 'Salmon from a can, really?'},
-    {ID = 'consumable_medicine', Type = 'Meds', Name = 'Medicine', Price = 15.0, Max = 5, Text = 'When you just need to feel better!'},
+    {ID = 'consumable_peach', Type = 'Food', Name = 'Peach', Price = 1.0, Max = 20, Text = 'Very good for your health'},
+    {ID = 'consumable_coffee', Type = 'Food', Name = 'Coffee', Price = 1.0, Max = 20, Text = 'A fine brown brew'},
+    {ID = 'consumable_meat_greavy', Type = 'Food', Name = 'Cooked Meat', Price = 2.5, Max = 10, Text = 'Cooked Meat free from pests'},
+    {ID = 'consumable_salmon_can', Type = 'Food', Name = 'Can Salmon', Price = 1.5, Max = 10, Text = 'Salmon from a can, really?'},
+    {ID = 'consumable_medicine', Type = 'Meds', Name = 'Medicine', Price = 15.0, Max = 10, Text = 'When you just need to feel better!'},
     {ID = 'campfire', Type = 'Misc', Name = 'campfire', Price = 12.0, Max = 1, Text = 'Then he said: Let there be light!'},
     {ID = 'tent', Type = 'Misc', Name = 'tent', Price = 120.0, Max = 1, Text = 'For the softies'},
     {ID = 'weapon_fishingrod', Type = 'Misc', Name = 'Fishing Rod', Price = 15.0, Max = 1, Text = 'There\'s no fishing without'},
     {ID = 'bait', Type = 'Misc', Name = 'Fishing Bait', Price = 1.25, Max = 10, Text = 'Fish need to eat something you know!'},
+    {ID = 'consumable_kidneybeans_can', Type = 'Food', Name = 'Canned Kidney Beans', Price = 1.25, Max = 10, Text = 'For when the apocalypse is here'},
   },
 
   -- These are the items that will appear in the sell section of the menu.
@@ -266,8 +285,6 @@ BountyHunter = {
 }
 
 
-
-
 --------------------------------------------------------------------------------
 ---------------------------------- Play Piano ----------------------------------
 --------------------------------------------------------------------------------
@@ -283,29 +300,52 @@ PlayPiano = {
   }
 }
 
-
-
-
-
-
 --------------------------------------------------------------------------------
+------------------------------------ Rivers ------------------------------------
 --------------------------------------------------------------------------------
-Keys = {
-  -- Mouse buttons
-  ["MOUSE1"] = 0x07CE1E61, ["MOUSE2"] = 0xF84FA74F, ["MOUSE3"] = 0xCEE12B50, ["MWUP"] = 0x3076E97C,
-  -- keyboard
-  ["A"] = 0x7065027D, ["B"] = 0x4CC0E2FE, ["C"] = 0x9959A6F0, ["D"] = 0xB4E465B4, ["E"] = 0xCEFD9220,
-  ["F"] = 0xB2F377E8, ["G"] = 0x760A9C6F, ["H"] = 0x24978A28, ["I"] = 0xC1989F95, ["J"] = 0xF3830D8E,
-  ["L"] = 0x80F28E95, ["M"] = 0xE31C6A41, ["N"] = 0x4BC9DABB, ["O"] = 0xF1301666, ["P"] = 0xD82E0BD2,
-  ["Q"] = 0xDE794E3E, ["R"] = 0xE30CD707, ["S"] = 0xD27782E3, ["U"] = 0xD8F73058, ["V"] = 0x7F8D09B8,
-  ["W"] = 0x8FD015D8, ["X"] = 0x8CC9CD42, ["Z"] = 0x26E9DC00, ["RIGHTBRACKET"] = 0xA5BDCD3C,
-  ["LEFTBRACKET"] = 0x430593AA, ["CTRL"] = 0xDB096B85, ["TAB"] = 0xB238FE0B, ["SHIFT"] = 0x8FFC75D6,
-  ["SPACEBAR"] = 0xD9D0E1C0, ["ENTER"] = 0xC7B5340A, ["BACKSPACE"] = 0x156F7119, ["LALT"] = 0x8AAA0AD4,
-  ["DEL"] = 0x4AF4D473, ["PGUP"] = 0x446258B6, ["PGDN"] = 0x3C3DD371, ["F1"] = 0xA8E3F467,
-  ["F4"] = 0x1F6D95E5, ["F6"] = 0x3C0A40F2, ["1"] = 0xE6F612E4, ["2"] = 0x1CE6D9EB, ["3"] = 0x4F49CC4C,
-  ["4"] = 0x8F9F9E58, ["5"] = 0xAB62E997, ["6"] = 0xA1FDE2A6, ["7"] = 0xB03A913B, ["8"] = 0x42385422,
-  ["DOWN"] = 0x05CA7C52, ["UP"] = 0x6319DB71, ["LEFT"] = 0xA65EBAB4, ["RIGHT"] = 0xDEB34313,
+Rivers = {
+  Drinking = { Stamina = 15, Thirst = 50, Health = 5 },
+  Washing  = { Stamina = 100, Thirst = -10, Health = 5 },
 }
+
+
+--------------------------------------------------------------------------------
+-------------------------------- PickableFruits --------------------------------
+--------------------------------------------------------------------------------
+PickableFruits = {
+  Bushes = {
+    { Label = 'Bush', ID = 'rdr_bush_neat_bb_sim'},
+    { Label = 'Bush', ID = 'rdr_bush_neat_aa_sim'},
+    { Label = 'Bush', ID = 'rdr_bush_ficus_aa_sim'},
+    { Label = 'Bush', ID = 'rdr_bush_sumac_aa_sim'},
+    { Label = 'Bush', ID = 's_inv_huckleberry01x'},
+    { Label = 'Bush', ID = 's_inv_raspberry01x'},
+    { Label = 'Bush', ID = 's_inv_oregano01dx'},
+    { Label = 'Bush', ID = 'rdr_bush_leafy_aa_sim'},
+    { Label = 'Bush', ID = 's_indiantobaccopicked01'},
+    { Label = 'Bush', ID = 'rdr2_bush_snakeweedflower'},
+    { Label = 'Chan', ID = 's_inv_chanterelles'},
+    { Label = 'Tree', ID = 'p_tree_orange_01'},
+    { Label = 'Tree', ID = 'p_tree_maple_s_04'},
+  },
+
+  Items = {
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'Currant Herbs', Item = 'consumable_herb_currant' },
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'BlackBerry', Item = 'blackberry' },
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'BlueBerry', Item = 'blueberry' },
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'Wintergreen Berry', Item = 'consumable_herb_wintergreen_berry' },
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'Evergreen Berry', Item = 'consumable_herb_evergreen_huckleberry' },
+    { Label = 'Tree', Min = 0, Max = 2, Name = 'Orange', Item = 'consumable_orange' },
+    { Label = 'Tree', Min = 0, Max = 2, Name = 'Pear', Item = 'consumable_pear' },
+    { Label = 'Tree', Min = 0, Max = 2, Name = 'Peach', Item = 'consumable_peach' },
+    { Label = 'Tree', Min = 0, Max = 2, Name = 'Apple', Item = 'consumable_apple' },
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'Oregano', Item = 'oregano' },
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'Vanilla Flower', Item = 'consumable_herb_vanilla_flower' },
+    { Label = 'Bush', Min = 0, Max = 2, Name = 'Tabacco', Item = 'consumable_herb_indian_tobacco' },
+    { Label = 'Chan', Min = 0, Max = 2, Name = 'Chanterelles', Item = 'consumable_herb_chanterelles' }
+  }
+}
+
 
 
 
@@ -357,6 +397,27 @@ Keys = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.8.1"
-_vConfig_ = 040029032021
+_Version_ = "1.9.0"
+_vConfig_ = 060931032021
 _StartError_ = false
+
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Keys = {
+  -- Mouse buttons
+  ["MOUSE1"] = 0x07CE1E61, ["MOUSE2"] = 0xF84FA74F, ["MOUSE3"] = 0xCEE12B50, ["MWUP"] = 0x3076E97C,
+  -- keyboard
+  ["A"] = 0x7065027D, ["B"] = 0x4CC0E2FE, ["C"] = 0x9959A6F0, ["D"] = 0xB4E465B4, ["E"] = 0xCEFD9220,
+  ["F"] = 0xB2F377E8, ["G"] = 0x760A9C6F, ["H"] = 0x24978A28, ["I"] = 0xC1989F95, ["J"] = 0xF3830D8E,
+  ["L"] = 0x80F28E95, ["M"] = 0xE31C6A41, ["N"] = 0x4BC9DABB, ["O"] = 0xF1301666, ["P"] = 0xD82E0BD2,
+  ["Q"] = 0xDE794E3E, ["R"] = 0xE30CD707, ["S"] = 0xD27782E3, ["U"] = 0xD8F73058, ["V"] = 0x7F8D09B8,
+  ["W"] = 0x8FD015D8, ["X"] = 0x8CC9CD42, ["Z"] = 0x26E9DC00, ["RIGHTBRACKET"] = 0xA5BDCD3C,
+  ["LEFTBRACKET"] = 0x430593AA, ["CTRL"] = 0xDB096B85, ["TAB"] = 0xB238FE0B, ["SHIFT"] = 0x8FFC75D6,
+  ["SPACEBAR"] = 0xD9D0E1C0, ["ENTER"] = 0xC7B5340A, ["BACKSPACE"] = 0x156F7119, ["LALT"] = 0x8AAA0AD4,
+  ["DEL"] = 0x4AF4D473, ["PGUP"] = 0x446258B6, ["PGDN"] = 0x3C3DD371, ["F1"] = 0xA8E3F467,
+  ["F4"] = 0x1F6D95E5, ["F6"] = 0x3C0A40F2, ["1"] = 0xE6F612E4, ["2"] = 0x1CE6D9EB, ["3"] = 0x4F49CC4C,
+  ["4"] = 0x8F9F9E58, ["5"] = 0xAB62E997, ["6"] = 0xA1FDE2A6, ["7"] = 0xB03A913B, ["8"] = 0x42385422,
+  ["DOWN"] = 0x05CA7C52, ["UP"] = 0x6319DB71, ["LEFT"] = 0xA65EBAB4, ["RIGHT"] = 0xDEB34313,
+}

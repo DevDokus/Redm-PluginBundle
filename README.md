@@ -1,7 +1,7 @@
 ---
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/49053928/111937011-2e9b8080-8ac7-11eb-914a-a0d94380d611.gif"><br>
- <b>Version (v1.8.1) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
+ <b>Version (v1.9.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
 </p>
 
 ---
@@ -105,6 +105,15 @@ was never been easier!
 - **Trains**
   - 2 Trains and 1 Tram
 
+- **Drink and Wash in Rivers**
+  - Press G to wash in rivers and E to drink.
+  - Incease/Decrease Thirst, health and stamina with washing
+  - Incease/Decrease Thirst, health and stamina with drinking
+
+- **Pickable Fruits**
+  - Pick varius fruits from bushes and trees.
+  - Add harvest items easy in the config.
+  - Choose Min/Max amount per item to get.
 
 # Events: Metabolism
 ```
@@ -147,4 +156,3 @@ to manually change this on every update.
 - [DevDokus PlayPiano](https://github.com/DevDokus/RedM-PlayPiano)
 - [KiBook iMaps](https://github.com/kibook/redm-imaps)
 - [Thunderstorm441 Trains](https://github.com/Thunderstorm441/ts-trains-redm)
-- [DevDokus ShowCoordinates](https://github.com/DevDokus/RedM-Show-Coordinates)

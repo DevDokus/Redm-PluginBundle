@@ -3,8 +3,8 @@ Lang['ru'] = {
   ['OnlyAdmins'] = 'Эта функция предназначена только для администраторов!',
 
   -- piano
-  ['PlayPiano_Play'] = 'Нажмите [~e~ пробел ~q~], чтобы играть на пианино',
-  ['PlayPiano_Stop'] = 'Нажмите [~e~ F ~q~], чтобы остановить воспроизведение',
+  ['PlayPiano_Play'] = 'Нажмите [~e~пробел~q~], чтобы играть на пианино',
+  ['PlayPiano_Stop'] = 'Нажмите [~e~F~q~], чтобы остановить воспроизведение',
 
   -- метаболизм
   ['Metabolism_IFCC'] = 'Неправильная_конфигурация_проверки_формата',
@@ -23,7 +23,7 @@ Lang['ru'] = {
   ['UsableItems_RefundTent'] = "Вам вернули деньги за палатку",
 
   -- Магазины
-  ['Store_OpenShop'] = 'Нажмите [~e~ SPACE ~q~], чтобы открыть меню магазина',
+  ['Store_OpenShop'] = 'Нажмите [~e~SPACE~q~], чтобы открыть меню магазина',
   ['Store_MenuTitle'] = 'Универсальный магазин',
   ['Store_Category'] = 'Категория',
   ['Store_Buy'] = 'Купить товары',
@@ -45,7 +45,7 @@ Lang['ru'] = {
   ['Store_NoItem'] = "У вас нет элемента с названием:",
 
   -- Охотник за головами
-  ['BountyHunter_PressSpace'] = 'Нажмите [~e~ SPACE ~q~], чтобы открыть меню наград',
+  ['BountyHunter_PressSpace'] = 'Нажмите [~e~SPACE~q~], чтобы открыть меню наград',
   ['BountyHunter_MenuTitle'] = 'Доска объявлений',
   ['BountyHunter_PVESubTitle'] = 'Охота на NPC',
   ['BountyHunter_PVPSubTitle'] = 'Охота на людей',
@@ -67,4 +67,11 @@ Lang['ru'] = {
   ['BountyHunter_AndBringBack'] = 'и отправь это обратно в полицию!',
   ['BountyHunter_BringBackEvidence'] = 'Верните доказательства шерифу!',
   ['BountyHunter_LostTargets'] = "Вы потеряли свои цели",
+
+  ['PickableFruits_PressSpace'] = 'Нажмите [~e~ SPACE ~q~], чтобы собрать ягоды ',
+  ['PickableFruits_Searching'] = "Поиск ...",
+  ['PickableFruits_Collected'] = 'Вы собрали',
+  ['PickableFruits_NothingFound'] = "Здесь нечего собирать!",
+
+  ['Rivers_Info'] = "Нажмите [~e~G~q~], чтобы мыть, [~e~ENTER~q~], чтобы пить воду",
 }

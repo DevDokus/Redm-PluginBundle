@@ -2,10 +2,26 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.9.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: [Fix]: Metabolism Core attribute native was returning a boolean instead of
+     a value. Therefor metabolism was unable to set your health or stamina. this
+     has now been fixed.
+
+[2]: [Feature Added]: You can now wash yourself and drink out of rivers and lakes.
+     Drinking will lower your thirst and slightly increase your stamina. Washing
+     yourself will increase your stamina and lower your thirst. In the config you
+     can set each health stamina and thirst for both actions.
+
+[3]: [Feature Added]: You can now harvest berries and other varius fruits from
+     bushes and trees. Every item and bush entity can be set in the config. All
+     possible items to get from harvesting can also be set in the config incl
+     how many you get per item. 
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.8.1 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: Finished off the translation for the rest of the Bounty Hunter script.
-     Now the whole feature can be switched from English. 
+     Now the whole feature can be switched from English.
 
 --------------------------------------------------------------------------------
 -------------------------------- Version 1.8.0 ---------------------------------
