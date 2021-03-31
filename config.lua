@@ -397,7 +397,7 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.9.0"
+_Version_ = "1.9.1"
 _vConfig_ = 060931032021
 _StartError_ = false
 
