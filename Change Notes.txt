@@ -2,6 +2,19 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 1.9.1 ---------------------------------
+--------------------------------------------------------------------------------
+[1] [Fix]: Some text that was not showing right when the player was dying. The
+           pointer is set right now and you see your vital warnings.
+
+[2] [Fix]: Drinking from rivers and picking fruits from bushes was not working
+           the moment the player joined the server. You had to restart DokusCore
+           to let it work. This was because i was loading the player id before
+           the while loop and this would happen before player actually has loaded
+           and sends out his ID. As the scripts will not get an ID, they simply
+           to running on the client. Now they both work upon player joining.
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.9.0 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: [Fix]: Metabolism Core attribute native was returning a boolean instead of
@@ -16,7 +29,7 @@
 [3]: [Feature Added]: You can now harvest berries and other varius fruits from
      bushes and trees. Every item and bush entity can be set in the config. All
      possible items to get from harvesting can also be set in the config incl
-     how many you get per item. 
+     how many you get per item.
 --------------------------------------------------------------------------------
 -------------------------------- Version 1.8.1 ---------------------------------
 --------------------------------------------------------------------------------
