@@ -21,8 +21,8 @@ Citizen.CreateThread(function()
     local Washing, Drinking
     Citizen.CreateThread(function()
       ActButtons()
-      local ped = PlayerPedId()
       while true do Wait(1)
+        local ped = PlayerPedId()
         local coords = GetEntityCoords(ped)
         local x, y, z = coords.x, coords.y, coords.z
         local water = Citizen.InvokeNative(0x5BA7A68A346A5A91, x, y, z)

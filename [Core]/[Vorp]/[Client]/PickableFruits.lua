@@ -12,8 +12,8 @@ if Plugins.PickableFruits and not _StartError_ then
   --------------------------------------------------------------------------------
   -- Get Distance from entities
   Citizen.CreateThread(function()
-    local ped = PlayerPedId()
     while true do Wait(1000)
+      local ped = PlayerPedId()
       local coords = GetEntityCoords(ped)
       local x, y, z = table.unpack(coords)
       for k, v in pairs(PickableFruits.Bushes) do
