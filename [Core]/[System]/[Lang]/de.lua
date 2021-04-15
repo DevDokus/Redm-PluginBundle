@@ -68,6 +68,8 @@ Lang['de'] = {
   ['BountyHunter_AndBringBack'] = 'und bing das zurück zum Polizeibüro!',
   ['BountyHunter_BringBackEvidence'] = 'Bring die Beweise zum Sherif zurück!',
   ['BountyHunter_LostTargets'] = "Du hast deine Ziele verloren",
+  ['BountyHunter_NoStackAllowed'] = "Du hast bereits ein aktives Kopfgeld! Töte sie zuerst",
+  ['BountyHunter_MaxBountiesReached'] = "Du hast zu viele Kopfgelder geöffnet, töte sie zuerst",
 
   ['PickableFruits_PressSpace'] = 'Drücken Sie [~e~SPACE~q~], um nach Beeren zu ernten',
   ['PickableFruits_Searching'] = "Suchen ...",

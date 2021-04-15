@@ -67,6 +67,8 @@ Lang['pl'] = {
   ['BountyHunter_AndBringBack'] = 'i wróć do biura policji!',
   ['BountyHunter_BringBackEvidence'] = 'Przynieś dowody szeryfowi!',
   ['BountyHunter_LostTargets'] = "Straciłeś swoje cele",
+  ['BountyHunter_NoStackAllowed'] = "Masz już aktywne zlecenie! Zabij je najpierw",
+  ['BountyHunter_MaxBountiesReached'] = "Masz za dużo otwartych zleceń, najpierw je zabij",
 
   ['PickableFruits_PressSpace'] = 'Naciśnij [~e~SPACE~q~], aby zbierać jagody',
   ['PickableFruits_Searching'] = "Wyszukiwanie ...",

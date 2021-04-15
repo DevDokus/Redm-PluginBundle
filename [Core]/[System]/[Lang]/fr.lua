@@ -67,6 +67,8 @@ Lang['fr'] = {
   ['BountyHunter_AndBringBack'] = 'et ramenez ceci au bureau de police!',
   ['BountyHunter_BringBackEvidence'] = 'Rapportez les preuves au sherrif!',
   ['BountyHunter_LostTargets'] = "Vous avez perdu vos cibles",
+  ['BountyHunter_NoStackAllowed'] = "Vous avez déjà une prime active! Tuez-les d'abord",
+  ['BountyHunter_MaxBountiesReached'] = "Vous avez trop de primes ouvertes, tuez-les d'abord",
 
   ['PickableFruits_PressSpace'] = 'Appuyez sur [~e~SPACE~q~] pour récolter les baies',
   ['PickableFruits_Searching'] = "Recherche ...",

@@ -67,6 +67,8 @@ Lang['it'] = {
   ['BountyHunter_AndBringBack'] = 'e riportalo all\'ufficio di polizia!',
   ['BountyHunter_BringBackEvidence'] = 'Riporta le prove allo sceriffo!',
   ['BountyHunter_LostTargets'] = "Hai perso i tuoi obiettivi",
+  ['BountyHunter_NoStackAllowed'] = "Hai già una taglia attiva! Uccidili prima",
+  ['BountyHunter_MaxBountiesReached'] = "Hai troppe taglie aperte, prima uccidile",
 
   ['PickableFruits_PressSpace'] = 'Premi [~e~SPAZIO~q~] per raccogliere le bacche',
   ['PickableFruits_Searching'] = "Ricerca in corso ...",

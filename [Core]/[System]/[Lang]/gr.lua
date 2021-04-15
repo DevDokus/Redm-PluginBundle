@@ -67,6 +67,8 @@ Lang['gr'] = {
   ['BountyHunter_AndBringBack'] = 'και επιστρέψτε το στο γραφείο της αστυνομίας!',
   ['BountyHunter_BringBackEvidence'] = 'Επιστρέψτε τα αποδεικτικά στοιχεία στον sherrif!',
   ['BountyHunter_LostTargets'] = "Έχετε χάσει τους στόχους σας",
+  ['BountyHunter_NoStackAllowed'] = "Έχετε ήδη ενεργό bounty! Σκοτώστε τους πρώτα",
+  ['BountyHunter_MaxBountiesReached'] = "Έχετε ανοίξει πολλά bounties, σκοτώστε τα πρώτα",
 
   ['PickableFruits_PressSpace'] = 'Πατήστε [~e~SPACE~q~] για συγκομιδή για μούρα',
   ['PickableFruits_Searching'] = "Αναζήτηση ...",

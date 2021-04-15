@@ -27,6 +27,12 @@ Plugins = {
   -- ======================================================= --
 }
 
+
+
+
+
+
+
 --------------------------------------------------------------------------------
 ------------------------------- Plugin Teleport --------------------------------
 --------------------------------------------------------------------------------
@@ -35,6 +41,10 @@ Teleport = {
   AdminGroup = 'admin', -- This is the admin group name you have set.
   AdminOnly  = false     -- Set false if everyone may use it
 }
+
+
+
+
 
 --------------------------------------------------------------------------------
 ------------------------------- Plugin ShowCoords ------------------------------
@@ -48,6 +58,11 @@ ShowCoords = {
   PosZ = { Horizon = 0.189, Vertical = 0.87 },
   PosH = { Horizon = 0.179, Vertical = 0.92 }
 }
+
+
+
+
+
 
 --------------------------------------------------------------------------------
 -----------------------------  Plugin Metabolism -------------------------------
@@ -79,6 +94,11 @@ Metabolism = {
     DamagePerSec = 1.0,  -- Amount of damage on innercore health per second.
   }
 }
+
+
+
+
+
 
 
 --------------------------------------------------------------------------------
@@ -123,6 +143,11 @@ UsableItems = {
 -- Increase: Set the value to be a positive value 1 to 100
 -- Decrease: Set the value to be a negative value -1 to -100
 -- No Change: Set the value to be 0. Then no changes will be made.
+
+
+
+
+
 
 --------------------------------------------------------------------------------
 -------------------------------- Plugin Stores ---------------------------------
@@ -173,29 +198,40 @@ Stores = {
   },
 }
 
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+-------------------------------- Bounty Hunter ---------------------------------
+--------------------------------------------------------------------------------
 BountyHunter = {
+
+  BountyStack = false,         -- Allow players to stack multiple bounties.
+  MaxBounties = 3,             -- The max amount of bounties player can request.
+
   ------------------------------------------------------------------------------
-  -------------------------------- Bounty Hunter ---------------------------------
-  --------------------------------------------------------------------------------
   -- Here you can choose how you want your UI to look like.
   -- NOTE: That you can only have 1 enabled at the same time.
   -- If 1 is set to [ true ] the other one needs to be [ false ]
-  --------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
   -- Same thing counts for the Themes. Only 1 can be activated at once!
-  --------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
   NUI = {
     Theme = { Dark = false, Red = true },
     Position = { Right = true, Left = false, Center = false }
   },
 
-  --------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
   -- Here you can set if BountyHunter needs a job or not for it to work.
   -- You can add multiple on this list. If set to true, the job is active
   -- NoJob is simply the error you get when you dont have the correct job.
   -- Make sure that you put every job on this line if you put them on the listz
   -- NOTE: if you disable one of the jobs, make sure to edit the NoJob also!
   -- Otherwise people will thet need a job that maybe doesn't exists.
-  --------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
   Jobs = {
     { Job = 'police', Use = false },
     { Job = 'hunter', Use = false },
@@ -285,6 +321,11 @@ BountyHunter = {
 }
 
 
+
+
+
+
+
 --------------------------------------------------------------------------------
 ---------------------------------- Play Piano ----------------------------------
 --------------------------------------------------------------------------------
@@ -300,6 +341,12 @@ PlayPiano = {
   }
 }
 
+
+
+
+
+
+
 --------------------------------------------------------------------------------
 ------------------------------------ Rivers ------------------------------------
 --------------------------------------------------------------------------------
@@ -307,6 +354,11 @@ Rivers = {
   Drinking = { Stamina = 15, Thirst = 50, Health = 5 },
   Washing  = { Stamina = 100, Thirst = -10, Health = 5 },
 }
+
+
+
+
+
 
 
 --------------------------------------------------------------------------------
@@ -397,8 +449,8 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "1.9.1"
-_vConfig_ = 060931032021
+_Version_ = "2.0.0"
+_vConfig_ = 093215042021
 _StartError_ = false
 
 

@@ -18,7 +18,7 @@ if Plugins.PickableFruits and not _StartError_ then
       local x, y, z = table.unpack(coords)
       for k, v in pairs(PickableFruits.Bushes) do
         local hash = GetHashKey(tostring(v.ID))
-        local Near = DoesObjectOfTypeExistAtCoords(x, y, z, 1.5, hash, true)
+        local Near = DoesObjectOfTypeExistAtCoords(x, y, z, 0.85, hash, true)
 
         if Location == nil and Near then Location = v.ID end
         if Location == v.ID then

@@ -67,6 +67,8 @@ Lang['bg'] = {
   ['BountyHunter_AndBringBack'] = 'и върнете това обратно в полицейския офис!',
   ['BountyHunter_BringBackEvidence'] = 'Върнете доказателствата в шериф!',
   ['BountyHunter_LostTargets'] = "Изгубихте целите си",
+  ['BountyHunter_NoStackAllowed'] = "Вече имате активна награда! Първо ги убийте",
+  ['BountyHunter_MaxBountiesReached'] = "Отворили сте много награди, първо ги убийте",
 
   -- Picking Fruits
   ['PickableFruits_PressSpace'] = 'Натиснете [~e~ SPACE ~q~], за да съберете плодове',

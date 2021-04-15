@@ -2,6 +2,19 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 2.2.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1] Changed the distance from when you can pick berries from 1.5 meters to
+    0.85 meters. This because it conflicts with some of the bounty board
+    positions, as some bushes are close to the bounty board. You would activate
+    both the board and picking berries at the same time.
+
+[2]: [ Bounty Hunter ]: ( Requested ) Max Amount of Bounties.
+    Now you have an extra option to your bounty hunter feature. You can now set
+    the amount of bounties a player can stack at the same time. If you do not want
+    the player to stack any bounties, you can simply turn the stacking option off.
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 1.9.1 ---------------------------------
 --------------------------------------------------------------------------------
 [1] [Fix]: Some text that was not showing right when the player was dying. The

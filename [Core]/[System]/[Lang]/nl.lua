@@ -67,6 +67,8 @@ Lang['nl'] = {
   ['BountyHunter_AndBringBack'] = 'en breng dit terug naar het politiebureau!',
   ['BountyHunter_BringBackEvidence'] = 'Breng het bewijs terug naar de sherrif!',
   ['BountyHunter_LostTargets'] = "Je bent je doelen kwijt",
+  ['BountyHunter_NoStackAllowed'] = "Je hebt al een actieve premie! Dood ze eerst",
+  ['BountyHunter_MaxBountiesReached'] = "Je hebt te veel premies open, dood ze eerst",
 
   ['PickableFruits_PressSpace'] = 'Druk op [~e~SPACE~q~] om te oogsten voor bessen',
   ['PickableFruits_Searching'] = "Zoeken ...",

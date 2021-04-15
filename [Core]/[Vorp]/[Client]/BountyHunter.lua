@@ -10,6 +10,16 @@ if Plugins.BountyHunter then
   local MenuOpen = false
   local Location = nil
 
+  TotalKilled = 0
+  local BountyStack = 0
+  local ArrayBounties = {}
+  local CreateNPC = {}
+  local NPCx, NPCy, NPCz = 0, 0, 0
+  local InMission = false
+  local TotalEnemies = 0
+  local SearchingBodies = false
+  local GPSToBodyIsSet = false
+  local SaveGuard = false
   RegisterNetEvent('DevDokus:BountyHunter:C:StartMission')
   --------------------------------------------------------------------------------
   -- Core
@@ -118,11 +128,29 @@ if Plugins.BountyHunter then
     ActiveMenu = 'PVEMenu'
     local hunt = WarBountyMenu.Button(_('BountyHunter_HuntBountyButton'), '', '')
     local payment = WarBountyMenu.Button(_('BountyHunter_ReceivePayment'), '', '')
+    local _Stack = BountyHunter.BountyStack
+    local _MaxBounties = BountyHunter.MaxBounties
 
     if hunt then
-      Location = nil
-      TriggerServerEvent('DevDokus:BountyHunter:S:CheckJob')
+      if _Stack then
+        if (BountyStack <= (_MaxBounties - 1)) then
+          BountyStack = (BountyStack + 1)
+          Location = nil
+          TriggerServerEvent('DevDokus:BountyHunter:S:CheckJob')
+        else
+          Notify(_('BountyHunter_MaxBountiesReached'))
+        end
+      else
+        if (BountyStack >= 1) then
+          Notify(_('BountyHunter_NoStackAllowed'))
+        else
+          BountyStack = (BountyStack + 1)
+          Location = nil
+          TriggerServerEvent('DevDokus:BountyHunter:S:CheckJob')
+        end
+      end
     end
+
 
     if payment and (TotalKilled > 0)then
       TriggerServerEvent('DevDokus:BountyHunter:S:PayDay', TotalKilled)
@@ -206,15 +234,6 @@ if Plugins.BountyHunter then
   RegisterNetEvent('DevDokus:BountyHunter:C:SetUpMission')
   RegisterNetEvent('DevDokus:BountyHunter:C:ResetTotalKills')
   --------------------------------------------------------------------------------
-  TotalKilled = 0
-  local ArrayBounties = {}
-  local CreateNPC = {}
-  local NPCx, NPCy, NPCz = 0, 0, 0
-  local InMission = false
-  local TotalEnemies = 0
-  local SearchingBodies = false
-  local GPSToBodyIsSet = false
-  local SaveGuard = false
 
   AddEventHandler('DevDokus:BountyHunter:C:SetUpMission', function(_Job)
     -- Make sure this script does not execute twice.
@@ -271,10 +290,6 @@ if Plugins.BountyHunter then
     Notify(_('BountyHunter_BountyOnMap'), 5000)
     Wait(3000)
     Notify(_('BountyHunter_TheyBeDead'), 5000)
-    Wait(5500)
-    Notify(_('BountyHunter_StackBounties'), 5000)
-    Wait(3000)
-    Notify(_('BountyHunter_DieAndLose'), 5000)
     InMission = true
     SaveGuard = false
     while InMission do Wait(1)

@@ -67,6 +67,8 @@ Lang['dk'] = {
   ['BountyHunter_AndBringBack'] = 'og bing dette tilbage til politiet!',
   ['BountyHunter_BringBackEvidence'] = 'Bring beviset tilbage til sherrif!',
   ['BountyHunter_LostTargets'] = "Du har mistet dine mål",
+  ['BountyHunter_NoStackAllowed'] = "Du har allerede en aktiv dusør! Dræb dem først",
+  ['BountyHunter_MaxBountiesReached'] = "Du har for mange bounties åbne, dræb dem først",
 
   ['PickableFruits_PressSpace'] = 'Tryk på [~e~MELLEMRUM~q~] for at høste efter bær',
   ['PickableFruits_Searching'] = "Søger ...",
