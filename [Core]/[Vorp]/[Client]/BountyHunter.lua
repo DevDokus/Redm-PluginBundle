@@ -336,6 +336,7 @@ if Plugins.BountyHunter then
           TriggerEvent("vorp:TipRight", _('BountyHunter_LostTargets'), 4000)
           StopMission()
           TotalKilled = 0
+          BountyStack = 0
         end
       end
     end
