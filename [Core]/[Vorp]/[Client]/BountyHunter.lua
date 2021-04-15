@@ -302,6 +302,7 @@ if Plugins.BountyHunter then
             TotalKilled = TotalKilled + 1
             ArrayBounties[k] = nil
             if TotalEnemies == 0 then
+              BountyStack = 0
               TriggerEvent("vorp:TipRight", _('BountyHunter_KilledAllTargets'), 5000)
               SearchingBodies = true
               Wait(5000)
@@ -352,6 +353,7 @@ if Plugins.BountyHunter then
 
   AddEventHandler('DevDokus:BountyHunter:C:ResetTotalKills', function()
     TotalKilled = 0
+    BountyStack = 0
   end)
 
 end
