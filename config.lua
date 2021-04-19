@@ -68,6 +68,11 @@ ShowCoords = {
 -----------------------------  Plugin Metabolism -------------------------------
 --------------------------------------------------------------------------------
 Metabolism = {
+
+  ResetOnDeath = {
+    Enabled = true,     -- Enable or Disable resetting vitals on death
+  },
+
   Temperature = {
     Format = 'C', -- Set it to C or F
     Max = 20,     -- Max Temp before losing more vitals stats.
@@ -467,8 +472,8 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.1.0"
-_vConfig_ = 093019012021
+_Version_ = "2.1.1"
+_vConfig_ = 114419042021
 _StartError_ = false
 
 

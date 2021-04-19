@@ -115,7 +115,7 @@ Citizen.CreateThread(function()
           local eHealth = GetEntityHealth(User)
 
           -- STOP: If user is dead, let's wait until the player is alive again.
-          if (Core == 0) and not DeadOrAlive then print("Waiting for respawn.....") return end
+          if (Core == 0) and not DeadOrAlive then print("Waiting for respawn.....") end
 
           if (Core == 0) and DeadOrAlive then
             CoreIsZero = true
@@ -140,12 +140,18 @@ Citizen.CreateThread(function()
 
           -- When the player comes back to live, reset the script.
           if (Core ~= 0) and not DeadOrAlive then
-            TriggerEvent('DevDokus:Metabolism:C:Health', 100)
+            local Reset = Metabolism.ResetOnDeath
+            if Reset.Enabled then
+              TriggerEvent('DevDokus:Metabolism:C:Hunger',  100.0)
+              TriggerEvent('DevDokus:Metabolism:C:Thirst',  100.0)
+              TriggerEvent('DevDokus:Metabolism:C:Health',  100.0)
+              TriggerEvent('DevDokus:Metabolism:C:Stamina', 100.0)
+              _Hunger     = 100
+              _Thirst     = 100
+              _Stamina    = 100
+            end
             CoreIsZero = false
             DeadOrAlive = true
-            _Hunger     = 100
-            _Thirst     = 100
-            _Stamina    = 100
             DyingCount = 0
             WarningCount = 0
             DeathWarning = false
@@ -154,7 +160,7 @@ Citizen.CreateThread(function()
             stage.s3 = false
           end
         end
-        Wait(5000)
+        Wait(500)
       end
     end)
 
