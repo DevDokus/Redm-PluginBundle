@@ -1,7 +1,7 @@
 ---
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/49053928/111937011-2e9b8080-8ac7-11eb-914a-a0d94380d611.gif"><br>
- <b>Version (v2.0.2) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
+ <b>Version (v2.1.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
 </p>
 
 ---
@@ -67,6 +67,9 @@ was never been easier!
   - Selling items from 3 categories (Food - Meds - Misc)
   - Multiple Store Locations
   - Easy to work with Config
+  - Change the color of the circle easy
+  - Show or Hide the circles
+  - Show or hide the NPCs behind the counter
 
 - **Teleport**
   - Set a marker on the map and teleport with /tpm
@@ -79,6 +82,10 @@ was never been easier!
   - Adding or removing thirst
   - Adding or removing stamina
   - Adding or removing health
+  - Adding Gold status health innercore
+  - Adding Gold status health outercore
+  - Adding Gold status stamina innercore
+  - Adding Gold status stamina outercore
 
 - **BankDoors**
   - Open or close the bank doors.
@@ -96,6 +103,8 @@ was never been easier!
   - Set groups of enemies together by using the same ID
   - Set a Red Theme or a Dark Theme for the menu.
   - Set the position of the menu (left - right - center)
+  - Restrict to jobs only or not.
+  - Set as many custom jobs to use the bounty menu
 
 - **Play Piano**
   - Customizable Config
@@ -121,8 +130,10 @@ TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
 TriggerEvent('DevDokus:Metabolism:C:Thirst', value)
 TriggerEvent('DevDokus:Metabolism:C:Health', value)
 TriggerEvent('DevDokus:Metabolism:C:Stamina', value)
-TriggerEvent('DevDokus:Metabolism:C:StaminaInner', value)
-TriggerEvent('DevDokus:Metabolism:C:StaminaOuter', value)
+TriggerEvent('DevDokus:Metabolism:C:StaminaInnerGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:StaminaOuterGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:HealthInnerGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:HealthOuterGold', seconds)
 ```
 
 # More will be added soon!

@@ -2,6 +2,38 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 2.1.0 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: Changed the inner and outer gold health bar event trigger names. These are
+     now StaminaInnerGold and StaminaOuterGold. This is to avoid confusion with the
+     new event triggers added.
+
+[2]: [ Metabolism Update ]: Metabolism has got 2 new events. HealthInnerGold and
+     HealthOuterGold. With these you can give players an X amount of seconds extra
+     boost to your health cores (same as we already had in stamina). I have also
+     updated the config, so make sure to use the new config!
+
+[3]: [ Stores Update ]:
+      - The stores have now NPCs behind the counter. They are frozen
+        in position so they do now walk away or attack. They are also set as a mission
+        entity so they stay on the map, and do not get removed by the game engine.
+        You can alter the position very easy in the config. You can also turn the
+        npcs on or off completely.
+
+      - You can now turn the store circles on or off via the config. You can also
+        alter the color of the circle now via the config.
+
+[4]: Reconfigured the order of the items in the config for the store section. I
+     have placed all custom names and item names at the end of the lines instead
+     of in front. This keeps the most variables directly aligned with each other
+     so the config is easy to read and does not look like a mess.
+
+[5]: [ UsableItems Update ]: You can now decide if you want to refund the tent
+     and the campfire after it being placed. Once the user uses /deltent or
+     /delfire he/she normally gets the items refunded. Now you can choose if you
+     want to refund these items or not.
+     
+--------------------------------------------------------------------------------
 -------------------------------- Version 2.0.0 ---------------------------------
 --------------------------------------------------------------------------------
 [1] Changed the distance from when you can pick berries from 1.5 meters to

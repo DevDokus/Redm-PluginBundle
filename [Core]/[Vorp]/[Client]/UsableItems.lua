@@ -15,7 +15,7 @@ Citizen.CreateThread(function()
     --------------------------------------------------------------------------------
     -- Core
     --------------------------------------------------------------------------------
-    AddEventHandler('DevDokus:C:Consume', function(Item, Type, Hunger, Thirst, Stamina, Health)
+    AddEventHandler('DevDokus:C:Consume', function(Item, Type, Hunger, Thirst, Stamina, Health, InnerS, OuterS, InnerH, OuterH)
       local ped = PlayerPedId()
       if Type == 'Eat' then
         TaskEat(ped) Wait(1000)
@@ -25,6 +25,10 @@ Citizen.CreateThread(function()
             TriggerEvent('DevDokus:Metabolism:C:Thirst', Thirst)
             TriggerEvent('DevDokus:Metabolism:C:Stamina', Stamina)
             TriggerEvent('DevDokus:Metabolism:C:Health', Health)
+            TriggerEvent('DevDokus:Metabolism:C:StaminaInnerGold', InnerS)
+            TriggerEvent('DevDokus:Metabolism:C:StaminaOuterGold', OuterS)
+            TriggerEvent('DevDokus:Metabolism:C:HealthInnerGold', InnerH)
+            TriggerEvent('DevDokus:Metabolism:C:HealthOuterGold', OuterH)
           end
         end
       elseif Type == 'Drink' then
@@ -35,6 +39,10 @@ Citizen.CreateThread(function()
             TriggerEvent('DevDokus:Metabolism:C:Thirst', Thirst)
             TriggerEvent('DevDokus:Metabolism:C:Stamina', Stamina)
             TriggerEvent('DevDokus:Metabolism:C:Health', Health)
+            TriggerEvent('DevDokus:Metabolism:C:StaminaInnerGold', InnerS)
+            TriggerEvent('DevDokus:Metabolism:C:StaminaOuterGold', OuterS)
+            TriggerEvent('DevDokus:Metabolism:C:HealthInnerGold', InnerH)
+            TriggerEvent('DevDokus:Metabolism:C:HealthOuterGold', OuterH)
           end
         end
       elseif Type == 'Placing' then

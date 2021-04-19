@@ -30,11 +30,16 @@ Citizen.CreateThread(function()
         local coords = GetEntityCoords(ped)
 
         for k,v in pairs(Stores.Stores) do
+          local ShowCircle = Stores.ShowCircles
+          local Red = Stores.CircleColor.Red
+          local Green = Stores.CircleColor.Green
+          local Blue = Stores.CircleColor.Blue
+          local Opacity = Stores.CircleColor.Opacity
           local x,y,z = v.Coords.x, v.Coords.y, v.Coords.z
           local dist = GetDistanceBetweenCoords(coords.x, coords.y, coords.z, x,y,z)
 
           if (dist <= 8) then
-            if not MenuOpen then DrawCircle(x,y,z, 204, 56, 209, 50) end
+            if not MenuOpen and ShowCircle then DrawCircle(x,y,z,  Red, Green, Blue, Opacity) end
             if (dist <= 1.5) then
               if not MenuOpen then DrawInfo(_('Store_OpenShop'), 0.5, 0.95, 0.75) end
               if IsControlJustPressed(0, Keys["SPACEBAR"]) then
@@ -57,6 +62,17 @@ Citizen.CreateThread(function()
               end
             end
           end
+        end
+      end
+    end)
+
+    -- Spawn All Store NPCs
+    Citizen.CreateThread(function()
+      if Stores.ShowNPCs then
+        for k,v in pairs(Stores.NPCs) do
+          local x,y,z,h = v.Coords.x, v.Coords.y, v.Coords.z, v.Heading
+          local model = v.Model
+          SpawnNPC(model, x,y,z,h)
         end
       end
     end)

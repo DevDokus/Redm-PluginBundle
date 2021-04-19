@@ -5,9 +5,9 @@
 --------------------------------------------------------------------------------
 
 -- Instructions --
-Simply place the "DevDokus--Metabolism" in your resource
+Simply place the "DokusCore" in your resource
 folder and add it to your server.cfg. Add the following line.
-`ensure DevDokus--Metabolism`
+`ensure DokusCore`
 --------------------------------------------------------------------------------
 
 -- Requirements --
@@ -38,10 +38,10 @@ Without the trains DokusCore run 0.00ms with 0.02% server
 side. With the trains this will be average around 0.80ms
 with 6.00% of thread time. The train edition is quite
 a heavy resource but should, depending on the amount of
-your resourcs, cause no lag on your server. If dispire you
+your resources, cause no lag on your server. If dispite you
 have troubles with the trains, you can simply disable it
 via the FXManifext.lua. Simply uncomment or delete the
-client and server /*.dll entries. By default i have disabled
+client and server /*.dll entries. By default I have disabled
 the trains, this because there is possibility that your RedM
 client crashes when restarting DokusCore. using the trains
 itself will not cause your troubles, just restarting them
@@ -54,8 +54,10 @@ TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
 TriggerEvent('DevDokus:Metabolism:C:Thirst', value)
 TriggerEvent('DevDokus:Metabolism:C:Health', value)
 TriggerEvent('DevDokus:Metabolism:C:Stamina', value)
-TriggerEvent('DevDokus:Metabolism:C:StaminaInner', value)
-TriggerEvent('DevDokus:Metabolism:C:StaminaOuter', value)
+TriggerEvent('DevDokus:Metabolism:C:StaminaInnerGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:StaminaOuterGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:HealthInnerGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:HealthOuterGold', seconds)
 
 --------------------------------------------------------------------------------
 -- Credits --

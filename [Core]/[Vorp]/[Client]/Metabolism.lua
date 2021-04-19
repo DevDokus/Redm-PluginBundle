@@ -23,8 +23,10 @@ Citizen.CreateThread(function()
     RegisterNetEvent('DevDokus:Metabolism:C:Thirst')
     RegisterNetEvent('DevDokus:Metabolism:C:Stamina')
     RegisterNetEvent('DevDokus:Metabolism:C:Health')
-    RegisterNetEvent('DevDokus:Metabolism:C:StaminaInner')
-    RegisterNetEvent('DevDokus:Metabolism:C:StaminaOuter')
+    RegisterNetEvent('DevDokus:Metabolism:C:StaminaInnerGold')
+    RegisterNetEvent('DevDokus:Metabolism:C:StaminaOuterGold')
+    RegisterNetEvent('DevDokus:Metabolism:C:HealthInnerGold')
+    RegisterNetEvent('DevDokus:Metabolism:C:HealthOuterGold')
     --------------------------------------------------------------------------------
     -- Core
     --------------------------------------------------------------------------------
@@ -190,15 +192,30 @@ Citizen.CreateThread(function()
       Citizen.InvokeNative(0xC6258F41D86676E0, User, 0, new)
     end)
 
-    AddEventHandler('DevDokus:Metabolism:C:StaminaInner', function(value)
+    AddEventHandler('DevDokus:Metabolism:C:StaminaInnerGold', function(value)
       local User   = PlayerPedId()
-      Citizen.InvokeNative(0x4AF5A4C7B9157D14, User, 1, value, true)
+      local new    = ((value * 100) / 100)
+      Citizen.InvokeNative(0x4AF5A4C7B9157D14, User, 1, new, true)
     end)
 
-    AddEventHandler('DevDokus:Metabolism:C:StaminaOuter', function(value)
+    AddEventHandler('DevDokus:Metabolism:C:StaminaOuterGold', function(value)
       local User   = PlayerPedId()
-      Citizen.InvokeNative(0xF6A7C08DF2E28B28, User, 1, value, true)
+      local new    = ((value * 100) / 100)
+      Citizen.InvokeNative(0xF6A7C08DF2E28B28, User, 1, new, true)
     end)
+
+    AddEventHandler('DevDokus:Metabolism:C:HealthInnerGold', function(value)
+      local User   = PlayerPedId()
+      local new    = ((value * 100) / 100)
+      Citizen.InvokeNative(0x4AF5A4C7B9157D14, User, 0, new, true)
+    end)
+
+    AddEventHandler('DevDokus:Metabolism:C:HealthOuterGold', function(value)
+      local User   = PlayerPedId()
+      local new    = ((value * 100) / 100)
+      Citizen.InvokeNative(0xF6A7C08DF2E28B28, User, 0, new, true)
+    end)
+
 
     --------------------------------------------------------------------------------
   end

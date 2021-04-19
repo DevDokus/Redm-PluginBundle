@@ -42,3 +42,20 @@ function DrawTxt(str, x, y, w, h, enableShadow, col1, col2, col3, a, center)
    Citizen.InvokeNative(0xADA9255D, 10);
    DisplayText(str, x, y)
 end
+
+-- Spawn a NPC model
+function SpawnNPC(_, x,y,z, heading)
+    local _ = GetHashKey(_)
+    while not HasModelLoaded(_) do RequestModel(_) Wait(1) end
+    local NCP = Citizen.InvokeNative(0xD49F9B0955C367DE, _, x,y,z, heading, 0, 0, 0, Citizen.ResultAsInteger())
+    Citizen.InvokeNative(0x1794B4FCC84D812F, NCP, 1) -- SetEntityVisible
+    Citizen.InvokeNative(0x0DF7692B1D9E7BA7, NCP, 255, false) -- SetEntityAlpha
+    Citizen.InvokeNative(0x283978A15512B2FE, NCP, true) -- Invisible without
+    Citizen.InvokeNative(0x7D9EFB7AD6B19754, NCP, true) -- FreezeEntityPosition
+    Citizen.InvokeNative(0xDC19C288082E586E, NCP, 1, 1) --SetEntityAsMissionEntity
+    Citizen.InvokeNative(0x919BE13EED931959, NPC, -1) -- TaskStandStill
+    Wait(100)
+    Citizen.InvokeNative(0xC80A74AC829DDD92, npc, _) -- SET_PED_RELATIONSHIP_GROUP_HASH
+    Citizen.InvokeNative(0x4AD96EF928BD4F9A, NCP) -- SetModelAsNoLongerNeeded
+    return NCP
+end

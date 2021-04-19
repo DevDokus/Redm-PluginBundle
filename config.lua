@@ -70,10 +70,10 @@ ShowCoords = {
 Metabolism = {
   Temperature = {
     Format = 'C', -- Set it to C or F
-    Max = 20, -- Max Temp before losing more vitals stats.
-    Min = -15, -- Min Temp before losing more vitals stats.
-    ColdDamage = { Water = 0.05, Food = 0.1 }, -- Amount of drain per second below min Temp
-    HotDamage = { Water = 0.25, Food = 0.01}, -- Amount of drain per second above max Temp
+    Max = 20,     -- Max Temp before losing more vitals stats.
+    Min = -15,    -- Min Temp before losing more vitals stats.
+    ColdDamage = { Water = 0.05, Food = 0.1 },  -- Amount of drain per second below min Temp
+    HotDamage =  { Water = 0.25, Food = 0.01 }, -- Amount of drain per second above max Temp
   },
 
   -- Food Settings
@@ -107,29 +107,30 @@ Metabolism = {
 -- Here you can add the items you want to be using in game.
 -- Additionally you can also change your metabolism per item.
 UsableItems = {
-  Items = {
+  RefundCampFire = false, -- Refund the campfire when ( /delfire ) is used
+  RefundTent     = true,  -- Refund the tent when ( /deltent ) is used.
 
+  Items = {
     -- Store
-    {Type = 'Eat',     Hunger = -5, Thirst = 20, Stamina = 20,  Health = 5, ID = 'consumable_coffee', Name = 'Coffee'},
-    {Type = 'Eat',     Hunger = 15, Thirst = 10, Stamina = 5,   Health = 5, ID = 'consumable_peach', Name = 'Peach'},
-    {Type = 'Placing', Hunger = 0,  Thirst = 0,  Stamina = -50, Health = 0, ID = 'tent', Name = 'Tent'},
-    {Type = 'Placing', Hunger = 0,  Thirst = 0,  Stamina = -25, Health = 0, ID = 'campfire', Name = 'Campfire'},
-    {Type = 'Eat',     Hunger = 5,  Thirst = -5, Stamina = 5,   Health = 5, ID = 'consumable_sugarcube', Name = 'Sugercube'},
+    {Type = 'Eat',     Hunger = -5, Thirst = 20, Stamina = 20,  Health = 5, InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_coffee', Name = 'Coffee'},
+    {Type = 'Eat',     Hunger = 15, Thirst = 10, Stamina = 5,   Health = 5, InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_peach', Name = 'Peach'},
+    {Type = 'Placing', Hunger = 0,  Thirst = 0,  Stamina = -50, Health = 0, InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'tent', Name = 'Tent'},
+    {Type = 'Placing', Hunger = 0,  Thirst = 0,  Stamina = -25, Health = 0, InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'campfire', Name = 'Campfire'},
+    {Type = 'Eat',     Hunger = 5,  Thirst = -5, Stamina = 5,   Health = 5, InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_sugarcube', Name = 'Sugercube'},
 
     -- PickableFruits Script.
-    {Type = 'Eat', Hunger = 1,   Thirst = 2,   Stamina = 5,  Health = 2,  ID = 'blackberry', Name = 'BlackBerry'},
-    {Type = 'Eat', Hunger = 1,   Thirst = 2,   Stamina = 5,  Health = 2,  ID = 'blueberry', Name = 'BlueBerry'},
-    {Type = 'Eat', Hunger = 1,   Thirst = 5,   Stamina = 7,  Health = 5,  ID = 'consumable_herb_wintergreen_berry', Name = 'Wintergreen Berry'},
-    {Type = 'Eat', Hunger = 1,   Thirst = 5,   Stamina = 7,  Health = 5,  ID = 'consumable_herb_evergreen_huckleberry', Name = 'Evergreen Berry'},
-    {Type = 'Eat', Hunger = 5,   Thirst = 10,  Stamina = 15, Health = 5,  ID = 'consumable_orange', Name = 'Orange'},
-    {Type = 'Eat', Hunger = 5,   Thirst = 7,   Stamina = 15, Health = 5,  ID = 'consumable_pear', Name = 'Pear'},
-    {Type = 'Eat', Hunger = 5,   Thirst = 7,   Stamina = 15, Health = 5,  ID = 'consumable_peach', Name = 'Peach'},
-    {Type = 'Eat', Hunger = 5,   Thirst = 5,   Stamina = 15, Health = 5,  ID = 'consumable_apple', Name = 'Apple'},
-    {Type = 'Eat', Hunger = 2,   Thirst = -10, Stamina = 10, Health = 5,  ID = 'oregano', Name = 'Oregano'},
-    {Type = 'Eat', Hunger = 1,   Thirst = -5,  Stamina = 5,  Health = 5,  ID = 'consumable_herb_vanilla_flower', Name = 'Vanilla Flower'},
-    {Type = 'Eat', Hunger = -20, Thirst = -20, Stamina = 20, Health = -5, ID = 'consumable_herb_indian_tobacco', Name = 'Tabacco'},
-    {Type = 'Eat', Hunger = 2,   Thirst = -5,  Stamina = 7,  Health = 2,  ID = 'consumable_herb_chanterelles', Name = 'Chanterelles'},
-    {Type = 'Eat', Hunger = 2,   Thirst = -5,  Stamina = 10, Health = 5,  ID = 'consumable_herb_currant', Name = 'Currant Herbs'},
+    {Type = 'Eat', Hunger = 1,   Thirst = 2,   Stamina = 5,  Health = 2,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'blackberry', Name = 'BlackBerry'},
+    {Type = 'Eat', Hunger = 1,   Thirst = 2,   Stamina = 5,  Health = 2,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'blueberry', Name = 'BlueBerry'},
+    {Type = 'Eat', Hunger = 1,   Thirst = 5,   Stamina = 7,  Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_herb_wintergreen_berry', Name = 'Wintergreen Berry'},
+    {Type = 'Eat', Hunger = 1,   Thirst = 5,   Stamina = 7,  Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_herb_evergreen_huckleberry', Name = 'Evergreen Berry'},
+    {Type = 'Eat', Hunger = 5,   Thirst = 10,  Stamina = 15, Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_orange', Name = 'Orange'},
+    {Type = 'Eat', Hunger = 5,   Thirst = 7,   Stamina = 15, Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_pear', Name = 'Pear'},
+    {Type = 'Eat', Hunger = 5,   Thirst = 5,   Stamina = 15, Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_apple', Name = 'Apple'},
+    {Type = 'Eat', Hunger = 2,   Thirst = -10, Stamina = 10, Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'oregano', Name = 'Oregano'},
+    {Type = 'Eat', Hunger = 1,   Thirst = -5,  Stamina = 5,  Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_herb_vanilla_flower', Name = 'Vanilla Flower'},
+    {Type = 'Eat', Hunger = -20, Thirst = -20, Stamina = 20, Health = -5, InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_herb_indian_tobacco', Name = 'Tabacco'},
+    {Type = 'Eat', Hunger = 2,   Thirst = -5,  Stamina = 7,  Health = 2,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_herb_chanterelles', Name = 'Chanterelles'},
+    {Type = 'Eat', Hunger = 2,   Thirst = -5,  Stamina = 10, Health = 5,  InStaGold = 0, OutStaGold = 0, InHealthGold = 0, OutHealthGold = 0, ID = 'consumable_herb_currant', Name = 'Currant Herbs'},
   }
 }
 -- TYPES: There are 3 types (Eat - Drink - Placing).
@@ -144,6 +145,11 @@ UsableItems = {
 -- Decrease: Set the value to be a negative value -1 to -100
 -- No Change: Set the value to be 0. Then no changes will be made.
 
+-- Inner and Outer Stamina / Health.
+-- The value you set here is in seconds. So if you enter 5 the
+-- player will get 5 seconds of extra gold health or stamina.
+-- Do not enter negative values at inner or outer gold stamina or health.
+
 
 
 
@@ -153,13 +159,25 @@ UsableItems = {
 -------------------------------- Plugin Stores ---------------------------------
 --------------------------------------------------------------------------------
 Stores = {
+  ShowNPCs    = true,   -- Show or hide the store NPCs
+  ShowCircles = true,   -- Show or hide the the shop colored circles.
+  -- Change the color of the store circles. RGA color coded, Opacity = transparency
+  CircleColor = { Red = 204, Green = 56, Blue = 209, Opacity = 50},
+
   -- Change this if you want to alter the store locations.
   -- You can also remove or add more stores on the list.
   Stores = {
     {Store = 'Valentine', Coords = {x = -321.89, y = 803.99, z = 117.88}},
     {Store = 'Saint Denis', Coords = {x = 2825.74, y = -1317.91, z = 46.76}},
     {Store = 'Blackwater', Coords = {x = -784.50, y = -1324.07, z = 43.88}},
-    {Store = 'Tumbleweed', Coords = {x = -5487.4, y = -2935.80, z = -0.40}}
+    {Store = 'Tumbleweed', Coords = {x = -5487.52, y = -2939.09, z = -0.40}},
+  },
+
+  NPCs = {
+    {Store = 'Valentine',   Coords = { x = -324.14,  y = 803.54,   z = 116.88 }, Heading = 277.00, Model = 'U_M_M_ValGenStoreOwner_01'},
+    {Store = 'Saint Denis', Coords = { x = 2824.49,  y = -1319.51, z = 45.75 },  Heading = 323.67, Model = 'U_M_M_ValGenStoreOwner_01'},
+    {Store = 'Blackwater',  Coords = { x = -784.81,  y = -1322.13, z = 42.88 },  Heading = 188.04, Model = 'U_M_O_BlWGeneralStoreOwner_01'},
+    {Store = 'Tumbleweed',  Coords = { x = -5485.94, y = -2938.08, z = -1.4},    Heading = 127.43, Model = 'U_F_M_TumGeneralStoreOwner_01'},
   },
 
   -- These are the items that will appear in the buy section of the menu.
@@ -167,34 +185,35 @@ Stores = {
   -- Items that can not be used can be added via my plugin DevDokus--UsableItems
   -- TYPE: There are 3 types (Food - Meds - Misc) more will be added in a later update.
   Buy = {
-    {ID = 'consumable_peach', Type = 'Food', Name = 'Peach', Price = 1.0, Max = 20, Text = 'Very good for your health'},
-    {ID = 'consumable_coffee', Type = 'Food', Name = 'Coffee', Price = 1.0, Max = 20, Text = 'A fine brown brew'},
-    {ID = 'consumable_meat_greavy', Type = 'Food', Name = 'Cooked Meat', Price = 2.5, Max = 10, Text = 'Cooked Meat free from pests'},
-    {ID = 'consumable_salmon_can', Type = 'Food', Name = 'Can Salmon', Price = 1.5, Max = 10, Text = 'Salmon from a can, really?'},
-    {ID = 'consumable_medicine', Type = 'Meds', Name = 'Medicine', Price = 15.0, Max = 10, Text = 'When you just need to feel better!'},
-    {ID = 'campfire', Type = 'Misc', Name = 'campfire', Price = 12.0, Max = 1, Text = 'Then he said: Let there be light!'},
-    {ID = 'tent', Type = 'Misc', Name = 'tent', Price = 120.0, Max = 1, Text = 'For the softies'},
-    {ID = 'weapon_fishingrod', Type = 'Misc', Name = 'Fishing Rod', Price = 15.0, Max = 1, Text = 'There\'s no fishing without'},
-    {ID = 'bait', Type = 'Misc', Name = 'Fishing Bait', Price = 1.25, Max = 10, Text = 'Fish need to eat something you know!'},
-    {ID = 'consumable_kidneybeans_can', Type = 'Food', Name = 'Canned Kidney Beans', Price = 1.25, Max = 10, Text = 'For when the apocalypse is here'},
+    {Type = 'Food', Price = 1.0,   Max = 20, ID = 'consumable_peach',           Name = 'Peach',               Text = 'Very good for your health'},
+    {Type = 'Food', Price = 1.0,   Max = 20, ID = 'consumable_coffee',          Name = 'Coffee',              Text = 'A fine brown brew'},
+    {Type = 'Food', Price = 2.5,   Max = 10, ID = 'consumable_meat_greavy',     Name = 'Cooked Meat',         Text = 'Cooked Meat free from pests'},
+    {Type = 'Food', Price = 1.5,   Max = 10, ID = 'consumable_salmon_can',      Name = 'Can Salmon',          Text = 'Salmon from a can, really?'},
+    {Type = 'Meds', Price = 15.0,  Max = 10, ID = 'consumable_medicine',        Name = 'Medicine',            Text = 'When you just need to feel better!'},
+    {Type = 'Misc', Price = 12.0,  Max = 1,  ID = 'campfire',                   Name = 'campfire',            Text = 'Then he said: Let there be light!'},
+    {Type = 'Misc', Price = 120.0, Max = 1,  ID = 'tent',                       Name = 'tent',                Text = 'For the softies'},
+    {Type = 'Misc', Price = 15.0,  Max = 1,  ID = 'weapon_fishingrod',          Name = 'Fishing Rod',         Text = 'There\'s no fishing without'},
+    {Type = 'Misc', Price = 1.25,  Max = 10, ID = 'bait',                       Name = 'Fishing Bait',        Text = 'Fish need to eat something you know!'},
+    {Type = 'Food', Price = 1.25,  Max = 10, ID = 'consumable_kidneybeans_can', Name = 'Canned Kidney Beans', Text = 'For when the apocalypse is here'},
   },
 
   -- These are the items that will appear in the sell section of the menu.
   -- Any item can be added to the list and it does not need to be in the database.
   -- As long the items is on the list by its item name id, it will work.
+
   Sell = {
-    {ID = 'consumable_peach', Type = 'Food', Name = 'Peach', Price = 0.25, Text = 'Sell Peach'},
-    {ID = 'consumable_coffee', Type = 'Food', Name = 'Coffee', Price = 0.55, Text = 'Sell Coffee'},
-    {ID = 'consumable_kidneybeans_can', Type = 'Food', Name = 'Can Kidney Beans', Price = 0.75, Text = 'Sell Bean Can'},
-    {ID = 'consumable_meat_greavy', Type = 'Food', Name = 'Cooked Meat', Price = 0.80, Text = 'Sell Cooked Meat'},
-    {ID = 'consumable_salmon_can', Type = 'Food', Name = 'Can Salmon', Price = 0.85, Text = 'Sell Can Salmon'},
-    {ID = 'consumable_medicine', Type = 'Meds', Name = 'Medicine', Price = 7.50, Text = 'Sell Medicine'},
-    {ID = 'campfire', Type = 'Misc', Name = 'campfire', Price = 5.00, Text = 'Sell Campfire'},
-    {ID = 'tent', Type = 'Misc', Name = 'tent', Price = 75.0, Text = 'Sell Tent '},
-    {ID = 'consumable_haycube', Type = 'Misc', Name = 'HayCube', Price = 30.0, Text = 'Sell HayCube '},
-    {ID = 'weapon_fishingrod', Type = 'Misc', Name = 'Fishing Rod', Price = 5.0, Text = 'Sell Fishing Rod '},
-    {ID = 'bait', Type = 'Misc', Name = 'Fishing Bait', Price = 0.5, Text = 'Sell Fishing Bait'},
-    {ID = 'wooden_boards', Type = 'Misc', Name = 'Wooden Board', Price = 0.75, Text = 'Fresh Smelling Wooden Board'},
+    {Type = 'Food', Price = 0.25, Name = 'Peach',             Text = 'Sell Peach',                  ID = 'consumable_peach'},
+    {Type = 'Food', Price = 0.55, Name = 'Coffee',            Text = 'Sell Coffee',                 ID = 'consumable_coffee'},
+    {Type = 'Food', Price = 0.75, Name = 'Can Kidney Beans',  Text = 'Sell Bean Can',               ID = 'consumable_kidneybeans_can'},
+    {Type = 'Food', Price = 0.80, Name = 'Cooked Meat',       Text = 'Sell Cooked Meat',            ID = 'consumable_meat_greavy'},
+    {Type = 'Food', Price = 0.85, Name = 'Can Salmon',        Text = 'Sell Can Salmon',             ID = 'consumable_salmon_can'},
+    {Type = 'Meds', Price = 7.50, Name = 'Medicine',          Text = 'Sell Medicine',               ID = 'consumable_medicine'},
+    {Type = 'Misc', Price = 5.00, Name = 'campfire',          Text = 'Sell Campfire',               ID = 'campfire'},
+    {Type = 'Misc', Price = 75.0, Name = 'tent',              Text = 'Sell Tent',                   ID = 'tent'},
+    {Type = 'Misc', Price = 30.0, Name = 'HayCube',           Text = 'Sell HayCube',                ID = 'consumable_haycube'},
+    {Type = 'Misc', Price = 5.0,  Name = 'Fishing Rod',       Text = 'Sell Fishing Rod',            ID = 'weapon_fishingrod'},
+    {Type = 'Misc', Price = 0.5,  Name = 'Fishing Bait',      Text = 'Sell Fishing Bait',           ID = 'bait'},
+    {Type = 'Misc', Price = 0.75, Name = 'Wooden Board',      Text = 'Fresh Smelling Wooden Board', ID = 'wooden_boards'},
   },
 }
 
@@ -208,7 +227,6 @@ Stores = {
 -------------------------------- Bounty Hunter ---------------------------------
 --------------------------------------------------------------------------------
 BountyHunter = {
-
   BountyStack = false,         -- Allow players to stack multiple bounties.
   MaxBounties = 3,             -- The max amount of bounties player can request.
 
@@ -449,8 +467,8 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.0.2"
-_vConfig_ = 093215042021
+_Version_ = "2.1.0"
+_vConfig_ = 093019012021
 _StartError_ = false
 
 
