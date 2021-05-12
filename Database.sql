@@ -11,4 +11,9 @@ INSERT INTO `items` (`item`, `label`, `limit`, `can_remove`, `type`, `usable`) V
   ('oregano', 'Oregano', 25, 1, 'item_standard', 0),
   ('consumable_herb_vanilla_flower', 'Vanilla', 30, 1, 'item_standard', 0),
   ('consumable_herb_indian_tobacco', 'Tabacco', 30, 1, 'item_standard', 0),
+  ('consumable_medicine', 'Medicine', 15, 1, 'item_standard', 0),
+  ('consumable_coffee', 'Coffee', 30, 1, 'item_standard', 0),
+  ('consumable_meat_greavy', 'Greavy Meat', 30, 1, 'item_standard', 0),
+  ('consumable_salmon_can', 'Can Salmon', 30, 1, 'item_standard', 0),
+  ('campfire', 'Campfire', 30, 1, 'item_standard', 0),
   ('consumable_herb_chanterelles', 'Chanterelles', 30, 1, 'item_standard', 0);
