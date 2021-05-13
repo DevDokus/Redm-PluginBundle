@@ -43,7 +43,8 @@ Lang['it'] = {
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Hai venduto un articolo:",
   ['Store_NoItem'] = "Nessun articolo chiamato:",
-
+  ['Store_Exit'] = 'Exit',
+  
   -- Cacciatore di taglie
   ['BountyHunter_PressSpace'] = 'Premi [~e~SPAZIO~q~] per aprire il menu delle taglie',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',

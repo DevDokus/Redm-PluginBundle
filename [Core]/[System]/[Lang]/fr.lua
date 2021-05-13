@@ -43,7 +43,8 @@ Lang['fr'] = {
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Vous avez vendu un article:",
   ['Store_NoItem'] = "Vous n'avez aucun élément appelé:",
-
+  ['Store_Exit'] = 'Quitter',
+  
   -- Chasseur de primes
   ['BountyHunter_PressSpace'] = 'Appuyez sur [~e~ESPACE~q~] pour ouvrir le menu des primes',
   ['BountyHunter_MenuTitle'] = 'Tableau de primes',

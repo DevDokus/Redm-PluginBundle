@@ -43,7 +43,8 @@ Lang['ru'] = {
   ['Store_Bought3'] = 'Доллар!',
   ['Store_Sold'] = "Вы продали товар:",
   ['Store_NoItem'] = "У вас нет элемента с названием:",
-
+  ['Store_Exit'] = 'Выход',
+  
   -- Охотник за головами
   ['BountyHunter_PressSpace'] = 'Нажмите [~e~SPACE~q~], чтобы открыть меню наград',
   ['BountyHunter_MenuTitle'] = 'Доска объявлений',

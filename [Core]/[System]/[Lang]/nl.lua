@@ -43,7 +43,8 @@ Lang['nl'] = {
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "U heeft een item verkocht:",
   ['Store_NoItem'] = "Je hebt geen item met de naam:",
-
+  ['Store_Exit'] = 'Afsluiten',
+  
   -- Premie Jager
   ['BountyHunter_PressSpace'] = 'Druk op [~e~SPACE~q~] om het bounty-menu te openen',
   ['BountyHunter_MenuTitle'] = 'Premiebord',
