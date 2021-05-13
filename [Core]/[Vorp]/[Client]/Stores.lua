@@ -165,7 +165,7 @@ Citizen.CreateThread(function()
     local _Foods = WarMenu.Button(_('Store_Food'), '', _('Store_FoodMenu'))
     local _Meds = WarMenu.Button(_('Store_Meds'), '', _('Store_MedsMenu'))
     local _Misc = WarMenu.Button(_('Store_Misc'), '', _('Store_MiscMenu'))
-    local Exit = WarMenu.Button(_('Store_Exit'), '', 'Exit the menu')
+    local Exit = WarMenu.Button(_('Store_Exit'), '', '')
     if _Foods then WarMenu.OpenMenu('bFoodCat') end
     if _Meds then WarMenu.OpenMenu('bMedsCat') end
     if _Misc then WarMenu.OpenMenu('bMiscCat') end
@@ -183,7 +183,7 @@ Citizen.CreateThread(function()
     local _Foods = WarMenu.Button(_('Store_Food'), '', _('Store_FoodMenu'))
     local _Meds = WarMenu.Button(_('Store_Meds'), '', _('Store_MedsMenu'))
     local _Misc = WarMenu.Button(_('Store_Misc'), '', _('Store_MiscMenu'))
-    local Exit = WarMenu.Button(_('Store_Exit'), '', 'Exit the menu')
+    local Exit = WarMenu.Button(_('Store_Exit'), '', '')
     if _Foods then WarMenu.OpenMenu('sFoodCat') end
     if _Meds then WarMenu.OpenMenu('sMedsCat') end
     if _Misc then WarMenu.OpenMenu('sMiscCat') end
