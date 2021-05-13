@@ -59,3 +59,22 @@ function SpawnNPC(_, x,y,z, heading)
     Citizen.InvokeNative(0x4AD96EF928BD4F9A, NCP) -- SetModelAsNoLongerNeeded
     return NCP
 end
+
+function RoundNumber(n, d)
+  local m = 10^(d or 0)
+  return math.floor(n * m + 0.5) / m
+end
+
+RegisterNetEvent('DokusCore:ProgressBars')
+AddEventHandler('DokusCore:ProgressBars', function(text, x,y, size, time)
+  local Text, run, count, loop, End = nil, true, 0, 1, ((time - 2) / 2)
+  while run do Wait(1)
+    if (count <= 15) then Text = (text..'.') end
+    if ((count > 15) and (count <= 30)) then Text = (text..'..') end
+    if ((count > 30) and (count <= 45)) then Text = (text..'...') end
+    if ((count > 60) and (loop ~= End)) then count = 0 loop = (loop + 1) end
+    if (loop >= End) then count = 0 loop = 1 run = false end
+    DrawInfo(Text, x,y, size)
+    count = (count + 1)
+  end
+end)

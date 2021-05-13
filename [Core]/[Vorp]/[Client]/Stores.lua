@@ -10,6 +10,7 @@ Citizen.CreateThread(function()
     local InRange = false
     local ActiveMenu = nil
     local MenuOpen = false
+    local Location = nil
     --------------------------------------------------------------------------------
     -- Core
     --------------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Citizen.CreateThread(function()
       while true do Wait(1)
         local ped = GetPlayerPed()
         local coords = GetEntityCoords(ped)
+        local IsDead = IsPedDeadOrDying(ped)
 
         for k,v in pairs(Stores.Stores) do
           local ShowCircle = Stores.ShowCircles
@@ -38,7 +40,18 @@ Citizen.CreateThread(function()
           local x,y,z = v.Coords.x, v.Coords.y, v.Coords.z
           local dist = GetDistanceBetweenCoords(coords.x, coords.y, coords.z, x,y,z)
 
-          if (dist <= 8) then
+          if ((Location == nil) and (dist <= 15)) then Location = v.Store end
+          if ((Location == nil) and (dist > 15)) then Wait(1000) end
+
+          if MenuOpen and IsDead then
+            Location = nil
+            MenuOpen = false
+            ActiveMenu = 'Home'
+            WarMenu.CloseMenu()
+          end
+
+          if (Location == v.Store) then
+            if ((Location ~= nil) and (dist > 15)) then Location = nil end
             if not MenuOpen and ShowCircle then DrawCircle(x,y,z,  Red, Green, Blue, Opacity) end
             if (dist <= 1.5) then
               if not MenuOpen then DrawInfo(_('Store_OpenShop'), 0.5, 0.95, 0.75) end
@@ -60,6 +73,10 @@ Citizen.CreateThread(function()
                 elseif ActiveMenu == 'sMedsCat'   then WarMenu.OpenMenu('SellMenu') ActiveMenu = 'SellMenu'
                 end
               end
+            else
+              MenuOpen = false
+              ActiveMenu = 'Home'
+              WarMenu.CloseMenu()
             end
           end
         end
@@ -128,8 +145,15 @@ Citizen.CreateThread(function()
     ActiveMenu = 'Home'
     local BBuy = WarMenu.Button(_('Store_Buy'), '', 'Github.com/DevDokus')
     local BSell = WarMenu.Button(_('Store_Sell'), '', 'WORK IN PROGRESS')
+    local Exit = WarMenu.Button('Exit', '', 'Exit the menu')
     if BBuy then WarMenu.OpenMenu('BuyMenu') end
     if BSell then WarMenu.OpenMenu('SellMenu') end
+    if Exit then
+      MenuOpen = false
+      ActiveMenu = 'Home'
+      Location = nil
+      WarMenu.CloseMenu()
+    end
     WarMenu.Display()
     end
 
@@ -141,9 +165,16 @@ Citizen.CreateThread(function()
     local _Foods = WarMenu.Button(_('Store_Food'), '', _('Store_FoodMenu'))
     local _Meds = WarMenu.Button(_('Store_Meds'), '', _('Store_MedsMenu'))
     local _Misc = WarMenu.Button(_('Store_Misc'), '', _('Store_MiscMenu'))
+    local Exit = WarMenu.Button('Exit', '', 'Exit the menu')
     if _Foods then WarMenu.OpenMenu('bFoodCat') end
     if _Meds then WarMenu.OpenMenu('bMedsCat') end
     if _Misc then WarMenu.OpenMenu('bMiscCat') end
+    if Exit then
+      MenuOpen = false
+      ActiveMenu = 'Home'
+      Location = nil
+      WarMenu.CloseMenu()
+    end
     WarMenu.Display()
     end
 
@@ -152,9 +183,16 @@ Citizen.CreateThread(function()
     local _Foods = WarMenu.Button(_('Store_Food'), '', _('Store_FoodMenu'))
     local _Meds = WarMenu.Button(_('Store_Meds'), '', _('Store_MedsMenu'))
     local _Misc = WarMenu.Button(_('Store_Misc'), '', _('Store_MiscMenu'))
+    local Exit = WarMenu.Button('Exit', '', 'Exit the menu')
     if _Foods then WarMenu.OpenMenu('sFoodCat') end
     if _Meds then WarMenu.OpenMenu('sMedsCat') end
     if _Misc then WarMenu.OpenMenu('sMiscCat') end
+    if Exit then
+      MenuOpen = false
+      ActiveMenu = 'Home'
+      Location = nil
+      WarMenu.CloseMenu()
+    end
     WarMenu.Display()
     end
 

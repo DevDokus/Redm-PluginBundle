@@ -112,7 +112,7 @@ Metabolism = {
 -- Here you can add the items you want to be using in game.
 -- Additionally you can also change your metabolism per item.
 UsableItems = {
-  RefundCampFire = false, -- Refund the campfire when ( /delfire ) is used
+  RefundCampFire = true, -- Refund the campfire when ( /delfire ) is used
   RefundTent     = true,  -- Refund the tent when ( /deltent ) is used.
 
   Items = {
@@ -472,7 +472,7 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.1.1"
+_Version_ = "2.1.2"
 _vConfig_ = 114419042021
 _StartError_ = false
 

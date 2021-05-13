@@ -1,7 +1,7 @@
 INSERT INTO `items` (`item`, `label`, `limit`, `can_remove`, `type`, `usable`) VALUES
   ('consumable_herb_currant','Currant Herbs', 1, 1, 'item_standard', 0),
   ('blackberry', 'BlackBerry', 50, 1, 'item_standard', 0),
-  ('blueberry', 'BlueBerry', 50, 1, 'item_standard', 0),  
+  ('blueberry', 'BlueBerry', 50, 1, 'item_standard', 0),
   ('consumable_herb_wintergreen_berry', 'Wintergreen Berry', 50, 1, 'item_standard', 0),
   ('consumable_herb_evergreen_huckleberry', 'Everygreen Berry', 50, 1, 'item_standard', 0),
   ('consumable_orange', 'Orange', 20, 1, 'item_standard', 0),
@@ -16,4 +16,10 @@ INSERT INTO `items` (`item`, `label`, `limit`, `can_remove`, `type`, `usable`) V
   ('consumable_meat_greavy', 'Greavy Meat', 30, 1, 'item_standard', 0),
   ('consumable_salmon_can', 'Can Salmon', 30, 1, 'item_standard', 0),
   ('campfire', 'Campfire', 30, 1, 'item_standard', 0),
-  ('consumable_herb_chanterelles', 'Chanterelles', 30, 1, 'item_standard', 0);
+  ('consumable_herb_chanterelles', 'Chanterelles', 30, 1, 'item_standard', 0),
+  ('tent', 'Tent', 1, 1, 'item_standard', 0),
+  ('weapon_fishingrod', 'Fishing Rod', 1, 1, 'item_standard', 0),
+  ('bait', 'Fish Bait', 20, 1, 'item_standard', 0),
+  ('consumable_kidneybeans_can', 'Can Kidneybeans', 20, 1, 'item_standard', 0),
+  ('consumable_haycube', 'Haycube', 2, 1, 'item_standard', 0),
+  ('wooden_boards', 'Wooden Boards', 10, 1, 'item_standard', 0);

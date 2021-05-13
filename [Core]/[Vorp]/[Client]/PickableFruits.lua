@@ -39,7 +39,6 @@ if Plugins.PickableFruits and not _StartError_ then
     if not Harvesting then DrawInfo(_('PickableFruits_PressSpace'), 0.5, 0.95, 0.75) end
     if Space then
       Harvesting = true
-      exports['progressBars']:startUI(4000, _('PickableFruits_Searching'))
       local hash = 'mech_pickup@plant@berries'
       RequestAnimDict(hash)
       while not HasAnimDictLoaded(hash) do Wait(100) end

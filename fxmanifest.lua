@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 description 'The Ultimate RP Pack for RedM VORP'
 author 'DevDokus Github'
-version '2.1.1'
+version '2.1.2'
 --------------------------------------------------------------------------------
 ui_page('[Core]/[Vorp]/[HTML]/index.html')
 shared_script {'config.lua', '[Core]/[System]/[Lang]/*.lua'}

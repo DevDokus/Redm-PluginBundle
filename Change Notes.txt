@@ -2,6 +2,38 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 2.1.2 ---------------------------------
+--------------------------------------------------------------------------------
+[1]: Updated the Database.sql file. It has missing items that where used but not
+     on the sql list. The missing items have now been added.
+
+[2]: [Stores][Fix]: The store has now a Exit button on both the first 2 pages.
+     This will make sure you are not getting stuck unable to close the menu.
+
+[3]: [Stores][Fix]: When you died when having the store menu open, it would be
+     stuck unable to be closed, until your back in the store area. Now the menu
+     will close immediately when a player has died.
+
+[4]: [Stores][Fix]: When the player walks away from the store while having the
+     store menu open, they would be unable to close it due to being out of the
+     interactive area. Now the store menu will automatically close once you walk
+     away from the store.
+
+[4]: [Stores][Optimized]: I have remade the part that checks your distance to the
+     store and if this is further then 15 meters, the script will hold pauses for
+     1 second to check the distance again. If the player is within distance it switches
+     back to 1 millisecond.
+
+[5]: [Removed Dependency]: I thought I removed ProgressBars plugin from DokusCore
+    but appearently not ^^. It has been removed now. I have made something new for
+    a replacement for the time being.
+
+[7]: [PickableFruits][Fix]: Removed the old ProgressBar when picking fruits. The
+     animation is short and repeated multiple times in a row. It would simply not
+     be of any value and so I see it as screen cluttering.
+
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 2.1.1 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: Changed the inner and outer gold health bar event trigger names. These are
