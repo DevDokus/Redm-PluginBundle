@@ -44,6 +44,7 @@ Lang['de'] = {
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Sie haben einen Artikel verkauft:",
   ['Store_NoItem'] = "Sie haben kein Element mit dem Namen:",
+  ['Store_Exit'] = 'Beenden',
 
   -- Kopfgeldjäger
   ['BountyHunter_PressSpace'] = 'Drücken Sie [~e~SPACE~q~], um das Kopfgeldmenü zu öffnen',

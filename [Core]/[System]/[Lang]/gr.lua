@@ -43,7 +43,8 @@ Lang['gr'] = {
   ['Store_Bought3'] = 'Δολάριο!',
   ['Store_Sold'] = "Έχετε πουλήσει ένα αντικείμενο:",
   ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
-
+  ['Store_Exit'] = 'Έξοδος',
+  
   -- Κυνηγός επικυρηγμένων
   ['BountyHunter_PressSpace'] = 'Πατήστε [~e~SPACE~q~] για να ανοίξετε το μενού bounty',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',

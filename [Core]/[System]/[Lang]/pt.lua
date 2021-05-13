@@ -43,7 +43,8 @@ Lang['pt'] = {
   ['Store_Bought3'] = 'Dólar!',
   ['Store_Sold'] = "Você vendeu um item:",
   ['Store_NoItem'] = "Você não tem nenhum item chamado:",
-
+  ['Store_Exit'] = 'Sair',
+  
   -- Caçador de Recompensa
   ['BountyHunter_PressSpace'] = 'Pressione [~e~ESPAÇO~q~] para abrir o menu de recompensas',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',

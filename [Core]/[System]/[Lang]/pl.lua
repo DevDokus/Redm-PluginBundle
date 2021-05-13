@@ -43,7 +43,8 @@ Lang['pl'] = {
   ['Store_Bought3'] = 'Δολάριο!',
   ['Store_Sold'] = "Έχετε πουλήσει ένα αντικείμενο:",
   ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
-
+  ['Store_Exit'] = 'Exit',
+  
   -- Łowca nagród
   ['BountyHunter_PressSpace'] = 'Naciśnij [~e~SPACE~q~], aby otworzyć menu nagród',
   ['BountyHunter_MenuTitle'] = 'Tablica zleceń',

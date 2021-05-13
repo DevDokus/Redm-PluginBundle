@@ -43,7 +43,8 @@ Lang['dk'] = {
   ['Store_Bought3'] = 'Dollar!',
   ['Store_Sold'] = "Du har solgt en vare:",
   ['Store_NoItem'] = "Du har ikke noget, der hedder:",
-
+  ['Store_Exit'] = 'Afslut',
+  
   -- Dusør jæger
   ['BountyHunter_PressSpace'] = 'Tryk på [~e~MELLEMRUM~q~] for at åbne dusørmenuen',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
