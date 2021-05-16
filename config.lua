@@ -69,8 +69,18 @@ ShowCoords = {
 --------------------------------------------------------------------------------
 Metabolism = {
 
+  -- This is the area where your character will be when he or she is creating
+  -- his or her character. It is adviced to leave this default. This prevents
+  -- The user from dying during character creation.
+  StartArea = {x = 602.7, y = -3726.8, z = 37.0},
+
+  -- This will reset your vitals to 100% the moment you repawn.
+  -- Setting this to false will mean that players are still dying
+  -- after respawn, and they need to eat as soon as possible.
   ResetOnDeath = {
-    Enabled = true,     -- Enable or Disable resetting vitals on death
+    Enabled = true,
+    Hunger = 50,
+    Thirst = 50
   },
 
   Temperature = {
@@ -472,8 +482,8 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.1.2"
-_vConfig_ = 114419042021
+_Version_ = "2.2.0"
+_vConfig_ = 010316052021
 _StartError_ = false
 
 

@@ -37,17 +37,6 @@ Citizen.CreateThread(function()
     local DyingCount = 0
     local WarningCount = 0
     local DeathWarning = false
-    -- local IsStatsSet  = false
-    --------------------------------------------------------------------------------
-    -- Citizen.CreateThread(function()
-    --   local run = true
-    --   while run do Wait(1)
-    --     if VORPCore ~= nil then
-    --       -- TriggerServerEvent('DevDokus:Metabolism:S:StartStatus')
-    --       run = false
-    --     end
-    --   end
-    -- end)
     --------------------------------------------------------------------------------
     Citizen.CreateThread(function()
       while true do Wait(1000)
@@ -57,27 +46,32 @@ Citizen.CreateThread(function()
           local User    = PlayerPedId()
           local coords  = GetEntityCoords(User)
           local temp    = math.floor(GetTemperatureAtCoords(coords))
+          local Area    = Metabolism.StartArea
+          local dist    = Vdist(coords, Area.x, Area.y, Area.z)
+          local IsReady = (dist > 1000)
 
-          if (temp >= Metabolism.Temperature.Max) then
-            DrainFood  = Metabolism.Temperature.HotDamage.Food
-            DrainWater = Metabolism.Temperature.HotDamage.Water
-          elseif (temp <= Metabolism.Temperature.Min) then
-            DrainFood  = Metabolism.Temperature.ColdDamage.Food
-            DrainWater = Metabolism.Temperature.ColdDamage.Water
-          end
+          if IsReady then
+            if (temp >= Metabolism.Temperature.Max) then
+              DrainFood  = Metabolism.Temperature.HotDamage.Food
+              DrainWater = Metabolism.Temperature.HotDamage.Water
+            elseif (temp <= Metabolism.Temperature.Min) then
+              DrainFood  = Metabolism.Temperature.ColdDamage.Food
+              DrainWater = Metabolism.Temperature.ColdDamage.Water
+            end
 
-          local running = IsPedRunning(User)
-          local walking = IsPedWalking(User)
+            local running = IsPedRunning(User)
+            local walking = IsPedWalking(User)
 
-          if running then
-            _Hunger  = _Hunger - (Metabolism.Food.DrainRunning + DrainFood)
-            _Thirst  = _Thirst - (Metabolism.Water.DrainRunning + DrainWater)
-          elseif walking then
-            _Hunger  = _Hunger - (Metabolism.Food.DrainWalking + DrainFood)
-            _Thirst  = _Thirst - (Metabolism.Water.DrainWalking + DrainWater)
-          else
-            _Hunger  = _Hunger - (Metabolism.Food.DrainIdle + DrainFood)
-            _Thirst  = _Thirst - (Metabolism.Water.DrainIdle + DrainWater)
+            if running then
+              _Hunger  = _Hunger - (Metabolism.Food.DrainRunning + DrainFood)
+              _Thirst  = _Thirst - (Metabolism.Water.DrainRunning + DrainWater)
+            elseif walking then
+              _Hunger  = _Hunger - (Metabolism.Food.DrainWalking + DrainFood)
+              _Thirst  = _Thirst - (Metabolism.Water.DrainWalking + DrainWater)
+            else
+              _Hunger  = _Hunger - (Metabolism.Food.DrainIdle + DrainFood)
+              _Thirst  = _Thirst - (Metabolism.Water.DrainIdle + DrainWater)
+            end
           end
         end
       end
@@ -135,19 +129,19 @@ Citizen.CreateThread(function()
           end
           ---------------------------- WORK IN PROGRESS ----------------------------
           -- ToDo: Detecting when user eats or drinks to reset the dialog for dying.
-          if (Core ~= 0) and CoreIsZero then print("User healed") CoreIsZero = false end
+          if (Core ~= 0) and CoreIsZero then CoreIsZero = false end
           --------------------------------------------------------------------------
 
           -- When the player comes back to live, reset the script.
           if (Core ~= 0) and not DeadOrAlive then
             local Reset = Metabolism.ResetOnDeath
             if Reset.Enabled then
-              TriggerEvent('DevDokus:Metabolism:C:Hunger',  100.0)
-              TriggerEvent('DevDokus:Metabolism:C:Thirst',  100.0)
+              TriggerEvent('DevDokus:Metabolism:C:Hunger',  Reset.Hunger)
+              TriggerEvent('DevDokus:Metabolism:C:Thirst',  Reset.Thirst)
               TriggerEvent('DevDokus:Metabolism:C:Health',  100.0)
               TriggerEvent('DevDokus:Metabolism:C:Stamina', 100.0)
-              _Hunger     = 100
-              _Thirst     = 100
+              _Hunger     = Reset.Hunger
+              _Thirst     = Reset.Thirst
               _Stamina    = 100
             end
             CoreIsZero = false
@@ -163,12 +157,6 @@ Citizen.CreateThread(function()
         Wait(500)
       end
     end)
-
-    -- AddEventHandler('DevDokus:Metabolism:C:SetFirstStatus', function(Data)
-    --   _Hunger = (Data.Hunger)
-    --   _Thirst = (Data.Thirst)
-    --   IsStatsSet = true
-    -- end)
 
     AddEventHandler('DevDokus:Metabolism:C:Hunger', function(value)
       _Hunger = _Hunger + tonumber(value)

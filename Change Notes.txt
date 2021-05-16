@@ -2,6 +2,25 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 2.2.0 ---------------------------------
+--------------------------------------------------------------------------------
+                   Attention: The Config.lua has been edited!
+--------------------------------------------------------------------------------
+[1]: [ Metabolism ][Fix]: People reported that you would die if you waited to
+     long during character creation. This was due to the environment being @20
+     degrees and higher, you would lose water and then die. I have made a extra
+     check that looks at your distance from the starting area. If you are within
+     the starting radius, Metabolism will wait with decreasing your vitals. The
+     moment you spawn to the map itself, metabolism starts.
+
+[2]: [ Metabolism ][ New ]: You can now set the hunger and thirst value upon
+     player respawn. Instead of it always going back to 100%, you can now set
+     you custom values.
+
+[3]: Added in better Polish translation with many thanks to ( AAAWARIA#0675 ).
+     He has taken his time to make a better translation! Many thanks for that!
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 2.1.2 ---------------------------------
 --------------------------------------------------------------------------------
 [1]: Updated the Database.sql file. It has missing items that where used but not

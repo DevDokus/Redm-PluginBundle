@@ -1,80 +1,111 @@
 Lang['pl'] = {
-  -- Γενικά
-  ['OnlyAdmins'] = 'Αυτή η λειτουργία είναι μόνο για διαχειριστές!',
+  -- General
+  ['OnlyAdmins'] = 'Ta funkcja jest przeznaczona tylko dla administratorów!',
 
-  -- πιάνο
-  ['PlayPiano_Play'] = 'Πατήστε [~e~Space~q~] για να παίξετε πιάνο',
-  ['PlayPiano_Stop'] = 'Πατήστε [~e~F~q~] για να σταματήσετε να παίζετε',
+  -- Piano
+  ['PlayPiano_Play'] = 'Naciśnij [~e~Space~q~] aby grać na pianinie',
+  ['PlayPiano_Stop'] = 'Naciśnij [~e~F~q~] aby przestać grać',
 
-  -- Μεταβολισμός
-  ['Metabolism_IFCC'] = 'Εσφαλμένο_Format_Check_Config',
-  ['Metabolism_YourDying1'] = 'Πεθαίνετε, ελέγξτε τα ζωτικά σας!',
-  ['Metabolism_YourDying2'] = "Νιώθω μυρμήγκιασμα στα δάχτυλά μου ...",
-  ['Metabolism_YourDying3'] = 'Μπορώ να δω τα φώτα, το τέλος είναι κοντά ...',
+  -- Metabolism
+  ['Metabolism_IFCC'] = 'Nieprawidłowy_Format_Sprawdź_Config',
+  ['Metabolism_YourDying1'] = 'Umierasz, sprawdź swoje funkcje życiowe!',
+  ['Metabolism_YourDying2'] = 'Czuję mrowienie w palcach...',
+  ['Metabolism_YourDying3'] = 'Widzę światła, koniec jest bliski...',
 
-  -- Στοιχεία που μπορούν να χρησιμοποιηθούν
-  ['UsableItems_NoTent'] = 'Δεν έχετε σκηνή!',
-  ['UsableItems_NoCampFire'] = 'Δεν έχετε φωτιά!',
-  ['UsableItems_PlacingCampfire'] = "Τοποθετείτε τη φωτιά σας ...",
-  ['UsableItems_PlacingTent'] = "Τοποθετείτε τη σκηνή σας ...",
-  ['UsableItems_Eating'] = "Έχετε καταναλώσει",
-  ['UsableItems_Drinking'] = "Έχετε πιει",
-  ['UsableItems_RefundCampfire'] = "Σας έχει επιστραφεί μια πυρά προσκόπων",
-  ['UsableItems_RefundTent'] = "Σας έχει επιστραφεί μια σκηνή",
+  -- UsableItems
+  ['UsableItems_NoTent'] = 'Nie masz namiotu!',
+  ['UsableItems_NoCampFire'] = 'Nie masz ogniska!',
+  ['UsableItems_PlacingCampfire'] = "Rozpalasz ognisko...",
+  ['UsableItems_PlacingTent'] = "Rozstawiasz namiot...",
+  ['UsableItems_Eating'] = "Spożyłeś ",
+  ['UsableItems_Drinking'] = "Wypiłeś ",
+  ['UsableItems_RefundCampfire'] = "Zwrócono ci pieniądze za ognisko",
+  ['UsableItems_RefundTent'] = "Zwrócono ci pieniądze za namiot",
 
-  -- Καταστήματα
-  ['Store_OpenShop'] = 'Πατήστε [~e~SPACE~q~] για να ανοίξετε το μενού καταστήματος',
-  ['Store_MenuTitle'] = "Γενικό κατάστημα",
-  ['Store_Category'] = 'Κατηγορία',
-  ['Store_Buy'] = 'Αγορά αντικειμένων',
-  ['Store_Sell'] = 'Πώληση αντικειμένων',
-  ['Store_Food'] = "Φαγητό",
-  ['Store_Meds'] = 'Ιατρική',
-  ['Store_Misc'] = 'Διάφορα',
-  ['Store_FoodMenu'] = 'Μενού φαγητού',
-  ['Store_MedsMenu'] = 'Ιατρικά είδη',
-  ['Store_MiscMenu'] = 'Άλλα αντικείμενα',
-  ['Store_FoodSubTitle'] = "Οι καθημερινές σας βασικές ανάγκες",
-  ['Store_MedsSubTitle'] = 'Για να μένεις ζωντανός!',
-  ['Store_OtherItems'] = 'Άλλα αντικείμενα',
-  ['Store_NotEnoughMoney'] = 'Δεν είναι αρκετά χρήματα',
-  ['Store_Bought1'] = "Αγοράσατε ένα",
-  ['Store_Bought2'] = ', σας κοστίζει $',
-  ['Store_Bought3'] = 'Δολάριο!',
-  ['Store_Sold'] = "Έχετε πουλήσει ένα αντικείμενο:",
-  ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
-  ['Store_Exit'] = 'Exit',
-  
-  -- Łowca nagród
-  ['BountyHunter_PressSpace'] = 'Naciśnij [~e~SPACE~q~], aby otworzyć menu nagród',
+  -- Stores
+  ['Store_OpenShop'] = 'Naciśnij [~e~ SPACE ~q~] aby otworzyć menu sklepu',
+  ['Store_MenuTitle'] = 'Sklep spożywczy',
+  ['Store_Category'] = 'Kategorie',
+  ['Store_Buy'] = 'Kup przedmiot',
+  ['Store_Sell'] = 'Sprzedaj przedmiot',
+  ['Store_Food'] = 'Żywność',
+  ['Store_Meds'] = 'Medykamenty',
+  ['Store_Misc'] = 'Różne',
+  ['Store_FoodMenu'] = 'Menu żywności',
+  ['Store_MedsMenu'] = 'Przedmioty medyczne',
+  ['Store_MiscMenu'] = 'Inne przedmioty',
+  ['Store_FoodSubTitle'] = 'Twoje codzienne podstawowe potrzeby',
+  ['Store_MedsSubTitle'] = 'Za przeżycie!',
+  ['Store_OtherItems'] = 'Inne przedmioty',
+  ['Store_NotEnoughMoney'] = 'Masz za mało pieniędzy',
+  ['Store_Bought1'] = "Kupiłeś ",
+  ['Store_Bought2'] = ', kosztuje cię $',
+  ['Store_Bought3'] = ' $!',
+  ['Store_Sold'] = "Sprzedałeś przedmiot: ",
+  ['Store_NoItem'] = "Nie masz żadnego przedmiotu o nazwie: ",
+  ['Store_Exit'] = 'Wyjdź',
+
+  -- Bounty Hunter
+  ['BountyHunter_PressSpace'] = 'Naciśnij [~e~ SPACE ~q~] aby otworzyć menu nagród',
   ['BountyHunter_MenuTitle'] = 'Tablica zleceń',
   ['BountyHunter_PVESubTitle'] = 'Poluj na NPC',
   ['BountyHunter_PVPSubTitle'] = 'Poluj na ludzi',
-  ['BountyHunter_PVEMenu'] = 'Menu PVE',
-  ['BountyHunter_PVPMenu'] = 'Menu PVP',
+  ['BountyHunter_PVEMenu'] = 'PVE Menu',
+  ['BountyHunter_PVPMenu'] = 'PVP Menu',
   ['BountyHunter_HuntBountyButton'] = 'Poluj na nagrodę',
-  ['BountyHunter_ReceivePayment'] = 'Odbierz płatność',
-  ['BountyHunter_NoBounties'] = "Nie masz żadnych nagranych zabójstw, partnerze!",
-  ['BountyHunter_SetBounty'] = 'Ustaw nagrodę',
+  ['BountyHunter_ReceivePayment'] = 'Otrzymaj nagrodę',
+  ['BountyHunter_NoBounties'] = "Nie zarejestrowałeś żadnych zabójstw w ramach nagród, partnerze!",
+  ['BountyHunter_SetBounty'] = 'Wyznacz nagrodę',
   ['BountyHunter_Payment1'] = "Otrzymałeś $",
-  ['BountyHunter_Payment2'] = 'i',
-  ['BountyHunter_Payment3'] = 'XP',
-  ['BountyHunter_BountyOnMap'] = 'Twoja nagroda znajduje się na mapie!',
-  ['BountyHunter_TheyBeDead'] = 'Potrzebujemy ich martwych, a nie żywych! Ale martwy! ',
-  ['BountyHunter_StackBounties'] = 'Możesz kumulować nagrody, pamiętaj o tym',
-  ['BountyHunter_DieAndLose'] = 'że tracisz nagrody, jeśli zginąłeś!',
+  ['BountyHunter_Payment2'] = ' i ',
+  ['BountyHunter_Payment3'] = ' XP',
+  ['BountyHunter_BountyOnMap'] = 'Twoje zlecenie znajduje się na mapie!',
+  ['BountyHunter_TheyBeDead'] = 'Potrzebujemy ich martwych, a nie żywych! Ale martwy!',
+  ['BountyHunter_StackBounties'] = 'Możesz kumulować nagrody, pamiętaj tylko',
+  ['BountyHunter_DieAndLose'] = 'że stracisz nagrody, jeśli umrzesz!',
   ['BountyHunter_KilledAllTargets'] = 'Udało ci się zabić wszystkie cele',
   ['BountyHunter_SearchBodies'] = 'Przeszukaj ciała w poszukiwaniu dowodów,',
-  ['BountyHunter_AndBringBack'] = 'i wróć do biura policji!',
+  ['BountyHunter_AndBringBack'] = 'i zanieś to z powrotem do biura szeryfa!',
   ['BountyHunter_BringBackEvidence'] = 'Przynieś dowody szeryfowi!',
   ['BountyHunter_LostTargets'] = "Straciłeś swoje cele",
-  ['BountyHunter_NoStackAllowed'] = "Masz już aktywne zlecenie! Zabij je najpierw",
-  ['BountyHunter_MaxBountiesReached'] = "Masz za dużo otwartych zleceń, najpierw je zabij",
+  ['BountyHunter_NoStackAllowed'] = "Masz już aktywną nagrodę! Zabij ich najpierw",
+  ['BountyHunter_MaxBountiesReached'] = "Masz wiele otwartych zleceń, najpierw je zabij",
 
-  ['PickableFruits_PressSpace'] = 'Naciśnij [~e~SPACE~q~], aby zbierać jagody',
-  ['PickableFruits_Searching'] = "Wyszukiwanie ...",
-  ['PickableFruits_Collected'] = "Zebrałeś",
+  ['PickableFruits_PressSpace'] = 'Naciśnij [ ~e~SPACE~q~ ] aby zbierać jagody',
+  ['PickableFruits_Searching'] = "Przeszukiwanie...",
+  ['PickableFruits_Collected'] = "Zebrałeś ",
   ['PickableFruits_NothingFound'] = "Nie ma tu nic do zebrania!",
 
-  ['Rivers_Info'] = "Naciśnij [~e~G~q~], aby umyć, [~e~ENTER~q~], aby pić wodę",
+  -- Rivers
+  ['Rivers_Info'] = "Naciśnij [~e~G~q~] by się umyć, [~e~ENTER~q~] aby się napić wody",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
