@@ -19,7 +19,7 @@ Plugins = {
   PlayPiano      = true,  -- Lets users play the saloon pianos.
   Rivers         = true,  -- Lets you drink and wash in rivers and lakes.
   PickableFruits = true,  -- Lets you harvest fruits from trees and bushes.
-
+  PayCheck       = true,  -- Pay your players per x amount of minutes.
 
   -- ======================================================= --
   -- For enabling the trains please read the Disclaimer.txt.
@@ -395,6 +395,26 @@ Rivers = {
 
 
 --------------------------------------------------------------------------------
+------------------------------- Plugin Paycheck --------------------------------
+--------------------------------------------------------------------------------
+PayCheck = {
+  CoolDown = 60, -- Time between each PayCheck
+  Jobs = {
+    -- The jobs that receive a PayCheck
+    -- Sometimes the job in the database is none instead of unemployed.
+    -- To cover both, i added both in the list
+    { Job = 'unemployed', Enable = true, Money = 2.0,  Gold = 0.0, Exp = 0 },
+    { Job = 'none',       Enable = true, Money = 2.0,  Gold = 0.0, Exp = 0 },
+    { Job = 'sheriff',    Enable = true, Money = 10.0, Gold = 0.0, Exp = 0 },
+    { Job = 'medic',      Enable = true, Money = 6.0,  Gold = 0.0, Exp = 0 }
+  }
+}
+
+
+
+
+
+--------------------------------------------------------------------------------
 -------------------------------- PickableFruits --------------------------------
 --------------------------------------------------------------------------------
 PickableFruits = {
@@ -482,8 +502,8 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.2.0"
-_vConfig_ = 010316052021
+_Version_ = "2.3.0"
+_vConfig_ = 015926052021
 _StartError_ = false
 
 
