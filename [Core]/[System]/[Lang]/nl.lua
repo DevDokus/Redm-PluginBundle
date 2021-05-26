@@ -79,8 +79,8 @@ Lang['nl'] = {
   ['Rivers_Info'] = "Druk op [~e~G~q~] om te wassen, [~e~ENTER~q~] om water te drinken",
 
   -- PayCheck
-  ['PayCheck_Money'] = 'Je hebt~t~$~q~~o~ontvangen',
-  ['PayCheck_Gold'] = '~t~Goud~q~:~o~',
-  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
-  ['PayCheck_Salary'] = '[~t~Salaris~q~]',
+  ['PayCheck_Money'] = 'Je hebt ~t~$~q~ ~o~',
+  ['PayCheck_Gold'] = '~t~Goud~q~: ~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~ ~o~',
+  ['PayCheck_Salary'] = ' ontvangen | [~t~Salaris~q~]',
 }

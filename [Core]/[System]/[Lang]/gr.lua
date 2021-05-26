@@ -79,8 +79,8 @@ Lang['gr'] = {
   ['Rivers_Info'] = "Πατήστε [~e~G~q~] για πλύσιμο, [~e~ENTER~q~] για να πιείτε νερό",
 
   -- PayCheck
-  ['PayCheck_Money'] = 'Λάβατε~t~$~q~~o~',
-  ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
-  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
-  ['PayCheck_Salary'] = '[~t~Μισθός~q~]',
+  ['PayCheck_Money'] = 'Λάβατε~t~$~q~ ~o~',
+  ['PayCheck_Gold'] = '~t~Gold~q~: ~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~ ~o~',
+  ['PayCheck_Salary'] = ' [~t~Μισθός~q~]',
 }

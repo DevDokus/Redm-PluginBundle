@@ -79,8 +79,8 @@ Lang['dk'] = {
   ['Rivers_Info'] = "Tryk på [~e~G~q~] for at vaske, [~e~ENTER~q~] for at drikke vand",
 
   -- PayCheck
-  ['PayCheck_Money'] = 'Du modtog~t~$~q~~o~',
-  ['PayCheck_Gold'] = '~t~Guld~q~:~o~',
-  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
-  ['PayCheck_Salary'] = '[~t~Løn~q~]',
+  ['PayCheck_Money'] = 'Du modtog ~t~$~q~ ~o~',
+  ['PayCheck_Gold'] = '~t~Guld~q~: ~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~ ~o~',
+  ['PayCheck_Salary'] = ' [~t~Løn~q~]',
 }
