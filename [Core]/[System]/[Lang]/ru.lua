@@ -44,7 +44,7 @@ Lang['ru'] = {
   ['Store_Sold'] = "Вы продали товар:",
   ['Store_NoItem'] = "У вас нет элемента с названием:",
   ['Store_Exit'] = 'Выход',
-  
+
   -- Охотник за головами
   ['BountyHunter_PressSpace'] = 'Нажмите [~e~SPACE~q~], чтобы открыть меню наград',
   ['BountyHunter_MenuTitle'] = 'Доска объявлений',
@@ -71,10 +71,16 @@ Lang['ru'] = {
   ['BountyHunter_NoStackAllowed'] = "У вас уже есть активная награда! Сначала убейте их",
   ['BountyHunter_MaxBountiesReached'] = "У вас открыто много наград, сначала убейте их",
 
-  ['PickableFruits_PressSpace'] = 'Нажмите [~e~ SPACE ~q~], чтобы собрать ягоды ',
+  ['PickableFruits_PressSpace'] = 'Нажмите [~e~SPACE~q~], чтобы собрать ягоды ',
   ['PickableFruits_Searching'] = "Поиск ...",
   ['PickableFruits_Collected'] = 'Вы собрали',
   ['PickableFruits_NothingFound'] = "Здесь нечего собирать!",
 
   ['Rivers_Info'] = "Нажмите [~e~G~q~], чтобы мыть, [~e~ENTER~q~], чтобы пить воду",
+
+  -- PayCheck
+  ['PayCheck_Money'] = 'Вы получили~t~$~q~~o~',
+  ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Salary'] = '[~t~Salary~q~]',
 }

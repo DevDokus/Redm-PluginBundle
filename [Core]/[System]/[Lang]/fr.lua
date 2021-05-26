@@ -44,7 +44,7 @@ Lang['fr'] = {
   ['Store_Sold'] = "Vous avez vendu un article:",
   ['Store_NoItem'] = "Vous n'avez aucun élément appelé:",
   ['Store_Exit'] = 'Quitter',
-  
+
   -- Chasseur de primes
   ['BountyHunter_PressSpace'] = 'Appuyez sur [~e~ESPACE~q~] pour ouvrir le menu des primes',
   ['BountyHunter_MenuTitle'] = 'Tableau de primes',
@@ -78,4 +78,10 @@ Lang['fr'] = {
   ['PickableFruits_NothingFound'] = "Il n'y a rien à collecter ici!",
 
   ['Rivers_Info'] = "Appuyez sur [~e~G~q~] pour laver, [~e~ENTER~q~] pour boire de l'eau",
+
+  - PayCheck
+  ['PayCheck_Money'] = 'Vous avez reçu~t~$~q~~o~',
+  ['PayCheck_Gold'] = '~t~Or~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Salary'] = '[~t~Salaire~q~]',
 }

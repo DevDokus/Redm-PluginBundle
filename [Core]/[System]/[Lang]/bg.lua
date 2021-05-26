@@ -3,8 +3,8 @@ Lang['bg'] = {
   ['OnlyAdmins'] = 'Тази функция е само за администратори!',
 
   -- Пиано
-  ['PlayPiano_Play'] = 'Натиснете [~e~ Space ~q~], за да свирите на пиано',
-  ['PlayPiano_Stop'] = 'Натиснете [~e~ F ~q~], за да спрете да играете',
+  ['PlayPiano_Play'] = 'Натиснете [~e~Space~q~], за да свирите на пиано',
+  ['PlayPiano_Stop'] = 'Натиснете [~e~F~q~], за да спрете да играете',
 
   -- Метаболизъм
   ['Metabolism_IFCC'] = 'Неправилен_Format_Check_Config',
@@ -23,7 +23,7 @@ Lang['bg'] = {
   ['UsableItems_RefundTent'] = "Възстановена ви е палатка",
 
   -- Магазини
-  ['Store_OpenShop'] = 'Натиснете [~e~ SPACE ~q~], за да отворите менюто на магазина',
+  ['Store_OpenShop'] = 'Натиснете [~e~SPACE~q~], за да отворите менюто на магазина',
   ['Store_MenuTitle'] = 'Общ магазин',
   ['Store_Category'] = 'Категория',
   ['Store_Buy'] = 'Купуване на артикули',
@@ -46,7 +46,7 @@ Lang['bg'] = {
   ['Store_Exit'] = 'Изход',
 
   -- Ловец на глави
-  ['BountyHunter_PressSpace'] = 'Натиснете [~e~ SPACE ~q~], за да отворите менюто за награди',
+  ['BountyHunter_PressSpace'] = 'Натиснете [~e~SPACE~q~], за да отворите менюто за награди',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
   ['BountyHunter_PVESubTitle'] = 'Лов на NPC',
   ['BountyHunter_PVPSubTitle'] = 'Лов на хора',
@@ -72,11 +72,17 @@ Lang['bg'] = {
   ['BountyHunter_MaxBountiesReached'] = "Отворили сте много награди, първо ги убийте",
 
   -- Picking Fruits
-  ['PickableFruits_PressSpace'] = 'Натиснете [~e~ SPACE ~q~], за да съберете плодове',
+  ['PickableFruits_PressSpace'] = 'Натиснете [~e~SPACE~q~], за да съберете плодове',
   ['PickableFruits_Searching'] = "Търсене ...",
   ['PickableFruits_Collected'] = "Събрахте",
   ['PickableFruits_NothingFound'] = "Тук няма какво да се събира!",
 
   -- Rivers
-  ['Rivers_Info'] = "Натиснете [~e~ G ~q~], за да измиете, [~e~ ENTER ~q~], за да пиете вода",
+  ['Rivers_Info'] = "Натиснете [~e~G~q~], за да измиете, [~e~ENTER~q~], за да пиете вода",
+
+  -- PayCheck
+  ['PayCheck_Money'] = 'Получихте~t~$~q~~o~',
+  ['PayCheck_Gold'] = '~t~Злато~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Salary'] = '[~t~Заплата~q~]',
 }

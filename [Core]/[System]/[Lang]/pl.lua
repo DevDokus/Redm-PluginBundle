@@ -23,7 +23,7 @@ Lang['pl'] = {
   ['UsableItems_RefundTent'] = "Zwrócono ci pieniądze za namiot",
 
   -- Stores
-  ['Store_OpenShop'] = 'Naciśnij [~e~ SPACE ~q~] aby otworzyć menu sklepu',
+  ['Store_OpenShop'] = 'Naciśnij [~e~SPACE~q~] aby otworzyć menu sklepu',
   ['Store_MenuTitle'] = 'Sklep spożywczy',
   ['Store_Category'] = 'Kategorie',
   ['Store_Buy'] = 'Kup przedmiot',
@@ -46,7 +46,7 @@ Lang['pl'] = {
   ['Store_Exit'] = 'Wyjdź',
 
   -- Bounty Hunter
-  ['BountyHunter_PressSpace'] = 'Naciśnij [~e~ SPACE ~q~] aby otworzyć menu nagród',
+  ['BountyHunter_PressSpace'] = 'Naciśnij [~e~SPACE~q~] aby otworzyć menu nagród',
   ['BountyHunter_MenuTitle'] = 'Tablica zleceń',
   ['BountyHunter_PVESubTitle'] = 'Poluj na NPC',
   ['BountyHunter_PVPSubTitle'] = 'Poluj na ludzi',
@@ -71,7 +71,7 @@ Lang['pl'] = {
   ['BountyHunter_NoStackAllowed'] = "Masz już aktywną nagrodę! Zabij ich najpierw",
   ['BountyHunter_MaxBountiesReached'] = "Masz wiele otwartych zleceń, najpierw je zabij",
 
-  ['PickableFruits_PressSpace'] = 'Naciśnij [ ~e~SPACE~q~ ] aby zbierać jagody',
+  ['PickableFruits_PressSpace'] = 'Naciśnij [~e~SPACE~q~] aby zbierać jagody',
   ['PickableFruits_Searching'] = "Przeszukiwanie...",
   ['PickableFruits_Collected'] = "Zebrałeś ",
   ['PickableFruits_NothingFound'] = "Nie ma tu nic do zebrania!",
@@ -79,7 +79,11 @@ Lang['pl'] = {
   -- Rivers
   ['Rivers_Info'] = "Naciśnij [~e~G~q~] by się umyć, [~e~ENTER~q~] aby się napić wody",
 
-
+  -- PayCheck
+    ['PayCheck_Money'] = 'Otrzymałeś~t~$~q~~o~',
+    ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
+    ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+    ['PayCheck_Salary'] = '[~t~Salary~q~]',
 
 
 

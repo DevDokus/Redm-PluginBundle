@@ -23,7 +23,7 @@ Lang['en'] = {
   ['UsableItems_RefundTent'] = "You've been refunded a tent",
 
   -- Stores
-  ['Store_OpenShop'] = 'Press [~e~ SPACE ~q~] to open the shop menu',
+  ['Store_OpenShop'] = 'Press [~e~SPACE~q~] to open the shop menu',
   ['Store_MenuTitle'] = 'General Store',
   ['Store_Category'] = 'Category',
   ['Store_Buy'] = 'Buy Items',
@@ -46,7 +46,7 @@ Lang['en'] = {
   ['Store_Exit'] = 'Exit',
 
   -- Bounty Hunter
-  ['BountyHunter_PressSpace'] = 'Press [~e~ SPACE ~q~] to open the bounty menu',
+  ['BountyHunter_PressSpace'] = 'Press [~e~SPACE~q~] to open the bounty menu',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
   ['BountyHunter_PVESubTitle'] = 'Hunt NPCs',
   ['BountyHunter_PVPSubTitle'] = 'Hunt Humans',
@@ -71,7 +71,7 @@ Lang['en'] = {
   ['BountyHunter_NoStackAllowed'] = "You already have a active bounty! Kill them first",
   ['BountyHunter_MaxBountiesReached'] = "You've to many bounties open, kill them first",
 
-  ['PickableFruits_PressSpace'] = 'Press [ ~e~SPACE~q~ ] to harvest for berries',
+  ['PickableFruits_PressSpace'] = 'Press [~e~SPACE~q~] to harvest for berries',
   ['PickableFruits_Searching'] = "Searching...",
   ['PickableFruits_Collected'] = "You've collected ",
   ['PickableFruits_NothingFound'] = "There is nothing to be collected here!",
@@ -79,8 +79,11 @@ Lang['en'] = {
   -- Rivers
   ['Rivers_Info'] = "Press [~e~G~q~] to wash, [~e~ENTER~q~] to Drink Water",
 
-
-
+  -- PayCheck
+  ['PayCheck_Money'] = 'You Recived~t~$~q~~o~',
+  ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Salary'] = '[~t~Salary~q~]',
 
 
 

@@ -44,7 +44,7 @@ Lang['dk'] = {
   ['Store_Sold'] = "Du har solgt en vare:",
   ['Store_NoItem'] = "Du har ikke noget, der hedder:",
   ['Store_Exit'] = 'Afslut',
-  
+
   -- Dusør jæger
   ['BountyHunter_PressSpace'] = 'Tryk på [~e~MELLEMRUM~q~] for at åbne dusørmenuen',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
@@ -77,4 +77,10 @@ Lang['dk'] = {
   ['PickableFruits_NothingFound'] = "Der er intet at samle her!",
 
   ['Rivers_Info'] = "Tryk på [~e~G~q~] for at vaske, [~e~ENTER~q~] for at drikke vand",
+
+  -- PayCheck
+  ['PayCheck_Money'] = 'Du modtog~t~$~q~~o~',
+  ['PayCheck_Gold'] = '~t~Guld~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Salary'] = '[~t~Løn~q~]',
 }

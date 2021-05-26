@@ -44,7 +44,7 @@ Lang['nl'] = {
   ['Store_Sold'] = "U heeft een item verkocht:",
   ['Store_NoItem'] = "Je hebt geen item met de naam:",
   ['Store_Exit'] = 'Afsluiten',
-  
+
   -- Premie Jager
   ['BountyHunter_PressSpace'] = 'Druk op [~e~SPACE~q~] om het bounty-menu te openen',
   ['BountyHunter_MenuTitle'] = 'Premiebord',
@@ -77,4 +77,10 @@ Lang['nl'] = {
   ['PickableFruits_NothingFound'] = "Er kan hier niets verzameld worden!",
 
   ['Rivers_Info'] = "Druk op [~e~G~q~] om te wassen, [~e~ENTER~q~] om water te drinken",
+
+  -- PayCheck
+  ['PayCheck_Money'] = 'Je hebt~t~$~q~~o~ontvangen',
+  ['PayCheck_Gold'] = '~t~Goud~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Salary'] = '[~t~Salaris~q~]',
 }

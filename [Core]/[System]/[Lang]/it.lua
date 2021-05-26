@@ -44,7 +44,7 @@ Lang['it'] = {
   ['Store_Sold'] = "Hai venduto un articolo:",
   ['Store_NoItem'] = "Nessun articolo chiamato:",
   ['Store_Exit'] = 'Exit',
-  
+
   -- Cacciatore di taglie
   ['BountyHunter_PressSpace'] = 'Premi [~e~SPAZIO~q~] per aprire il menu delle taglie',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
@@ -77,4 +77,10 @@ Lang['it'] = {
   ['PickableFruits_NothingFound'] = "Non c'è niente da raccogliere qui!",
 
   ['Rivers_Info'] = "Premi [~e~G~q~] per lavare, [~e~ENTER~q~] per bere acqua",
+
+  -- PayCheck
+  ['PayCheck_Money'] = 'Hai ricevuto~t~$~q~~o~',
+  ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ["PayCheck_Salary"] = "[~t~Stipendio~q~]",
 }

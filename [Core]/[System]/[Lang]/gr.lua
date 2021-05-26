@@ -44,7 +44,7 @@ Lang['gr'] = {
   ['Store_Sold'] = "Έχετε πουλήσει ένα αντικείμενο:",
   ['Store_NoItem'] = "Δεν έχετε όνομα με το όνομα:",
   ['Store_Exit'] = 'Έξοδος',
-  
+
   -- Κυνηγός επικυρηγμένων
   ['BountyHunter_PressSpace'] = 'Πατήστε [~e~SPACE~q~] για να ανοίξετε το μενού bounty',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
@@ -77,4 +77,10 @@ Lang['gr'] = {
   ['PickableFruits_NothingFound'] = "Δεν υπάρχει τίποτα για συλλογή εδώ!",
 
   ['Rivers_Info'] = "Πατήστε [~e~G~q~] για πλύσιμο, [~e~ENTER~q~] για να πιείτε νερό",
+
+  -- PayCheck
+  ['PayCheck_Money'] = 'Λάβατε~t~$~q~~o~',
+  ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Salary'] = '[~t~Μισθός~q~]',
 }
