@@ -130,6 +130,10 @@ was never been easier!
   - Set what jobs need to reveive a paycheck
   - Set the mount of Money - Gold or Exp per Job
 
+- **MaxCores**
+  - Boost the default health of a player
+  - Boost the default stamina of a player
+
 # Events: Metabolism
 ```
 TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
@@ -165,6 +169,11 @@ If you make any changes in the client/server files, you have  <br>
 to manually change this on every update.  
 
 # Scripts Included
+Note: Not all standalone plugins are up to date with the newest version!! <br>
+DokusCore has the newest version of all these scripts, I would advice to use <br>
+the core instead of the standalones. Once I got more time, I will update all <br>
+the standalone.
+
 - [DevDokus Teleport]( https://github.com/DevDokus/RedM-Teleport)
 - [DevDokus Stores](https://github.com/DevDokus/Redm-Stores)
 - [DevDokus Usable Items](https://github.com/DevDokus/RedM-UsableItems)
