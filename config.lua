@@ -8,7 +8,7 @@ Language = 'en'
 --------------------------------------------------------------------------------
 -- This will turn features on or off.
 Plugins = {
-  MaxCores       = true,  -- Set health and stamina to max
+  MaxCores       = false,  -- Set health and stamina to max
   Metabolism     = true,  -- Gives you Character vitals like eat and drink.
   Stores         = true,  -- Gives you multiple stores to buy and sell items.
   Teleport       = true,  -- Lets admins or all players teleport to map marker.
@@ -36,12 +36,12 @@ Plugins = {
 ------------------------------- Plugin MaxCores --------------------------------
 --------------------------------------------------------------------------------
 MaxCores = {
-  -- [Warning]: Stamina works but when enabled it will give you an error in the
+  -- [Warning]: This Feature works but when enabled it will give you an error in the
   -- client console. This error can, as of right now, not be fixed as the error
   -- should not be thrown at all. Keep this in mind if you enable Stamina. If does
   -- give an error, but it can be ignored.
-  Health = true,
-  Stamina = true,
+  Health = false,
+  Stamina = false,
 
   -- This multiplies the mount of health and stamina will be added to your
   -- default cores. 1 point roughtly corresponds to 10/15% extra core boost.
