@@ -8,7 +8,10 @@
     Money - Gold and Experience per x defined minutes in the config.
     You are able to define your own jobs and how much money, gold or experience
     they will receive.
-    
+
+[2] [ MaxCores ] [ NEW ]: Added a feature to increase your default vital cores.
+    You will now be able to set your default health and stamina higher.
+
 --------------------------------------------------------------------------------
 -------------------------------- Version 2.2.0 ---------------------------------
 --------------------------------------------------------------------------------
