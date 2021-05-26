@@ -41,10 +41,10 @@ MaxCores = {
   -- should not be thrown at all. Keep this in mind if you enable Stamina. If does
   -- give an error, but it can be ignored.
   Health = true,
-  Stamina = false,
+  Stamina = true,
 
   -- This multiplies the mount of health and stamina will be added to your
-  -- default cores. 1 point roughtly corresponds to 5/7% extra core boost.
+  -- default cores. 1 point roughtly corresponds to 10/15% extra core boost.
   -- Note: Please do not make this a decimal number!!! Use 1 instead of 1.0
   HealthMulti  = 1,
   StaminaMulti = 1
