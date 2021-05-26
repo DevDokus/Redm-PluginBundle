@@ -4,6 +4,9 @@
 --------------------------------------------------------------------------------
 -------------------------------- Version 2.3.0 ---------------------------------
 --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+                   Attention: The Config.lua has been edited!
+--------------------------------------------------------------------------------
 [1] [ PayCheck ] [ NEW ]: Added a feature to pay your players an x amount of
     Money - Gold and Experience per x defined minutes in the config.
     You are able to define your own jobs and how much money, gold or experience
