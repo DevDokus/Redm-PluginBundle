@@ -79,8 +79,8 @@ Lang['it'] = {
   ['Rivers_Info'] = "Premi [~e~G~q~] per lavare, [~e~ENTER~q~] per bere acqua",
 
   -- PayCheck
-  ['PayCheck_Money'] = 'Hai ricevuto~t~$~q~~o~',
-  ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
-  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
-  ["PayCheck_Salary"] = "[~t~Stipendio~q~]",
+  ['PayCheck_Money'] = 'Hai ricevuto~t~$~q~ ~o~',
+  ['PayCheck_Gold'] = '~t~Gold~q~: ~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~ ~o~',
+  ["PayCheck_Salary"] = " [~t~Stipendio~q~]",
 }

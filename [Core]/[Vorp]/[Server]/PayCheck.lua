@@ -27,6 +27,6 @@ end)
 function Note(Money, Gold, Exp)
   local _m = (_('PayCheck_Money') .. Money .. '~q~ | ')
   local _g = (_('PayCheck_Gold') .. Gold .. '~q~ | ')
-  local _e = (_('PayCheck_Exp') .. Exp .. '~q~ | ' .. _('PayCheck_Salary'))
+  local _e = (_('PayCheck_Exp') .. Exp .. '~q~' .. _('PayCheck_Salary'))
   TriggerClientEvent("vorp:TipRight", source, (_m.._g.._e), 10000)
 end

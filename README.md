@@ -1,7 +1,7 @@
 ---
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/49053928/111937011-2e9b8080-8ac7-11eb-914a-a0d94380d611.gif"><br>
- <b>Version (v2.2.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
+ <b>Version (v2.3.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
 </p>
 
 ---
@@ -124,6 +124,11 @@ was never been easier!
   - Pick varius fruits from bushes and trees.
   - Add harvest items easy in the config.
   - Choose Min/Max amount per item to get.
+
+- **PayChecks**
+  - Set how often the paycheck needs to occure
+  - Set what jobs need to reveive a paycheck
+  - Set the mount of Money - Gold or Exp per Job
 
 # Events: Metabolism
 ```

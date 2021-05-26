@@ -80,10 +80,10 @@ Lang['pl'] = {
   ['Rivers_Info'] = "Naciśnij [~e~G~q~] by się umyć, [~e~ENTER~q~] aby się napić wody",
 
   -- PayCheck
-    ['PayCheck_Money'] = 'Otrzymałeś~t~$~q~~o~',
-    ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
-    ['PayCheck_Exp'] = '~t~XP:~q~~o~',
-    ['PayCheck_Salary'] = '[~t~Salary~q~]',
+    ['PayCheck_Money'] = 'Otrzymałeś ~t~$~q~ ~o~',
+    ['PayCheck_Gold'] = '~t~Gold~q~: ~o~',
+    ['PayCheck_Exp'] = '~t~XP:~q~ ~o~',
+    ['PayCheck_Salary'] = ' [~t~Salary~q~]',
 
 
 

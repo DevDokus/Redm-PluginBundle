@@ -81,8 +81,8 @@ Lang['bg'] = {
   ['Rivers_Info'] = "Натиснете [~e~G~q~], за да измиете, [~e~ENTER~q~], за да пиете вода",
 
   -- PayCheck
-  ['PayCheck_Money'] = 'Получихте~t~$~q~~o~',
-  ['PayCheck_Gold'] = '~t~Злато~q~:~o~',
-  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
+  ['PayCheck_Money'] = 'Получихте ~t~$~q~ ~o~',
+  ['PayCheck_Gold'] = '~t~Злато~q~: ~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~ ~o~',
   ['PayCheck_Salary'] = '[~t~Заплата~q~]',
 }

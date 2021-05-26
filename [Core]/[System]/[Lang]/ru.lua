@@ -79,8 +79,8 @@ Lang['ru'] = {
   ['Rivers_Info'] = "Нажмите [~e~G~q~], чтобы мыть, [~e~ENTER~q~], чтобы пить воду",
 
   -- PayCheck
-  ['PayCheck_Money'] = 'Вы получили~t~$~q~~o~',
-  ['PayCheck_Gold'] = '~t~Gold~q~:~o~',
-  ['PayCheck_Exp'] = '~t~XP:~q~~o~',
-  ['PayCheck_Salary'] = '[~t~Salary~q~]',
+  ['PayCheck_Money'] = 'Вы получили ~t~$~q~ ~o~',
+  ['PayCheck_Gold'] = '~t~Gold~q~: ~o~',
+  ['PayCheck_Exp'] = '~t~XP:~q~ ~o~',
+  ['PayCheck_Salary'] = ' [~t~Salary~q~]',
 }
