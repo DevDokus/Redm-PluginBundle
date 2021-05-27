@@ -11,6 +11,8 @@ Lang['pt'] = {
   ['Metabolism_YourDying1'] = 'Você está morrendo, verifique seus sinais vitais!',
   ['Metabolism_YourDying2'] = 'Sinto formigamento nos dedos ...',
   ['Metabolism_YourDying3'] = 'Eu posso ver as luzes, o fim está próximo ...',
+  ['Metabolism_SoHungry'] = 'Estou com muita fome, preciso comer',
+  ['Metabolism_SoThirsty'] = 'Estou com muita sede, preciso beber',
 
   -- UsableItems
   ['UsableItems_NoTent'] = 'Você não tem tenda!',

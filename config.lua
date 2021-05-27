@@ -90,6 +90,7 @@ Metabolism = {
   -- his or her character. It is adviced to leave this default. This prevents
   -- The user from dying during character creation.
   StartArea = {x = 602.7, y = -3726.8, z = 37.0},
+  StartRadius = 1200, -- Radius of the circle you dont lose vitals on character creation
 
   -- This will reset your vitals to 100% the moment you repawn.
   -- Setting this to false will mean that players are still dying
@@ -519,7 +520,7 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.3.0"
+_Version_ = "2.3.1"
 _vConfig_ = 015926052021
 _StartError_ = false
 

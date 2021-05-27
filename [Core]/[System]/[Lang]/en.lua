@@ -11,6 +11,8 @@ Lang['en'] = {
   ['Metabolism_YourDying1'] = 'You\'re dying, check your vitals!',
   ['Metabolism_YourDying2'] = 'I feel tingling in my fingers...',
   ['Metabolism_YourDying3'] = 'I can see the lights, the end is near...',
+  ['Metabolism_SoHungry'] = 'I am feeling so hungry, I need to eat',
+  ['Metabolism_SoThirsty'] = 'I am feeling so thirsty, I need to drink',
 
   -- UsableItems
   ['UsableItems_NoTent'] = 'You\'ve no tent!',

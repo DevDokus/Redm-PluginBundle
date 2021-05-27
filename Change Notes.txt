@@ -2,6 +2,28 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 2.3.1 ---------------------------------
+--------------------------------------------------------------------------------
+[1] [ Metabolism ] [ Change ]: Before you where only getting vital warning the
+    moment your health's inner core has been depleted, but it would not give you
+    a thirst or hunger warnings before the vital warnings. Now you will start
+    to receive warnings about low food and thirst before you receive the last
+    vital warnings.
+
+[2] [ Metabolism ] [ Fix ]: The moment you where starting to lose your health's
+    outer core, this would go very fast as i still had the timeout set to 500
+    milliseconds for texting purposes. I have set this tick rate back to 4 seconds
+    instead of 2x per second.
+
+[3] [ Metabolism ] [ Fix ]: Some servers still had problems with the character
+    losing water within the character creator. I have increased the radius to check
+    if you are in this area by 200 meters, from 1000 to 1200 meters. This should
+    cover the area a bit better. Keep in mind that if you change the start coords
+    you have to edit this also in the DokusCore config! I have also made a option
+    for the radius checking to the start coordinates, for if people would like to
+    change this for their server
+
+--------------------------------------------------------------------------------
 -------------------------------- Version 2.3.0 ---------------------------------
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------

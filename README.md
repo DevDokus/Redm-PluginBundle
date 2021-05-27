@@ -1,7 +1,7 @@
 ---
 <p align="center">
   <img width="600" height="200" src="https://user-images.githubusercontent.com/49053928/111937011-2e9b8080-8ac7-11eb-914a-a0d94380d611.gif"><br>
- <b>Version (v2.3.0) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
+ <b>Version (v2.3.1) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
 </p>
 
 ---
@@ -57,6 +57,8 @@ was never been easier!
   - Boost Stamina outer core (Gold)
   - Boost Stamina inner core (Gold)
   - Enable / Disable reset vitals after death
+  - Gives warnings when low on food and thirst
+  - Gives vital warnings when low on health
 
 - **iMaps**
   - Fix multiple holes in the map
@@ -172,7 +174,7 @@ to manually change this on every update.
 Note: Not all standalone plugins are up to date with the newest version!! <br>
 DokusCore has the newest version of all these scripts, I would advice to use <br>
 the core instead of the standalones. Once I got more time, I will update all <br>
-the standalone. 
+the standalone.
 
 - [DevDokus Teleport]( https://github.com/DevDokus/RedM-Teleport)
 - [DevDokus Stores](https://github.com/DevDokus/Redm-Stores)

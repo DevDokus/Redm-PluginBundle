@@ -11,6 +11,8 @@ Lang['es'] = {
   ['Metabolism_YourDying1'] = '¡Te estás muriendo, revisa tus signos vitales!',
   ['Metabolism_YourDying2'] = 'Siento un hormigueo en mis dedos ...',
   ['Metabolism_YourDying3'] = 'Puedo ver las luces, el final está cerca ...',
+  ['Metabolism_SoHungry'] = 'Tengo tanta hambre que necesito comer',
+  ['Metabolism_SoThirsty'] = 'Tengo tanta sed, necesito beber',
 
   -- Elementos utilizables
   ['UsableItems_NoTent'] = '¡No tienes tienda!',

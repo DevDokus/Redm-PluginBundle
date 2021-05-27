@@ -11,6 +11,8 @@ Lang['dk'] = {
   ['Metabolism_YourDying1'] = 'Du dør, tjek dine vitaler!',
   ['Metabolism_YourDying2'] = 'Jeg føler mig kriblende i fingrene ...',
   ['Metabolism_YourDying3'] = 'Jeg kan se lysene, enden er nær ...',
+  ['Metabolism_SoHungry'] = 'Jeg føler mig så sulten, jeg har brug for at spise',
+  ['Metabolism_SoThirsty'] = 'Jeg føler mig så tørstig, jeg har brug for at drikke',
 
   -- Brugbare emner
   ['UsableItems_NoTent'] = 'Du har intet telt!',

@@ -36,7 +36,13 @@ Citizen.CreateThread(function()
     _Stamina    = 100
     local DyingCount = 0
     local WarningCount = 0
+    local FoodWarning = 0
+    local ThirstWarning = 0
     local DeathWarning = false
+
+    local stage = { s1 = false, s2 = false, s3 = false}
+    local DeadOrAlive = true
+    local CoreIsZero = false
     --------------------------------------------------------------------------------
     Citizen.CreateThread(function()
       while true do Wait(1000)
@@ -48,7 +54,7 @@ Citizen.CreateThread(function()
           local temp    = math.floor(GetTemperatureAtCoords(coords))
           local Area    = Metabolism.StartArea
           local dist    = Vdist(coords, Area.x, Area.y, Area.z)
-          local IsReady = (dist > 1000)
+          local IsReady = (dist > Metabolism.StartRadius)
 
           if IsReady then
             if (temp >= Metabolism.Temperature.Max) then
@@ -71,6 +77,26 @@ Citizen.CreateThread(function()
             else
               _Hunger  = _Hunger - (Metabolism.Food.DrainIdle + DrainFood)
               _Thirst  = _Thirst - (Metabolism.Water.DrainIdle + DrainWater)
+            end
+
+            if (_Hunger <= Metabolism.Food.LoseWhen) then
+              if (FoodWarning == 0) and not CoreIsZero then
+                FoodWarning = (FoodWarning + 1)
+                TriggerEvent("vorp:TipRight", _('Metabolism_SoHungry'), 5000)
+              else
+                FoodWarning = (FoodWarning + 1)
+                if (FoodWarning == 10) then FoodWarning = 0 end
+              end
+            end
+
+            if (_Thirst <= Metabolism.Food.LoseWhen) then
+              if (ThirstWarning == 0) and not CoreIsZero then
+                ThirstWarning = (ThirstWarning + 1)
+                TriggerEvent("vorp:TipRight", _('Metabolism_SoThirsty'), 5000)
+              else
+                ThirstWarning = (ThirstWarning + 1)
+                if (ThirstWarning == 10) then ThirstWarning = 0 end
+              end
             end
           end
         end
@@ -98,9 +124,7 @@ Citizen.CreateThread(function()
       end
     end)
 
-    local stage = { s1 = false, s2 = false, s3 = false}
-    local DeadOrAlive = true
-    local CoreIsZero = false
+
     Citizen.CreateThread(function()
       while true do
         if VORPCore ~= nil then
@@ -154,7 +178,7 @@ Citizen.CreateThread(function()
             stage.s3 = false
           end
         end
-        Wait(500)
+        Wait(4000)
       end
     end)
 

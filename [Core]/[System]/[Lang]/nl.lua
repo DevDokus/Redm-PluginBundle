@@ -11,6 +11,8 @@ Lang['nl'] = {
   ['Metabolism_YourDying1'] = 'Je gaat dood, controleer je vitale functies!',
   ['Metabolism_YourDying2'] = 'Ik voel tintelingen in mijn vingers ...',
   ['Metabolism_YourDying3'] = 'Ik kan de lichten zien, het einde is nabij ...',
+  ['Metabolism_SoHungry'] = 'Ik heb zo\'n honger, ik moet eten',
+  ['Metabolism_SoThirsty'] = 'Ik heb zo\'n dorst, ik moet drinken',
 
   -- Bruikbare items
   ['UsableItems_NoTent'] = 'Je hebt geen tent!',

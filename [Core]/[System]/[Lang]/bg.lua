@@ -11,6 +11,8 @@ Lang['bg'] = {
   ['Metabolism_YourDying1'] = 'Умирате, проверете жизнените си показатели!',
   ['Metabolism_YourDying2'] = 'Чувствам изтръпване в пръстите ...',
   ['Metabolism_YourDying3'] = 'Виждам светлините, краят е близо ...',
+  ['Metabolism_SoHungry'] = 'Чувствам се толкова гладен, че трябва да ям',
+  ['Metabolism_SoThirsty'] = 'Чувствам се толкова жаден, че трябва да пия',
 
   -- UsableItems
   ['UsableItems_NoTent'] = 'Вие нямате палатка!',

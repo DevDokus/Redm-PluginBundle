@@ -12,6 +12,8 @@ Lang['de'] = {
   ['Metabolism_YourDying1'] = 'Du stirbst, überprüfe deine Vitalwerte!',
   ['Metabolism_YourDying2'] = 'Ich fühle ein Kribbeln in meinen Fingern ...',
   ['Metabolism_YourDying3'] = 'Ich kann die Lichter sehen, das Ende ist nahe ...',
+  ['Metabolism_SoHungry'] = 'Ich bin so hungrig, dass ich etwas essen muss',
+  ['Metabolism_SoThirsty'] = 'Ich fühle mich so durstig, ich muss trinken',
 
   -- UsableItems
   ['UsableItems_NoTent'] = 'Du hast kein Zelt!',

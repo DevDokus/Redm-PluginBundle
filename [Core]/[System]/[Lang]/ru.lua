@@ -11,6 +11,8 @@ Lang['ru'] = {
   ['Metabolism_YourDying1'] = 'Вы умираете, проверьте свои жизненно важные органы!',
   ['Metabolism_YourDying2'] = 'Я чувствую покалывание в пальцах ...',
   ['Metabolism_YourDying3'] = 'Я вижу огни, конец близок ...',
+  ['Metabolism_SoHungry'] = 'Я так голоден, мне нужно поесть',
+  ['Metabolism_SoThirsty'] = 'Я чувствую сильную жажду, мне нужно выпить',
 
   -- UsableItems
   ['UsableItems_NoTent'] = 'У вас нет палатки!',

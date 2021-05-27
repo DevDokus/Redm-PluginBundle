@@ -11,6 +11,8 @@ Lang['pl'] = {
   ['Metabolism_YourDying1'] = 'Umierasz, sprawdź swoje funkcje życiowe!',
   ['Metabolism_YourDying2'] = 'Czuję mrowienie w palcach...',
   ['Metabolism_YourDying3'] = 'Widzę światła, koniec jest bliski...',
+  ['Metabolism_SoHungry'] = 'Czuję się tak głodny, że muszę jeść',
+  ['Metabolism_SoThirsty'] = 'Czuję się tak spragniony, że muszę się napić',
 
   -- UsableItems
   ['UsableItems_NoTent'] = 'Nie masz namiotu!',
