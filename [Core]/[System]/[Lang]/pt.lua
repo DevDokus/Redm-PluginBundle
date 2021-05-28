@@ -3,8 +3,8 @@ Lang['pt'] = {
   ['OnlyAdmins'] = 'Este recurso é apenas para administradores!',
 
   -- Piano
-  ['PlayPiano_Tocar'] = 'Pressione [~e~Espaço~q~] para tocar o piano',
-  ['PlayPiano_Parar'] = 'Pressione [~e~F~q~] para parar de tocar',
+  ['PlayPiano_Play'] = 'Pressione [~e~Espaço~q~] para tocar o piano',
+  ['PlayPiano_Stop'] = 'Pressione [~e~F~q~] para parar de tocar',
 
   -- Metabolismo
   ['Metabolism_IFCC'] = 'Configuração_de_verificação_de formato_incorreto',
