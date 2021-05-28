@@ -23,6 +23,9 @@
     for the radius checking to the start coordinates, for if people would like to
     change this for their server
 
+[4] [ Piano ] [ Fix ]: The Portugese translation for the piano was broken due to
+    the translator translated the object names. These are corrected.
+
 --------------------------------------------------------------------------------
 -------------------------------- Version 2.3.0 ---------------------------------
 --------------------------------------------------------------------------------
