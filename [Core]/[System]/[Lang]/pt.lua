@@ -9,18 +9,18 @@ Lang['pt'] = {
   -- Metabolismo
   ['Metabolism_IFCC'] = 'Configuração_de_verificação_de formato_incorreto',
   ['Metabolism_YourDying1'] = 'Você está morrendo, verifique seus sinais vitais!',
-  ['Metabolism_YourDying2'] = 'Sinto formigamento nos dedos ...',
+  ['Metabolism_YourDying2'] = 'Sinto formigamento nos dedos...',
   ['Metabolism_YourDying3'] = 'Eu posso ver as luzes, o fim está próximo ...',
   ['Metabolism_SoHungry'] = 'Estou com muita fome, preciso comer',
-  ['Metabolism_SoThirsty'] = 'Estou com muita sede, preciso beber',
+  ['Metabolism_SoThirsty'] = 'Estou com muita sede, preciso me hidratar',
 
   -- UsableItems
   ['UsableItems_NoTent'] = 'Você não tem tenda!',
   ['UsableItems_NoCampFire'] = 'Você não tem fogueira!',
-  ['UsableItems_PlacingCampfire'] = "Você está colocando sua fogueira ...",
-  ['UsableItems_PlacingTent'] = "Você está colocando sua barraca ...",
-  ['UsableItems_Eating'] = "Você consumiu",
-  ['UsableItems_Drinking'] = "Você bebeu",
+  ['UsableItems_PlacingCampfire'] = "Você está colocando sua fogueira...",
+  ['UsableItems_PlacingTent'] = "Você está colocando sua barraca...",
+  ['UsableItems_Eating'] = "Você consumiu ",
+  ['UsableItems_Drinking'] = "Você bebeu ",
   ['UsableItems_RefundCampfire'] = "Você foi reembolsado por uma fogueira",
   ['UsableItems_RefundTent'] = "Você foi reembolsado por uma barraca",
 
@@ -40,17 +40,17 @@ Lang['pt'] = {
   ['Store_MedsSubTitle'] = 'Para permanecer vivo!',
   ['Store_OtherItems'] = 'Outros itens',
   ['Store_NotEnoughMoney'] = 'Sem dinheiro suficiente',
-  ['Store_Bought1'] = "Você comprou um",
+  ['Store_Bought1'] = "Você comprou um ",
   ['Store_Bought2'] = ', custando $',
   ['Store_Bought3'] = 'Dólar!',
-  ['Store_Sold'] = "Você vendeu um item:",
-  ['Store_NoItem'] = "Você não tem nenhum item chamado:",
+  ['Store_Sold'] = "Você vendeu um item: ",
+  ['Store_NoItem'] = "Você não tem nenhum item chamado: ",
   ['Store_Exit'] = 'Sair',
 
   -- Caçador de Recompensa
   ['BountyHunter_PressSpace'] = 'Pressione [~e~ESPAÇO~q~] para abrir o menu de recompensas',
   ['BountyHunter_MenuTitle'] = 'Bounty Board',
-  ['BountyHunter_PVESubTitle'] = 'Hunt NPCs',
+  ['BountyHunter_PVESubTitle'] = 'Caçar NPCs',
   ['BountyHunter_PVPSubTitle'] = 'Caçar humanos',
   ['BountyHunter_PVEMenu'] = 'Menu PVE',
   ['BountyHunter_PVPMenu'] = 'Menu PVP',
@@ -73,16 +73,12 @@ Lang['pt'] = {
   ['BountyHunter_NoStackAllowed'] = "Você já tem uma recompensa ativa! Mate-os primeiro",
   ['BountyHunter_MaxBountiesReached'] = "Você tem muitas recompensas abertas, mate-os primeiro",
 
-  ['PickableFruits_PressSpace'] = 'Pressione [~e~SPACE~q~] para colher os frutos',
-  ['PickableFruits_Searching'] = "Pesquisando ...",
-  ['PickableFruits_Collected'] = "Você coletou",
+  ['PickableFruits_PressSpace'] = 'Pressione [~e~ESPAÇO~q~] para coletar ervas e frutas',
+  ['PickableFruits_Searching'] = "Procurando...",
+  ['PickableFruits_Collected'] = 'Você coletou ',
+  ['PickableFruits_NothingFound'] = "Não há nada para ser coletado aqui!",
 
-  ['PickableFruits_PressSpace'] = 'Нажмите [~e~SPACE~q~], чтобы собрать ягоды',
-  ['PickableFruits_Searching'] = "Поиск ...",
-  ['PickableFruits_Collected'] = 'Вы собрали',
-  ['PickableFruits_NothingFound'] = "Não há nada a ser coletado aqui!",
-
-  ['Rivers_Info'] = "Pressione [~e~G~q~] para lavar, [~e~ENTER~q~] para beber água",
+  ['Rivers_Info'] = "Pressione [~e~G~q~] para se lavar, [~e~ENTER~q~] para beber água",
 
   -- PayCheck
   ['PayCheck_Money'] = 'Você recebeu~t~$~q~ ~o~',

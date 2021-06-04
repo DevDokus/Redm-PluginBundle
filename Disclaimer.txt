@@ -34,7 +34,7 @@ to manually change this on every update.
 ===================================================================
 ===================================================================
 -- Disclaimer Trains --
-Without the trains DokusCore run 0.00ms with 0.02% server
+Without the trains DokusCore run 0.00ms with 0.08% server
 side. With the trains this will be average around 0.80ms
 with 6.00% of thread time. The train edition is quite
 a heavy resource but should, depending on the amount of
