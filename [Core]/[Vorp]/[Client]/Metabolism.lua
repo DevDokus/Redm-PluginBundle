@@ -1,8 +1,6 @@
 
-
-Citizen.CreateThread(function()
-  Wait(500)
-  if Plugins.Metabolism and not _StartError_ then
+Citizen.CreateThread(function() Wait(1000)
+  if (((Plugins.Metabolism) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
     --------------------------------------------------------------------------------
     ----------------------------------- DevDokus -----------------------------------
     --------------------------------------------------------------------------------

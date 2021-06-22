@@ -5,10 +5,11 @@
 -- en - es - ru - pt - fr - de - it - nl - pl - gr - dk - bg
 --------------------------------------------------------------------------------z
 Language = 'en'
+Framework = { RedEmRP = true, Vorp = false }
 --------------------------------------------------------------------------------
 -- This will turn features on or off.
 Plugins = {
-  MaxCores       = false,  -- Set health and stamina to max
+  MaxCores       = true,  -- Set health and stamina to max
   Metabolism     = true,  -- Gives you Character vitals like eat and drink.
   Stores         = true,  -- Gives you multiple stores to buy and sell items.
   Teleport       = true,  -- Lets admins or all players teleport to map marker.
@@ -520,8 +521,8 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.3.1"
-_vConfig_ = 015926052021
+_Version_ = "2.4.0"
+_vConfig_ = 011022062021
 _StartError_ = false
 
 

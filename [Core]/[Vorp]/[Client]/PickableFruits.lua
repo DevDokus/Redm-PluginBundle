@@ -1,5 +1,5 @@
-
-if Plugins.PickableFruits and not _StartError_ then
+Citizen.CreateThread(function() Wait(1000)
+if (((Plugins.PickableFruits) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
   --------------------------------------------------------------------------------
   ----------------------------------- DevDokus -----------------------------------
   --------------------------------------------------------------------------------
@@ -50,4 +50,5 @@ if Plugins.PickableFruits and not _StartError_ then
     end
   end
 end)
+end
 end

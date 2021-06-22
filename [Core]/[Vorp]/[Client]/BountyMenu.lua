@@ -1,7 +1,7 @@
-if Plugins.BountyHunter and BountyHunter.NUI.Theme.Red then
+Citizen.CreateThread(function() Wait(1000)
+if (((Plugins.BountyHunter) and not (_StartError_) and (Framework.Vorp) and (BountyHunter.NUI.Theme.Red) and not (Framework.RedEmRP))) then
   WarBountyMenu = { }
   WarBountyMenu.debug = false
-
 
   local menus = { }
   local keys = { up = 0x6319DB71, down = 0x05CA7C52, left = 0xA65EBAB4, right = 0xDEB34313, select = 0xC7B5340A, back = 0x156F7119 }
@@ -1336,4 +1336,5 @@ if Plugins.BountyHunter and BountyHunter.NUI.Theme.Dark then
   function WarBountyMenu.SetMenuButtonPressedSound(id, name, set)
     setMenuProperty(id, 'buttonPressedSound', { ['name'] = name, ['set'] = set })
   end
+end
 end

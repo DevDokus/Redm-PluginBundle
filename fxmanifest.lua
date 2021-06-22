@@ -3,13 +3,14 @@
 --------------------------------------------------------------------------------
 description 'The Ultimate RP Pack for RedM VORP'
 author 'DevDokus Github'
-version '2.3.1'
+version '2.4.0'
 --------------------------------------------------------------------------------
-ui_page('[Core]/[Vorp]/[HTML]/index.html')
+ui_page('[Core]/[HTML]/index.html')
 shared_script {'config.lua', '[Core]/[System]/[Lang]/*.lua'}
 --------------------------------------------------------------------------------
 client_scripts {
   '[Core]/[Vorp]/[Client]/*.lua',
+  '[Core]/[RedEmRP]/[Client]/*.lua',
   '[Core]/[System]/[Client]/*.lua',
 
 -- ================================================== --
@@ -24,6 +25,7 @@ client_scripts {
 --------------------------------------------------------------------------------
 server_scripts {
   '[Core]/[Vorp]/[Server]/*.lua',
+  '[Core]/[RedEmRP]/[Server]/*.lua',
   '[Core]/[System]/[Server]/*.lua',
 
 -- ================================================== --
@@ -37,11 +39,11 @@ server_scripts {
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 files {
-  "[Core]/[Vorp]/[HTML]/script.js",
-  "[Core]/[Vorp]/[HTML]/styles.css",
-  "[Core]/[Vorp]/[HTML]/img/Hud/*.png",
-  "[Core]/[Vorp]/[HTML]/index.html",
-  "[Core]/[Vorp]/[HTML]/img/Cards/*.png",
+  "[Core]/[HTML]/script.js",
+  "[Core]/[HTML]/styles.css",
+  "[Core]/[HTML]/img/Hud/*.png",
+  "[Core]/[HTML]/index.html",
+  "[Core]/[HTML]/img/Cards/*.png",
 }
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------

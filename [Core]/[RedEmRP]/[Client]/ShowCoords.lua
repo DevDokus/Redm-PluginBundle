@@ -1,5 +1,6 @@
-Citizen.CreateThread(function() Wait(1000)
-  if (((Plugins.ShowCoords) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
+Citizen.CreateThread(function()
+  Wait(500)
+  if (((Plugins.ShowCoords) and not (_StartError_) and (Framework.RedEmRP))) then
     --------------------------------------------------------------------------------
     ----------------------------------- DevDokus -----------------------------------
     --------------------------------------------------------------------------------

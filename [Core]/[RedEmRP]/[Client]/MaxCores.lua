@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------------
 ----------------------------------- DevDokus -----------------------------------
 --------------------------------------------------------------------------------
-Citizen.CreateThread(function() Wait(1000)
-  if (((Plugins.MaxCores) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
+Citizen.CreateThread(function() Wait(500)
+  if (((Plugins.MaxCores) and not (_StartError_) and (Framework.RedEmRP))) then
     Citizen.CreateThread(function()
       if MaxCores.Stamina then Stamina() end
     end)

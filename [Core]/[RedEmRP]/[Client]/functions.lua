@@ -1,8 +1,7 @@
 --------------------------------------------------------------------------------
 ----------------------------------- DevDokus -----------------------------------
 --------------------------------------------------------------------------------
-Citizen.CreateThread(function() Wait(1000)
-if not ((_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP)) then
+if not ((_StartError_) and (Framework.Vorp)) then
   function DrawCircle(x, y, z, r, g, b, a)
     Citizen.InvokeNative(0x2A32FAA57B937173, 0x94FDAE17, x, y, z - 0.95, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.25, r, g, b, a, 0, 0, 2, 0, 0, 0, 0)
   end
@@ -80,5 +79,4 @@ if not ((_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP)) then
       count = (count + 1)
     end
   end)
-end
 end

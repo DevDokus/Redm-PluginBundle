@@ -1,5 +1,5 @@
-Citizen.CreateThread(function() Wait(1000)
-if (((Plugins.PlayPiano) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
+
+if (((Plugins.PlayPiano) and not (_StartError_) and (Framework.RedEmRP))) then
 
   --------------------------------------------------------------------------------
   ----------------------------------- DevDokus -----------------------------------
@@ -93,5 +93,4 @@ end)
 
 
 --------------------------------------------------------------------------------
-end
 end

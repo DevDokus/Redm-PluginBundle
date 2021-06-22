@@ -1,14 +1,17 @@
 --------------------------------------------------------------------------------
 ----------------------------------- DevDokus -----------------------------------
 --------------------------------------------------------------------------------
-local VorpCore = {}
-TriggerEvent("getCore", function(core) VorpCore = core end)
-VorpInv = exports.vorp_inventory:vorp_inventoryApi()
-RegisterServerEvent('DevDokus:S:Refund')
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 Citizen.CreateThread(function() Wait(1000)
-  if Plugins.UsableItems and not _StartError_ then
+  if (((Plugins.UsableItems) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
+    --------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------
+    local VorpCore = {}
+    TriggerEvent("getCore", function(core) VorpCore = core end)
+    VorpInv = exports.vorp_inventory:vorp_inventoryApi()
+    RegisterServerEvent('DevDokus:S:Refund')
+    --------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------
+
     for k, v in pairs(UsableItems.Items) do
       if v.Type == 'Eat' then
         VorpInv.RegisterUsableItem(v.ID, function(_Data)
@@ -29,8 +32,13 @@ Citizen.CreateThread(function() Wait(1000)
         end)
       end
     end
+
+
+    --------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------
   end
 end)
+
 
 AddEventHandler('DevDokus:S:Refund', function(Item)
   if UsableItems.RefundCampFire and Item == 'campfire' then
@@ -41,11 +49,6 @@ AddEventHandler('DevDokus:S:Refund', function(Item)
     TriggerClientEvent("vorp:TipRight", source, _('UsableItems_RefundTent'), 5000)
   end
 end)
-
-
-
-
-
 
 
 

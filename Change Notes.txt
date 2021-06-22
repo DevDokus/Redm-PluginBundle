@@ -2,6 +2,27 @@
 --------------------------------------------------------------------------------
 --------------------------------- CHANGE NOTES ---------------------------------
 --------------------------------------------------------------------------------
+-------------------------------- Version 2.4.0 ---------------------------------
+--------------------------------------------------------------------------------
+ --- IMPORTANT UPDATE -- REDEMRP COMPATIBLE -- REQUIRES COMPLETE FILE SWAP ---
+--------------------------------------------------------------------------------
+[1] [ Cure File Structure ]: I have re-ordered all files and folder to make it
+    ready for the RedEmRP implementation. Some files do not to be copied and be
+    used by both plugins. These are now shared between and are taken out of the
+    Vorp folder.
+
+[2]: The following plugins are now working for RedEmRP
+	- Play the piano
+	- Open all bank doors
+ 	- Show character coords with /coords
+	- MaxCores the players default stamina and health cores
+
+[3]: Warnings added if plugins that are not RedEMRP capable, are turned on.
+[4]: Switch in the config added to toggle both frameworks.
+
+[Disclaimer]: Not all featires are RedEmRP compatible yet! But you can still use
+DokusCore without any problems in the server.
+--------------------------------------------------------------------------------
 -------------------------------- Version 2.3.1 ---------------------------------
 --------------------------------------------------------------------------------
 [1] [ Metabolism ] [ Change ]: Before you where only getting vital warning the

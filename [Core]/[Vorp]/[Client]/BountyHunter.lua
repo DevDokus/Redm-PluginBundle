@@ -1,4 +1,5 @@
-if Plugins.BountyHunter then
+Citizen.CreateThread(function() Wait(1000)
+if (((Plugins.BountyHunter) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
   --------------------------------------------------------------------------------
   ----------------------------------- DevDokus -----------------------------------
   --------------------------------------------------------------------------------
@@ -356,4 +357,5 @@ if Plugins.BountyHunter then
     BountyStack = 0
   end)
 
+end
 end

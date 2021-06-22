@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
 ----------------------------------- DevDokus -----------------------------------
 --------------------------------------------------------------------------------
+if (((Plugins.Teleport) and not (_StartError_) and (Framework.Vorp) and not (Framework.RedEmRP))) then
 local VorpCore = {}
 TriggerEvent("getCore", function(core) VorpCore = core end)
 --------------------------------------------------------------------------------
@@ -19,3 +20,4 @@ AddEventHandler('DevDokus:Teleport:S:CheckAdmin', function()
     end
   end
 end)
+end
