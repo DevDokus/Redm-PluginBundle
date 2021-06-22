@@ -6,7 +6,7 @@
 
 ---
 # Requirements
-- [VorpCore](https://github.com/VORPCORE/VORP-Core)
+- [VorpCore](https://github.com/VORPCORE/VORP-Core) OR [RedEMRP](https://github.com/RedEM-RP)
 
 # Discord
 If you need any information about my script,<br>
@@ -15,9 +15,9 @@ next version, or if you simply need some help.<br>
 Feel free to join our [Discord](http://discord.gg/2gdypBhsye)
 
 # Framework
-Currently, this script only works with VORP. <br>
-In the near future this script will also be <br>
-compatible with RedEmRP.
+DokusCore is designed to work with both Vorp and <br>
+and the RedEMRP Framwork. Currently all Vorp features <br>
+are being re-written to have RedEMRP capabilities. <br>
 
 # Description
 DokusCore is a bundle of plugins I've made to give      <br>
