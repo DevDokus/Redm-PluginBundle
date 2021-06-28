@@ -8,3 +8,13 @@ end
 function Notify(text, time)
   TriggerClientEvent("vorp:TipRight", source, text, time)
 end
+
+function Note(text, source, time)
+  TriggerClientEvent("pNotify:SendNotification", source, {
+    text = "<height='40' width='40' style='float:left; margin-bottom:10px; margin-left:20px;' />"..text,
+    type = "success",
+    timeout = time,
+    layout = "centerRight",
+    queue = "right"
+  })
+end

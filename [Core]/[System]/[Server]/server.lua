@@ -84,7 +84,6 @@ if (not (_StartError_) and (Framework.RedEmRP) and not (Framework.Vorp) and (Plu
 if (not (_StartError_) and (Framework.RedEmRP) and not (Framework.Vorp) and (Plugins.PayCheck))       then print('^5[DokusCore]^1[ERROR]: ^3The plugin ^1PayCheck^3 is not RedEmRP Ready yet!') end
 if (not (_StartError_) and (Framework.RedEmRP) and not (Framework.Vorp) and (Plugins.PickableFruits)) then print('^5[DokusCore]^1[ERROR]: ^3The plugin ^1PickableFruits^3 is not RedEmRP Ready yet!') end
 if (not (_StartError_) and (Framework.RedEmRP) and not (Framework.Vorp) and (Plugins.Rivers))         then print('^5[DokusCore]^1[ERROR]: ^3The plugin ^1Rivers^3 is not RedEmRP Ready yet!') end
-if (not (_StartError_) and (Framework.RedEmRP) and not (Framework.Vorp) and (Plugins.Stores))         then print('^5[DokusCore]^1[ERROR]: ^3The plugin ^1Stores^3 is not RedEmRP Ready yet!') end
 if (not (_StartError_) and (Framework.RedEmRP) and not (Framework.Vorp) and (Plugins.Teleport))       then print('^5[DokusCore]^1[ERROR]: ^3The plugin ^1Teleport^3 is not RedEmRP Ready yet!') end
 if (not (_StartError_) and (Framework.RedEmRP) and not (Framework.Vorp) and (Plugins.UsableItems))    then print('^5[DokusCore]^1[ERROR]: ^3The plugin ^1UsableItems^3 is not RedEmRP Ready yet!') end
 
