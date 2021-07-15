@@ -90,7 +90,7 @@ if (((Plugins.BountyHunter) and not (_StartError_) and (Framework.Vorp) and not 
 
   -- Warmenu
   Citizen.CreateThread(function()
-    CreateMenus()
+    CreateBountyMenus()
     while true do Wait(1)
       local War = WarBountyMenu.IsMenuOpened
       if War('BountyMenu') then BountyMenu()
@@ -101,7 +101,7 @@ if (((Plugins.BountyHunter) and not (_StartError_) and (Framework.Vorp) and not 
   end)
 
 
-  function CreateMenus()
+  function CreateBountyMenus()
     WarBountyMenu.CreateMenu('BountyMenu', _('BountyHunter_MenuTitle'))
     WarBountyMenu.SetSubTitle('BountyMenu', 'Made By DevDokus')
     WarBountyMenu.CreateMenu('PVEMenu', _('BountyHunter_MenuTitle'))
@@ -358,4 +358,4 @@ if (((Plugins.BountyHunter) and not (_StartError_) and (Framework.Vorp) and not 
   end)
 
 end
-end
+end)

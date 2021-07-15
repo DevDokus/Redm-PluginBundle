@@ -1337,4 +1337,4 @@ if Plugins.BountyHunter and BountyHunter.NUI.Theme.Dark then
     setMenuProperty(id, 'buttonPressedSound', { ['name'] = name, ['set'] = set })
   end
 end
-end
+end)
