@@ -521,7 +521,7 @@ PickableFruits = {
 -- DON'T TOUCH ANYTHING BELOW THIS, It WILL CREATE A DISTURBANCE IN THE FORCE --
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-_Version_ = "2.4.1"
+_Version_ = "2.4.2"
 _vConfig_ = 011022062021
 _StartError_ = false
 
