@@ -4,6 +4,31 @@
  <b>Version (v2.4.2) (WIP)</b> - The Ultimate RP bundle of plugins for your RedM Server.
 </p>
 
+
+---
+---
+---
+---
+# ATTENTION!!!
+Soon this repository will be renamed to **DokusBundle** !! <br>
+This because I am developing a new framework for RedM that <br>
+will be called DokusCore.
+
+## Would you like to get early access ?
+The new DokusCore Framework is not yet publicly released, but <br>
+if you like, you can receive early access by becoming a Beta <br>
+tester! Shoot me a mail via [DokusCore@outlook.com](DokusCore@outlook.com), <br>
+and I will send your the instructions how to get the files as soon <br>
+as possible. For right now only beta testers can have access to the <br>
+DokusCore Framework, once the core is finished it will be publicly released. <br>
+
+Website: [Website](https://DokusCore.com)         - [ Under Development ] <br>
+Discord: [Discord](https://discord.io/DokusCore)  - [ Under Development ] <br>
+Github:  [Repository](https://github.com/DokusCore/DokusCore) - [ Only Beta Access ] <br>
+
+---
+---
+---
 ---
 # Requirements
 - [VorpCore](https://github.com/VORPCORE/VORP-Core) OR [RedEMRP](https://github.com/RedEM-RP)
