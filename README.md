@@ -37,7 +37,7 @@ Github:  [Repository](https://github.com/DokusCore/DokusCore) - [ Only Beta Acce
 If you need any information about my script,<br>
 if you found a bug, if you have an idea for the <br>
 next version, or if you simply need some help.<br>
-Feel free to join our [Discord](http://discord.gg/2gdypBhsye)
+Feel free to join our [Discord](https://discord.io/DokusCore)
 
 # Framework
 DokusCore is designed to work with both Vorp and <br>
