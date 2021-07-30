@@ -10,9 +10,9 @@
 ---
 ---
 # ATTENTION!!!
-Soon this repository will be renamed to **DokusBundle** !! <br>
-This because I am developing a new framework for RedM that <br>
-will be called DokusCore.
+This is a plugin bundle I made for Vorp and Rememrp, but currently
+I am working on a new public RedM Framework!. For more information
+visit the Discord link below!.
 
 ## Would you like to get early access ?
 The new DokusCore Framework is not yet publicly released, but <br>
