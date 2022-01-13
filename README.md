@@ -23,7 +23,7 @@ DokusCore Framework, once the core is finished it will be publicly released. <br
 
 Website: [Website](https://DokusCore.com)         - [ Under Development ] <br>
 Discord: [Discord](https://discord.io/DokusCore)  - [ Under Development ] <br>
-Github:  [Repository](https://github.com/DokusCore/DokusCore) - [ Only Beta Access ] <br>
+Github:  [Repository](https://github.com/DokusCore) - [ Only Beta Access ] <br>
 
 ---
 ---
@@ -49,7 +49,7 @@ DokusCore is a bundle of plugins I've made to give      <br>
 RedM roleplay servers a more flexible roleplay. <br>
 Instead, having to install all plugins manually,  <br>
 and putting them in the right order, you can install  <br>
-this on the go! Simply `ensure DokusCore` in your <br>
+this on the go! Simply `ensure Redm-PluginBundle` in your <br>
 server cfg and you're done. If you don't like to use  <br>
 any of the features, you can simply turn them off <br>
 in the config. Setting up your RedM RP experience <br>
