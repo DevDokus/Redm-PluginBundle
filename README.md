@@ -40,8 +40,9 @@ Feel free to join our [Discord](https://discord.io/DokusCore)
 
 # Framework
 DokusCore is designed to work with both Vorp and <br>
-and the RedEMRP Framwork. Currently all Vorp features <br>
-are being re-written to have RedEMRP capabilities. <br>
+and the RedEMRP Framwork. I am not maintaining this 
+repository anymore, as I am building my own framework.<br>
+Though all scripts should still be working normal!
 
 # Description
 DokusCore is a bundle of plugins I've made to give      <br>
