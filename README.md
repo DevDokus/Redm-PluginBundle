@@ -5,6 +5,30 @@
 </p>
 
 ---
+---
+---
+---
+# ATTENTION!!!
+This is a plugin bundle I made for Vorp and Rememrp, but currently
+I am working on a new public RedM Framework!. For more information
+visit the Discord link below!.
+
+## Would you like to get early access ?
+The new DokusCore Framework is not yet publicly released, but <br>
+if you like, you can receive early access by becoming a Beta <br>
+tester! Shoot me a mail via [DokusCore@outlook.com](DokusCore@outlook.com), <br>
+and I will send your the instructions how to get the files as soon <br>
+as possible. For right now only beta testers can have access to the <br>
+DokusCore Framework, once the core is finished it will be publicly released. <br>
+
+Website: [Website](https://DokusCore.com)         - [ Under Development ] <br>
+Discord: [Discord](https://discord.io/DokusCore)  - [ Under Development ] <br>
+Github:  [Repository](https://github.com/DokusCore) - [ Only Beta Access ] <br>
+
+---
+---
+---
+---
 # Requirements
 - [VorpCore](https://github.com/VORPCORE/VORP-Core) OR [RedEMRP](https://github.com/RedEM-RP)
 
@@ -12,19 +36,20 @@
 If you need any information about my script,<br>
 if you found a bug, if you have an idea for the <br>
 next version, or if you simply need some help.<br>
-Feel free to join our [Discord](http://discord.gg/2gdypBhsye)
+Feel free to join our [Discord](https://discord.io/DokusCore)
 
 # Framework
 DokusCore is designed to work with both Vorp and <br>
-and the RedEMRP Framwork. Currently all Vorp features <br>
-are being re-written to have RedEMRP capabilities. <br>
+and the RedEMRP Framwork. I am not maintaining this <br>
+repository anymore, as I am building my own framework.<br>
+Though all scripts should still be working normal!
 
 # Description
 DokusCore is a bundle of plugins I've made to give      <br>
 RedM roleplay servers a more flexible roleplay. <br>
 Instead, having to install all plugins manually,  <br>
 and putting them in the right order, you can install  <br>
-this on the go! Simply `ensure DokusCore` in your <br>
+this on the go! Simply `ensure Redm-PluginBundle` in your <br>
 server cfg and you're done. If you don't like to use  <br>
 any of the features, you can simply turn them off <br>
 in the config. Setting up your RedM RP experience <br>

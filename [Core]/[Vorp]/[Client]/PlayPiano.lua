@@ -21,7 +21,7 @@ if (((Plugins.PlayPiano) and not (_StartError_) and (Framework.Vorp) and not (Fr
     local coords = GetEntityCoords(ped)
     for k, v in pairs(PlayPiano.Pianos) do
       local x, y, z = v.x, v.y, v.z
-      local dist = GetDistanceBetweenCoords(coords, x, y, z)
+      local dist = Vdist(coords, x, y, z)
 
       -- Set the current closest piano to the player
       if Location == nil and (dist <= 5) then Location = v.ID end
@@ -68,7 +68,7 @@ AddEventHandler('DevDokus:PlayPiano:C:ActPiano', function(ped, x, y, z, h)
   if F and IsPlaying then
     Location = nil
     IsPlaying = false
-    ClearPedTasks(GetPlayerPed())
+    ClearPedTasks(PlayerPedId())
   end
 end
 end)

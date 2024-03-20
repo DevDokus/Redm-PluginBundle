@@ -26,7 +26,7 @@ Citizen.CreateThread(function() Wait(1000)
     -- Check players distance from the stores.
     Citizen.CreateThread(function()
       while true do Wait(1)
-        local ped = GetPlayerPed()
+        local ped = PlayerPedId()
         local coords = GetEntityCoords(ped)
         local IsDead = IsPedDeadOrDying(ped)
 
@@ -37,7 +37,7 @@ Citizen.CreateThread(function() Wait(1000)
           local Blue = Stores.CircleColor.Blue
           local Opacity = Stores.CircleColor.Opacity
           local x,y,z = v.Coords.x, v.Coords.y, v.Coords.z
-          local dist = GetDistanceBetweenCoords(coords.x, coords.y, coords.z, x,y,z)
+          local dist = Vdist(coords, v.Coords.x, v.Coords.y, v.Coords.z);
 
           if ((Location == nil) and (dist <= 15)) then Location = v.Store end
           if ((Location == nil) and (dist > 15)) then Wait(1000) end

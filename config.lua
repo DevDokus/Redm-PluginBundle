@@ -1,11 +1,11 @@
 --------------------------------------------------------------------------------
 ----------------------------------- DevDokus -----------------------------------
---------------------------------------------------------------------------------z
+--------------------------------------------------------------------------------
 -- Supported Languages
 -- en - es - ru - pt - fr - de - it - nl - pl - gr - dk - bg
---------------------------------------------------------------------------------z
+--------------------------------------------------------------------------------
 Language = 'en'
-Framework = { RedEmRP = true, Vorp = false }
+Framework = { RedEmRP = false, Vorp = true }
 --------------------------------------------------------------------------------
 -- This will turn features on or off.
 Plugins = {
@@ -201,10 +201,10 @@ Stores = {
   -- Change this if you want to alter the store locations.
   -- You can also remove or add more stores on the list.
   Stores = {
-    {Store = 'Valentine', Coords = {x = -321.89, y = 803.99, z = 117.88}},
-    {Store = 'Saint Denis', Coords = {x = 2825.74, y = -1317.91, z = 46.76}},
-    {Store = 'Blackwater', Coords = {x = -784.50, y = -1324.07, z = 43.88}},
-    {Store = 'Tumbleweed', Coords = {x = -5487.52, y = -2939.09, z = -0.40}},
+    {Store = 'Valentine', Coords = {x = -322.4, y = 803.9, z = 117.8 }},
+    -- {Store = 'Saint Denis', Coords = {x = 2825.74, y = -1317.91, z = 46.76}},
+    -- {Store = 'Blackwater', Coords = {x = -784.50, y = -1324.07, z = 43.88}},
+    -- {Store = 'Tumbleweed', Coords = {x = -5487.52, y = -2939.09, z = -0.40}},
   },
 
   NPCs = {
