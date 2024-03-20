@@ -1,0 +1,65 @@
+--------------------------------------------------------------------------------
+----------------------------------- DevDokus -----------------------------------
+--------------------------------------------------------------------------------
+-------------------------------- RedM Metabolism -------------------------------
+--------------------------------------------------------------------------------
+
+-- Instructions --
+Simply place the "DokusCore" in your resource
+folder and add it to your server.cfg. Add the following line.
+`ensure DokusCore`
+--------------------------------------------------------------------------------
+
+-- Requirements --
+Other then the VORP Core, you do not
+require other plugins for this to work.
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+-- Disclaimer --
+DokusCore is currently under development!
+I will still be including more scripts to this
+core on a daily basis. If you want to be able to
+upgrade to the latest version with ease, then I would
+recommend not to make changes in any files other then
+the config file. This way you can simply download the
+latest version and replace your old files. Just keep in
+mind that changes can be made to the config. You
+can either replace the config and add in your custom changes,
+or use the old config and add in the changes I made manually.
+If you make any changes in the client/server files, you have
+to manually change this on every update.
+
+===================================================================
+===================================================================
+-- Disclaimer Trains --
+Without the trains DokusCore run 0.00ms with 0.08% server
+side. With the trains this will be average around 0.80ms
+with 6.00% of thread time. The train edition is quite
+a heavy resource but should, depending on the amount of
+your resources, cause no lag on your server. If dispite you
+have troubles with the trains, you can simply disable it
+via the FXManifext.lua. Simply uncomment or delete the
+client and server /*.dll entries. By default I have disabled
+the trains, this because there is possibility that your RedM
+client crashes when restarting DokusCore. using the trains
+itself will not cause your troubles, just restarting them
+your client sometimes doesn't like.
+===================================================================
+===================================================================
+
+--------------------------------------------------------------------------------
+TriggerEvent('DevDokus:Metabolism:C:Hunger', value)
+TriggerEvent('DevDokus:Metabolism:C:Thirst', value)
+TriggerEvent('DevDokus:Metabolism:C:Health', value)
+TriggerEvent('DevDokus:Metabolism:C:Stamina', value)
+TriggerEvent('DevDokus:Metabolism:C:StaminaInnerGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:StaminaOuterGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:HealthInnerGold', seconds)
+TriggerEvent('DevDokus:Metabolism:C:HealthOuterGold', seconds)
+
+--------------------------------------------------------------------------------
+-- Credits --
+[SirFreddie](https://github.com/SirFreddie) For the hud.
+--------------------------------------------------------------------------------
